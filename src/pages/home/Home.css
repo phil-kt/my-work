@@ -1,0 +1,36 @@
+.home .intro {
+    margin: 70px auto 20px  auto;
+    width: 90%;
+}
+
+.home .name {
+    margin-bottom: 0;
+}
+
+.home .byline {
+    font-weight: normal;
+    margin-top: 15px;
+}
+
+.home .about {
+    margin-top: 5px;
+    padding-left: 30px;
+}
+
+.home .social a {
+    text-decoration: none;
+}
+
+.home .social svg {
+    width: 24px;
+    height: 24px;
+}
+
+
+#dribbble svg:hover {
+    fill: #ea4c89
+}
+
+#github svg:hover {
+    fill: #6cc644;
+}

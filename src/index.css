@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Consolas';
+  src: url('fonts/consolas/Consolas.eot');
+  src: url('fonts/consolas/Consolas.woff2') format('woff2'),
+  url('fonts/consolas/Consolas.woff') format('woff'),
+  url('fonts/consolas/Consolas.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Consolas';
+  src: url('fonts/consolas/ConsolasBold.eot');
+  src: url('fonts/consolas/ConsolasBold.woff2') format('woff2'),
+  url('fonts/consolas/ConsolasBold.woff') format('woff'),
+  url('fonts/consolas/ConsolasBold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+/* Import Lora */
+@import url('https://fonts.googleapis.com/css?family=Lora:700');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+  font-family: Consolas, Monaco, monospace;
+  background: #F5F4F4;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: Lora, serif;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-family: Lora, serif;
+}
+
+h3 {
+  font-size: 2em;
+}
