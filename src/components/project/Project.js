@@ -1,35 +1,37 @@
 import React, { Component } from 'react';
+import Button from '../button/Button';
 import './Project.css';
 
 class Project extends Component {
 
-
   static propTypes = {
     title: React.PropTypes.string.isRequired,
-    description: React.PropTypes.object.isRequired,
-    github: React.PropTypes.string,
-    devpost: React.PropTypes.string,
-    prototype: React.PropTypes.string,
-    customLinks: React.PropTypes.array,
+    description: React.PropTypes.string.isRequired,
+    link: React.PropTypes.string.isRequired,
+    image: React.PropTypes.string.isRequired,
+    iPhone: React.PropTypes.bool
   }
 
   static defaultProps = {
     title: undefined,
-    content: undefined,
-    github: undefined,
-    devpost: undefined,
-    prototype: undefined,
-    customLinks: [],
+    description: undefined,
+    link: undefined,
+    image: undefined,
+    iPhone: false
   }
-
 
   render () {
     return (
       <div className={"project " + this.props.title}>
-        <div className="left">
-          <h2>{this.props.title}</h2>
-          <p>{this.props.description}</p>
-          <button>EXPLORE</button>
+        <div className="content">
+          <div className="left">
+            <h2>{this.props.title}</h2>
+            <p>{this.props.description}</p>
+            <Button content="explore" link={this.props.link} />
+          </div>
+          <div className={ this.props.iPhone ? "right iphone" : "right"}>
+            <img src={this.props.image} alt={this.props.title + " preview"}/>
+          </div>
         </div>
       </div>
     )

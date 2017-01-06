@@ -1,5 +1,53 @@
 .project {
     width: 100%;
-    height: 350px;
+    max-height: auto;
     display: flex;
+    color: #F5F4F4;
+    overflow: hidden;
+}
+
+.project .content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.project .left {
+    width: 60%;
+    display: inline-block;
+}
+
+.project .button {
+    margin-bottom: 20px;
+}
+
+.project .iphone {
+    padding-top: 60px;
+}
+
+.project .iphone img  {
+    max-width: 250px;
+}
+
+.project .right {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.project h2 {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.project img {
+    width: 85%;
+    max-width: 200px;
+    margin: auto;
+    display: block;
 }

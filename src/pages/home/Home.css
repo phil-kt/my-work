@@ -1,5 +1,5 @@
 .home .intro {
-    margin: 70px auto 20px  auto;
+    margin: 50px auto 20px  auto;
     width: 90%;
 }
 
@@ -17,15 +17,30 @@
     padding-left: 30px;
 }
 
+.home .social {
+    display: flex;
+    align-items: center;
+    width: 230px;
+    justify-content: flex-start;
+}
 .home .social a {
     text-decoration: none;
+    margin: auto;
 }
 
 .home .social svg {
     width: 24px;
     height: 24px;
+    fill: #1F1E1E;
 }
 
+.home .social path {
+    transition: fill .4s ease;
+}
+
+#resume svg:hover {
+    fill: #8C7AE5;
+}
 
 #dribbble svg:hover {
     fill: #ea4c89
@@ -33,4 +48,32 @@
 
 #github svg:hover {
     fill: #6cc644;
+}
+
+#twitter svg:hover {
+    fill: rgb(29, 161, 242);
+}
+
+#mail svg:hover {
+    fill: #43918E;
+}
+
+#linkedin svg:hover {
+    fill: #0077B5;
+}
+
+.home .Hive {
+    background: #1FBFD0;
+}
+
+.home .Medi {
+    background: #DB4D32;
+}
+
+.home .Graffiti {
+    background: #1DC7AA;
+}
+
+.home .Dots {
+    background: #1C39CB;
 }

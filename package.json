@@ -2,6 +2,7 @@
   "name": "my-work",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://linkcable.github.io/my-work",
   "devDependencies": {
     "react-scripts": "0.8.4"
   },
