@@ -1,6 +1,6 @@
 .project {
     width: 100%;
-    max-height: auto;
+    height: 360px;
     display: flex;
     color: #F5F4F4;
     overflow: hidden;

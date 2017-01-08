@@ -1,0 +1,7 @@
+.Hive {
+    background: #1FBFD0;
+}
+
+.Hive .header {
+    background: url(../../../media/hive/hive-hero.png) center bottom;
+}

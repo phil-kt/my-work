@@ -15,13 +15,25 @@ class Button extends Component {
     link: undefined
   }
 
+  isLinkInternal () {
+    if(this.props.link.indexOf("://")=== -1)
+      return true;
+
+    return window.location.host === this.props.link.host;
+  }
+
 
   render () {
     return (
       <div className="button">
-        <Link to={this.props.link}>
-          {this.props.content}
-        </Link>
+        {this.isLinkInternal() ?
+          <Link to={this.props.link}>
+            {this.props.content}
+          </Link> :
+          <a href={this.props.link} target="_blank">
+            {this.props.content}
+          </a>
+        }
       </div>
     )
   }

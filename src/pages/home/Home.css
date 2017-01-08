@@ -3,6 +3,12 @@
     width: 90%;
 }
 
+.home .vapor {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
 .home .name {
     margin-bottom: 0;
 }
@@ -64,6 +70,10 @@
 
 .home .Hive {
     background: #1FBFD0;
+}
+
+.home .AR {
+    background: #d0a70f;
 }
 
 .home .Medi {

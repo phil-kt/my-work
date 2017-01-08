@@ -10,7 +10,9 @@
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-inlinesvg": "^0.5.5",
-    "react-router": "^3.0.0"
+    "react-mfb": "^0.4.1",
+    "react-router": "^3.0.0",
+    "react-slick": "^0.14.5"
   },
   "scripts": {
     "start": "react-scripts start",

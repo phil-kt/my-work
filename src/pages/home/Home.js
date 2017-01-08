@@ -4,6 +4,7 @@ import './Home.css';
 
 import Project from '../../components/project/Project';
 
+import computers from '../../media/home/im_so_computers.png';
 import resume from '../../media/social/resume.svg';
 import dribbble from '../../media/social/dribbble.svg';
 import github from '../../media/social/github.svg';
@@ -12,6 +13,7 @@ import twitter from '../../media/social/twitter.svg';
 import linkedin from '../../media/social/linkedin.svg';
 import graffiti from '../../media/home/graffiti-iphone.png';
 import medi from '../../media/home/medi-iphone.png';
+import argon from '../../media/home/argon-iphone.png';
 import dots from '../../media/home/dots.svg';
 
 class Home extends Component {
@@ -20,6 +22,9 @@ class Home extends Component {
     return (
       <div className="home">
         <div className="intro">
+          <a href="http://www.philkt.me" className="vapor">
+            <img src={computers} alt="im so computers" width="30px"/>
+          </a>
           <h1 className="name">Philippe Kimura-Thollander</h1>
           <h3 className="byline">A developer turned designer</h3>
 
@@ -77,12 +82,19 @@ class Home extends Component {
 
         <Project title="The Hive"
                  description="A case study about how to optimize finding a seat in Georgia Tech’s library"
-                  link="root"
+                  link="hive"
                   image={null} />
+
+        <Project title="Understanding AR"
+                 description="An augmented reality book about the history of augmented reality"
+                 link="argon"
+                 image={argon}
+                 iPhone={true}/>
+
 
         <Project title="Medi"
                  description="An application ecosystem to ensure that elderly patients take their prescription medications"
-                 link="root"
+                 link="medi"
                  image={medi}
                  iPhone={true}/>
 
@@ -96,6 +108,7 @@ class Home extends Component {
                  description="An art video inspired by the Google Now dots that was purchased by Stony Brook’s president "
                  link="root"
                  image={dots}/>
+
 
       </div>
     )
