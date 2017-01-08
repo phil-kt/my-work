@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, browserHistory, Redirect } from 'react-router';
+import { Router, Route, browserHistory } from 'react-router';
+import { useBasename } from 'history'
+
 
 import App from './App';
 import Hive from './pages/portfolio/hive/Hive';
@@ -20,16 +22,14 @@ function logPageView() {
 
 
 ReactDOM.render((
-  <Router history={browserHistory} onUpdate={logPageView}>
+  <Router history={useBasename(() => browserHistory)({ basename: process.env.PUBLIC_URL })} onUpdate={logPageView}>
     <Route path="/" component={App}/>
     <Route path="/hive" component={Hive}/>
     <Route path="/argon" component={Argon}/>
     <Route path="/medi" component={Medi}/>
     <Route path="/graffiti" component={Graffiti}/>
     <Route path="/dots" component={Dots}/>
-
-    <Route path='/404' component={NotFound} />
-    <Redirect from='*' to='/404' />
+    <Route path="*" component={NotFound}/>
 
     {/* add the routes here
     <Route path="/roam" component={Roam}/>
