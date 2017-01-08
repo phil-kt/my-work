@@ -6,6 +6,9 @@ import App from './App';
 import Hive from './pages/portfolio/hive/Hive';
 import Argon from './pages/portfolio/argon/Argon';
 import Medi from './pages/portfolio/medi/Medi';
+import Graffiti from './pages/portfolio/graffiti/Graffiti';
+import Dots from './pages/portfolio/dots/Dots';
+import NotFound from './pages/not-found/NotFound';
 import './index.css';
 
 
@@ -22,18 +25,20 @@ ReactDOM.render((
     <Route path="/hive" component={Hive}/>
     <Route path="/argon" component={Argon}/>
     <Route path="/medi" component={Medi}/>
+    <Route path="/graffiti" component={Graffiti}/>
+    <Route path="/dots" component={Dots}/>
+
+    <Route path='/404' component={NotFound} />
+    <Redirect from='*' to='/404' />
 
     {/* add the routes here
-    <Route path="/dots" component={Dots}/>
     <Route path="/roam" component={Roam}/>
     <Route path="/safeny" component={Safeny}/>
     <Route path="/rendezvous" component={Rendezvous}/>
     <Route path="/stokr" component={Stokr}/>
-    <Route path="/graffiti" component={Graffiti}/>
+    */
 
-
-    <Route path='/404' component={NotFound} />
-    <Redirect from='*' to='/404' /> */}
+    }
   </Router>),
   document.getElementById('root')
 );

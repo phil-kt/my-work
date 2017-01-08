@@ -11,6 +11,7 @@ import github from '../../media/social/github.svg';
 import twitter from '../../media/social/twitter.svg';
 //import mail from '../../media/social/mail.svg';
 import linkedin from '../../media/social/linkedin.svg';
+import tree from '../../media/home/tree.png';
 import graffiti from '../../media/home/graffiti-iphone.png';
 import medi from '../../media/home/medi-iphone.png';
 import argon from '../../media/home/argon-iphone.png';
@@ -83,7 +84,8 @@ class Home extends Component {
         <Project title="The Hive"
                  description="A case study about how to optimize finding a seat in Georgia Tech’s library"
                   link="hive"
-                  image={null} />
+                  image={tree}
+                  />
 
         <Project title="Understanding AR"
                  description="An augmented reality book about the history of augmented reality"
@@ -100,16 +102,22 @@ class Home extends Component {
 
         <Project title="Graffiti"
                  description="An augmented reality iOS app to draw virtual graffiti on real world objects"
-                 link="root"
+                 link="graffiti"
                  image={graffiti}
                  iPhone={true}/>
 
         <Project title="Dots"
                  description="An art video inspired by the Google Now dots that was purchased by Stony Brook’s president "
-                 link="root"
+                 link="dots"
                  image={dots}/>
 
 
+        <footer>
+          <p>
+            <span>Designed and developed by me</span>
+            <a href="http://github.com/linkcable/my-work">View this site on Github</a>
+          </p>
+        </footer>
       </div>
     )
   }

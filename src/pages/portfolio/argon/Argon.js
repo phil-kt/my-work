@@ -4,6 +4,7 @@ import './Argon.css';
 
 import ProjectPage from '../../../components/project-page/ProjectPage';
 
+import leadin from '../../../media/argon/argon-leadin.png';
 import eyetap from '../../../media/argon/eyetap.png';
 import argon from '../../../media/argon/argon.png';
 import google_glass from '../../../media/argon/google_glass.jpg';
@@ -37,6 +38,7 @@ class Argon extends Component {
             <p>
               An augmented reality storybook telling the history of augmented reaily. (meta huh?)
             </p>
+            <img src={leadin} alt="ar sneak peak" />
             <h2>Origins</h2>
             <p className="starting-paragraph">
               Over the summer, I, like many others, became obsessed with the augmented reality game known as Pokemon Go, and found myself every day after my internship trekking through Central Park to hunt some Pokemon. During this playtime, and after the craze died down, I was interested in designing and developing an augmented reality experience of my own for people to try out.

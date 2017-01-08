@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {browserHistory} from 'react-router';
 import './ProjectPage.css';
 
 import Button from '../button/Button';
@@ -20,11 +19,6 @@ class ProjectPage extends Component {
     customLinks: []
   }
 
-  goHome () {
-    console.log("home");
-    browserHistory.push('/');
-  }
-
   render () {
 
     let linksList = this.props.customLinks.map(function(link, index){
@@ -37,6 +31,7 @@ class ProjectPage extends Component {
       );
     });
 
+
     return (
       <div className={"project-page " + this.props.title}>
         <div className="header">
@@ -44,8 +39,16 @@ class ProjectPage extends Component {
           <div className="links">
             {this.props.github ?
               <Button
-                content="code"
+                content="github"
                 link={this.props.github}
+              />
+              : null
+            }
+
+            {this.props.devpost ?
+              <Button
+                content="devpost"
+                link={this.props.devpost}
               />
               : null
             }
@@ -65,6 +68,7 @@ class ProjectPage extends Component {
         <div className="content">
           {this.props.content}
         </div>
+
 
       </div>
     )

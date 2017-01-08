@@ -1,0 +1,14 @@
+.Graffiti {
+    background: #1DC7AA;
+}
+
+.Graffiti .header {
+    background: url(../../../media/graffiti/graffiti-hero.png) center center;
+    background-size: cover;
+}
+
+.graffiti-logos {
+    max-height: 500px;
+    width: auto !important;
+}
+

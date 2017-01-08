@@ -1,0 +1,15 @@
+.not-found {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+
+.not-found .button a {
+    border: 3px solid #1f1e1e;
+    color: #1f1e1e;
+    background-image: linear-gradient(to bottom, transparent 50%, white 50%);
+
+}

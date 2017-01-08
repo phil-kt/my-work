@@ -4,6 +4,7 @@ import './Hive.css';
 
 import ProjectPage from '../../../components/project-page/ProjectPage';
 
+import leadin from '../../../media/hive/lead-in.png';
 import affinity_map from '../../../media/hive/affinity-resize.jpg';
 import task_analysis from '../../../media/hive/task-analysis.png';
 import screen from '../../../media/hive/designs/screen.png';
@@ -45,6 +46,8 @@ class Hive extends Component {
             The Hive is both an art installation and a design solution to finding seats in a crowded library. The Hive was conceived through research done in CS8803 of Georgia Tech's MS-HCI program, and aims to make it simpler and faster to find study spots for students at the Clough Undergraduate Learning Center (CULC).
             </p>
 
+            <img src={leadin} alt="preview of the hive" />
+
             <h3>Problem Space</h3>
             <p>
               The concept for The Hive came about after noticing that students at the CULC often struggle to find seats, due to there being no easy way to see if certain seats were taken or not, which led to students walking around different floors for several minutes trying to find a suitable studying space. Having personally experienced this ourselves as well, we thought it would be useful to try and solve the problem of finding a seat so students could focus on studying, not searching for a place to work.
@@ -53,7 +56,8 @@ class Hive extends Component {
             <h3>What I Did</h3>
             <p>
             My contributions to this project include:
-              <ul className="list">
+            </p>
+             <ul className="list">
                 <li>Defining the data we were interested in collecting for our problem space</li>
                 <li>Conducting interview sessions with users</li>
                 <li>Creating interview questions</li>
@@ -63,7 +67,6 @@ class Hive extends Component {
                 <li>Modeling and coding of a Unity prototype for The Hive</li>
                 <li>Conducting user tests with both virtual and physical prototypes in the CULC</li>
               </ul>
-            </p>
 
             <h3>Research</h3>
             <p>

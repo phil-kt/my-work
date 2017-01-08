@@ -64,22 +64,19 @@ class Medi extends Component {
             <p>
               An app ecosystem to support the elderly and their caretakers in taking their prescribed medication properly and on time.
             </p>
+            <img src={ecosystem} alt="phone, watch, and dispenser" />
             <h2>Origins</h2>
             <p className="starting-paragraph">
               For fall semester of my master's program, I took a class called Interface Prototyping, ID6515, which focused on teaching how to design interfaces from low to high fidelity. For the class we were given an assignment to design an application that would assist both the elderly and their caretakers in taking prescription medication.
             </p>
-            <img src={ecosystem} alt="phone, watch, and dispenser" />
-            <p className="caption">
-              The three devices of the medi ecosystem
-            </p>
             <p>
               For this application, three aspects of a prototype were created:
-              <ul className="list">
+            </p>
+             <ul className="list">
                 <li>A mobile application for the caretaker to use to check up on their patient</li>
                 <li>A physical artifact which allows the patient to track their medication</li>
                 <li>An automatic pill dispensing device for the patient with an embedded screen</li>
               </ul>
-            </p>
             <h2>Problem Space</h2>
             <p>
               As the elderly population continues to increase, so too does the amount of prescriptions given out per year. Elderly patients can often forget to take their doses, or take them late, which can affect the effectiveness of a medication, or can cause medical complications. Caretakers and doctors are concerned about ensuring patients take their medications on time, and it would be useful if there were a way to monitor and track if patients do. Medi aims to solve this issue.</p>
