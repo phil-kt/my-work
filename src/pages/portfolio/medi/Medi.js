@@ -264,9 +264,9 @@ class Medi extends Component {
             <p>
             <img src={faces} alt="wireframe of physical watch"/>
             </p>
-            <p>For the screens on the device, I didn't want there to be too many states or screens that might confuse the user. The watch basically serves as a reminder and a logger, it reminds a patient when it's time for their dose, and they can see what medication they've taken so far today and be told what they've missed, which could be useful information for the caretaker or the doctor. </p>
+            <p>For the screens on the device, I didn't want there to be too many states or screens that might confuse the user. The watch basically serves as a reminder and a logger, it reminds a patient when it's time for their dose, they can see what medication they've taken so far today, and be told what medication they've missed, which could be useful information for the caretaker or the doctor. </p>
 
-            <p>On its standard state, the watch simple shows the time and when your next dose is, as well as what you've taken so far using the color coded system. When it's time for a dosage, the watch notifies the user, and requires the patient to dismiss the screen as a form of confirmation.</p>
+            <p>On its standard state, the watch simply shows the time and when your next dose is, as well as what you've taken so far using the color coded system. When it's time for a dosage, the watch notifies the user, and requires the patient to dismiss the screen as a form of confirmation.</p>
 
             <img src={poster} alt="medi poster pitch" className="portrait" />
             <p className="caption">A poster created to pitch medi watch</p>
