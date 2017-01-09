@@ -1,0 +1,41 @@
+.misc-project {
+    padding-top: 40px;
+}
+
+.misc-project .header {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    margin-bottom: 20px;
+}
+
+.misc-project .badge {
+    margin-right: 15px;
+}
+
+.misc-project h2 {
+    display: inline;
+    margin: 0;
+}
+
+.misc-project img {
+    max-width: 100%;
+}
+
+.misc-project iframe {
+    margin: auto;
+    display: block;
+}
+
+.misc-project .description a {
+    color: #1F1E1E;
+    text-decoration: none;
+}
+
+.misc-project .buttons .button {
+    display: inline-block;
+}
+
+.misc-project .buttons .button:not(:last-child) {
+    margin-right: 15px;
+}

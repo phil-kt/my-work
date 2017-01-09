@@ -69,7 +69,7 @@
 }
 
 .home .Hive {
-    background: #1FBFD0;
+    background: #78909C;
 }
 
 .home .Hive .right {
@@ -93,7 +93,11 @@
 }
 
 .home .Dots {
-    background: #1C39CB;
+    background: #1565C0;
+}
+
+.home .Miscellaneous {
+    background: #4CAF50;
 }
 
 .home footer {
@@ -104,4 +108,9 @@
 
 .home footer span {
     display: block;
+}
+
+.home footer a {
+    text-decoration: none;
+    color: #1da1f2;
 }

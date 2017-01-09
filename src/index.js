@@ -10,6 +10,7 @@ import Argon from './pages/portfolio/argon/Argon';
 import Medi from './pages/portfolio/medi/Medi';
 import Graffiti from './pages/portfolio/graffiti/Graffiti';
 import Dots from './pages/portfolio/dots/Dots';
+import Misc from './pages/misc/Misc'
 import NotFound from './pages/not-found/NotFound';
 import './index.css';
 
@@ -29,7 +30,8 @@ ReactDOM.render((
     <Route path="/medi" component={Medi}/>
     <Route path="/graffiti" component={Graffiti}/>
     <Route path="/dots" component={Dots}/>
-    <Route path="*" component={NotFound}/>
+    <Route path="/miscellaneous" component={Misc}/>
+    <Route path="/*" component={NotFound}/>
 
     {/* add the routes here
     <Route path="/roam" component={Roam}/>

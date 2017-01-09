@@ -16,6 +16,7 @@ import graffiti from '../../media/home/graffiti-iphone.png';
 import medi from '../../media/home/medi-iphone.png';
 import argon from '../../media/home/argon-iphone.png';
 import dots from '../../media/home/dots.svg';
+import misc from '../../media/home/logo.png';
 
 class Home extends Component {
 
@@ -40,7 +41,7 @@ class Home extends Component {
 
           <div className="social">
 
-            <a href={process.env.PUBLIC_URL + 'philippe_kimura-thollander_resume.pdf'} target="_blank" id="resume">
+            <a href={process.env.PUBLIC_URL + '/philippe_kimura-thollander_resume.pdf'} target="_blank" id="resume">
               <Isvg src={resume}>
                 <img src={resume} alt="resume link" width="20px" />
               </Isvg>
@@ -110,6 +111,12 @@ class Home extends Component {
                  description="An art video inspired by the Google Now dots that was purchased by Stony Brook’s president "
                  link="dots"
                  image={dots}/>
+
+        <Project title="Miscellaneous"
+                 description="Some other stuff I work or worked on"
+                 link="miscellaneous"
+                 image={misc}/>
+
 
 
         <footer>

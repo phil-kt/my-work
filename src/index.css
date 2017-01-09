@@ -18,6 +18,9 @@
 /* Import Lora */
 @import url('https://fonts.googleapis.com/css?family=Lora:700');
 
+html, body, #root {
+  height: 100%;
+}
 
 body {
   margin: 0;
