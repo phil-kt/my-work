@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, browserHistory } from 'react-router';
+import { Router, Route, browserHistory, hashHistory } from 'react-router';
 import { useBasename } from 'history'
 
 
@@ -21,9 +21,13 @@ function logPageView() {
   window.scrollTo(0,0);
 }
 
+/*
+ useBasename(() => borwserHistory)({ basename: process.env.PUBLIC_URL })
+ */
+
 
 ReactDOM.render((
-  <Router history={useBasename(() => browserHistory)({ basename: process.env.PUBLIC_URL })} onUpdate={logPageView}>
+  <Router history={hashHistory} onUpdate={logPageView}>
     <Route path="/" component={App}/>
     <Route path="/hive" component={Hive}/>
     <Route path="/argon" component={Argon}/>

@@ -84,37 +84,37 @@ class Home extends Component {
 
         <Project title="The Hive"
                  description="A case study about how to optimize finding a seat in Georgia Tech’s library"
-                  link="hive"
+                  link="/hive"
                   image={tree}
                   />
 
         <Project title="Understanding AR"
                  description="An augmented reality book about the history of augmented reality"
-                 link="argon"
+                 link="/argon"
                  image={argon}
                  iPhone={true}/>
 
 
         <Project title="Medi"
                  description="An application ecosystem to ensure that elderly patients take their prescription medications"
-                 link="medi"
+                 link="/medi"
                  image={medi}
                  iPhone={true}/>
 
         <Project title="Graffiti"
                  description="An augmented reality iOS app to draw virtual graffiti on real world objects"
-                 link="graffiti"
+                 link="/graffiti"
                  image={graffiti}
                  iPhone={true}/>
 
         <Project title="Dots"
                  description="An art video inspired by the Google Now dots that was purchased by Stony Brook’s president "
-                 link="dots"
+                 link="/dots"
                  image={dots}/>
 
         <Project title="Miscellaneous"
                  description="Some other stuff I work or worked on"
-                 link="miscellaneous"
+                 link="/miscellaneous"
                  image={misc}/>
 
 
