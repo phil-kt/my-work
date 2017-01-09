@@ -101,6 +101,10 @@ class Home extends Component {
                          {
                            name: "github",
                            link: "https://github.com/linkcable/Ai.exe"
+                         },
+                         {
+                           name: "download",
+                           link: "https://github.com/LinkCable/Ai.exe/releases"
                          }
                        ]}
                       />

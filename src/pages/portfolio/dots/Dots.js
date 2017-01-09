@@ -17,7 +17,7 @@ class Dots extends Component {
         ]}
         content={
           <span>
-            <h2>What is it?</h2>
+            <h3>What is it?</h3>
             <p>
               An art video I made in After Effects for an undergraduate art class. It was inspired by Google's new branding and was <a href="http://zuccairegallery.stonybrook.edu/2016/05/senior-show-2016-awards/">bought by Stony Brook University’s president.</a>
             </p>
