@@ -106,24 +106,26 @@ class Medi extends Component {
               Thomas is very happy with his new app which allows him to monitor his father’s health while on the go, and is excited to see what other features this dispenser and app combo have to ensure his father continues to live a healthy life. Without this app, Thomas would have no way to consistently and easily keep tabs on his father, and would not be able to ensure that his father is taking the medicine he needs to stay healthy. His father also gets the benefits of consistent reminders, and peace of mind knowing that the machine handles the task of tracking medication for him.
             </p>
             <h3>Concept Drawings</h3>
-            <Slider {...sliderSettings}>
-              <div>
-                <img className="concepts" src={figure_1} alt="schedule"/>
-                <p>Figure 1: A schedule of the day</p>
-              </div>
-              <div>
-                <img className="concepts" src={figure_2} alt="detail view"/>
-                <p>Figure 2: A detail of the medication</p>
-              </div>
-              <div>
-                <img className="concepts" src={figure_3} alt="editing view"/>
-                <p>Figure 3: Editing a medication's details</p>
-              </div>
-              <div>
-                <img className="concepts" src={figure_4} alt="missed medication"/>
-                <p>Figure 4: Push notification for a missed medication</p>
-              </div>
-            </Slider>
+            <p>
+              <Slider {...sliderSettings}>
+                <div>
+                  <img className="concepts" src={figure_1} alt="schedule"/>
+                  <p>Figure 1: A schedule of the day</p>
+                </div>
+                <div>
+                  <img className="concepts" src={figure_2} alt="detail view"/>
+                  <p>Figure 2: A detail of the medication</p>
+                </div>
+                <div>
+                  <img className="concepts" src={figure_3} alt="editing view"/>
+                  <p>Figure 3: Editing a medication's details</p>
+                </div>
+                <div>
+                  <img className="concepts" src={figure_4} alt="missed medication"/>
+                  <p>Figure 4: Push notification for a missed medication</p>
+                </div>
+              </Slider>
+            </p>
             <h3>Low Fidelity Prototypes</h3>
             <p className="starting-paragraph">
               Using the concept drawings I drew up some low fidelity prototypes, fleshing out the details a bit more.
@@ -259,7 +261,9 @@ class Medi extends Component {
 
             <h3>Physical Prototype Display</h3>
 
+            <p>
             <img src={faces} alt="wireframe of physical watch"/>
+            </p>
             <p>For the screens on the device, I didn't want there to be too many states or screens that might confuse the user. The watch basically serves as a reminder and a logger, it reminds a patient when it's time for their dose, and they can see what medication they've taken so far today and be told what they've missed, which could be useful information for the caretaker or the doctor. </p>
 
             <p>On its standard state, the watch simple shows the time and when your next dose is, as well as what you've taken so far using the color coded system. When it's time for a dosage, the watch notifies the user, and requires the patient to dismiss the screen as a form of confirmation.</p>
@@ -282,7 +286,7 @@ class Medi extends Component {
                 <li>Standby or day to day operation</li>
               </ol>
 
-            <img src={wireframe} alt="wireframe of device" />
+            <img src={wireframe} alt="wireframe of device" className="wireframes" />
 
             <p>
               With these features in mind, it was relatively quick to create a wireframe of the device as I had standard assets across all three devices. Once these wireframes were reviewed by my professor, I then created an interactable prototype in Framer.js, fleshing out the interactions.

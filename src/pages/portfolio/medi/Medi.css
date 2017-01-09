@@ -8,6 +8,10 @@
 }
 
 
+.Medi .wireframes {
+    max-height: none;
+}
+
 .Medi .device {
     width: 100%;
     height: 520px;

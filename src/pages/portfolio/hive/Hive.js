@@ -70,12 +70,12 @@ class Hive extends Component {
 
             <h3>Research</h3>
             <p>
-            After finding our problem space, we then began to conduct research on how exactly students use the CULC, how many have struggled finding a seat before, and other data points so that we could see if this was a real issue that needed solving. We began by distributing a <a href="https://gatech.qualtrics.com/SE/?SID=SV_bJDYgX6eSylMEfz" target="_blank">survey</a>, conducting an semi-structured interview with random individuals in the CULC, and conducting observations of how students use the CULC and how long it can take them to find seats.
+            After finding our problem space, we then began to conduct research on how exactly students use the CULC, how many have struggled finding a seat before, and other data points so that we could see if this was a real issue that needed solving. We began by distributing a <a href="https://gatech.qualtrics.com/SE/?SID=SV_bJDYgX6eSylMEfz" target="_blank">survey</a>, conducting semi-structured interviews with random individuals in the CULC, and observing how students use the CULC as well as how long it can take them to find seats.
             </p>
 
             <h3>Refinements</h3>
             <p>
-              After conducting research and analyzing our findings, we came up with three refinements to our problem space to better focus our efforts. It turns out that there is not much difficulty in finding an open seat in the CULC; the problem lies in finding an available table.
+              After completing our research and analyzing the findings, we came up with three refinements to our problem space to better focus our efforts. <b>It turns out that there is not much difficulty in finding an open seat in the CULC; the problem lies in finding an available table.</b>
             </p>
 
             <Slider {...sliderSettings} className="carousel">
@@ -248,10 +248,19 @@ class Hive extends Component {
 
             <h3>Further Design Considerations</h3>
             <p>
-              The evident one is colors. For the physical prototypes we were limited to a certain set of colors that were available in the form of EL wires which were green and blue. After testing different colors on the 3D model and questionnaires, the pair of colors that seemed to communicate empty and full most clearly were green and red. Therefore, for future iterations we would need to test with different hues and lightness of the two colors to find a specific pair that are visible with sunlight as well not being intrusive for students studying or lacking accessibility.
+              <b>Test colors pairings to convey available or unavailable areas.</b>
             </p>
             <p>
-              We also want to improve the way we communicate how full or empty the seating area is and provide more details. (For example: whether there is a table of four is available for group work or four individual seats available) Currently, we are communicating that information the same way on the tree, and students can only see that there is an open seat but not know if it is for an individual or a group. Our next iteration would immediately address this issue. We would test various ways of communicating this information by either brightness or pulsing light. This idea is one that will need extensive testing at a large scale to see if it could work in the CULC environment.
+              For the physical prototypes we were limited to a certain set of colors that were available in the form of EL wires which were green and blue. After testing different colors on the 3D model and questionnaires, the pair of colors that seemed to communicate empty and full most clearly were green and red. Therefore, for future iterations we would need to test with different hues and lightness of the two colors to find a specific pair that are visible with sunlight as well not being intrusive for students studying or lacking accessibility.
+            </p>
+            <p>
+              <b>Improve the way we communicate how full or empty the seating area is and provide more details about the seating.</b>
+            </p>
+            <p>
+              Information such as whether there is a table of four is available for group work or four individual seats available. Currently, we are communicating that information the same way on the tree, and students can only see that there is an open seat but not know if it is for an individual or a group. Our next iteration would immediately address this issue. We would test various ways of communicating this information by either brightness or pulsing light. This idea is one that will need extensive testing at a large scale to see if it could work in the CULC environment.
+            </p>
+            <p>
+              <b>Work on a final architectural design of the tree.</b>
             </p>
             <p>
               The largest design challenge that we had while working on this project was creating a sculpture that maintained a tree-like appearance with enough branches so that it did not seem empty while also having the required number of branches so that users did not get confused as to which branch was pointing to which area or floor. Therefore, a future design implication could be to create large main branches that point to the main seating areas and have smaller, minor branches to point towards smaller seating areas.
