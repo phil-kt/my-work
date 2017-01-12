@@ -1,5 +1,6 @@
 .project-page {
     color: #f5f4f4;
+    min-height: 100%;
 }
 
 .project-page img {
@@ -119,7 +120,7 @@
 .content {
     width: 90%;
     margin: auto;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 
 .content h3 {

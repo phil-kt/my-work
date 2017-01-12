@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './ProjectPage.css';
 
 import Button from '../button/Button';
+import FabButton from '../fab-button/FabButton';
 
 class ProjectPage extends Component {
 
@@ -69,6 +70,7 @@ class ProjectPage extends Component {
           {this.props.content}
         </div>
 
+        <FabButton/>
 
       </div>
     )

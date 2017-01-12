@@ -15,6 +15,9 @@
 }
 
 .fab-main span {
-    font-size: 36px;
     margin-top: 4px;
+}
+
+.fab-main span i {
+    font-size: 28px;
 }

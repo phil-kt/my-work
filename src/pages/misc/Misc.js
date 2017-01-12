@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './Misc.css';
 
 import MiscProject from '../../components/misc-project/MiscProject';
+import FabButton from '../../components/fab-button/FabButton';
+
 
 import tachiyomi from '../../media/misc/tachiyomi/tachiyomi.png';
 import tachiyomi_flow from '../../media/misc/tachiyomi/tachiyomi-flow.png';
@@ -110,6 +112,7 @@ class Home extends Component {
                       />
         </div>
 
+        <FabButton/>
       </div>
     )
   }

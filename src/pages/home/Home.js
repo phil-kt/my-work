@@ -24,20 +24,23 @@ class Home extends Component {
     return (
       <div className="home">
         <div className="intro">
-          <a href="http://www.philkt.me" className="vapor">
+          <a href="http://www.philkt.me/vapor" className="vapor">
             <img src={computers} alt="im so computers" width="30px"/>
           </a>
           <h1 className="name">Philippe Kimura-Thollander</h1>
           <h3 className="byline">A developer turned designer</h3>
 
+          <div className="about">
           <span>
             About me:
           </span>
-          <ul className="about">
+          <ul>
             <li>Master’s HCI at Georgia Tech, undergrad CS at Stony Brook</li>
             <li>UI design, UX engineering, with some UX research thrown in</li>
-            <li>Passionate about emojis, games, and vaporwave</li>
+            <li>Passionate about emojis, mecha, and vaporwave</li>
           </ul>
+          <p>My goal in design is to never make the user feel stupid.</p>
+          </div>
 
           <div className="social">
 
@@ -113,7 +116,7 @@ class Home extends Component {
                  image={dots}/>
 
         <Project title="Miscellaneous"
-                 description="Some other stuff I work or worked on"
+                 description="Some other stuff I made"
                  link="/miscellaneous"
                  image={misc}/>
 

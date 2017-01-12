@@ -2,15 +2,17 @@
   "name": "my-work",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://linkcable.github.io/my-work",
+  "homepage": "http://linkcable.github.io",
   "devDependencies": {
     "gh-pages": "^0.12.0",
+    "react-ga": "^2.1.2",
     "react-scripts": "0.8.4"
   },
   "dependencies": {
     "history": "^3.0.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
+    "react-ga": "^2.1.2",
     "react-inlinesvg": "^0.5.5",
     "react-mfb": "^0.4.1",
     "react-router": "^3.0.0",

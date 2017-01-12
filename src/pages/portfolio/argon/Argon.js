@@ -36,7 +36,7 @@ class Argon extends Component {
           <span>
             <h3>What is it?</h3>
             <p>
-              An augmented reality storybook telling the history of augmented reaily. (meta huh?)
+              An augmented reality storybook telling the history of augmented reality through a digital pop up storybook. (meta huh?)
             </p>
             <img src={leadin} alt="ar sneak peak" />
             <h3>Origins</h3>

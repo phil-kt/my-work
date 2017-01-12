@@ -4,8 +4,9 @@ import './FabButton.css';
 
 class FabButton extends Component {
 
+
   goHome = (e) => {
-    browserHistory.push('/');
+    browserHistory.push('/')
   }
 
   render () {
@@ -15,7 +16,6 @@ class FabButton extends Component {
         <div className="fab-main" onClick={this.goHome}>
           <span><i className="material-icons">home</i></span>
         </div>
-
       </div>
     )
   }

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, browserHistory, hashHistory } from 'react-router';
+import ReactGA from 'react-ga';
 import { useBasename } from 'history'
 
 
@@ -14,10 +15,12 @@ import Misc from './pages/misc/Misc'
 import NotFound from './pages/not-found/NotFound';
 import './index.css';
 
+ReactGA.initialize('UA-36903668-3');
+
 
 function logPageView() {
-  //ReactGA.set({ page: window.location.pathname });
-  //ReactGA.pageview(window.location.pathname);
+  ReactGA.set({ page: window.location.pathname });
+  ReactGA.pageview(window.location.pathname);
   window.scrollTo(0,0);
 }
 
@@ -27,7 +30,7 @@ function logPageView() {
 
 
 ReactDOM.render((
-  <Router history={hashHistory} onUpdate={logPageView}>
+  <Router history={browserHistory} onUpdate={logPageView}>
     <Route path="/" component={App}/>
     <Route path="/hive" component={Hive}/>
     <Route path="/argon" component={Argon}/>
@@ -35,6 +38,7 @@ ReactDOM.render((
     <Route path="/graffiti" component={Graffiti}/>
     <Route path="/dots" component={Dots}/>
     <Route path="/miscellaneous" component={Misc}/>
+    <Route path="/my-work" component={App}/>
     <Route path="/*" component={NotFound}/>
 
     {/* add the routes here

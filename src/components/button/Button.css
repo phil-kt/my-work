@@ -1,5 +1,6 @@
 
 .button a {
+    font-family: Consolas, Monaco, monospace;
     text-decoration: none;
     border: 3px solid #F5F4F4;
     padding: 7px 25px 2px 25px;
