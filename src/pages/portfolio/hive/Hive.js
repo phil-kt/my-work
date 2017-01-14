@@ -88,11 +88,6 @@ class Hive extends Component {
             </div>
             <p>Our research results revealed that students often use the CULC for group work due to its noisier nature compared to the library, and its central location. When questioning students about seats, some of them outright stated that they never had problems finding seats, but rather finding tables. Our observations enforced this point, as we noticed an abundance of free chairs in the CULC. So many free chairs in fact, students were using them as footrests or to create makeshift beds. However table space was scarce, and once students left a table it was quickly occupied by a new group. Some students opted to sit on the floor, even when there were open seats left, due to the space afforded by spreading stuff out on the ground.</p>
 
-            <h3>Refinements</h3>
-            <p>
-              After completing our research and analyzing the findings, we realized that we were asking the wrong question in our problem space. <b>It turns out that there is not much difficulty in finding an open seat in the CULC; the problem lies in finding an available table.</b>
-            </p>
-
             <Slider {...sliderSettings} className="carousel">
               <div>
                 <img src={affinity_map} alt="affinity map" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
@@ -107,6 +102,12 @@ class Hive extends Component {
                 </p>
               </div>
             </Slider>
+
+            <h3>Refinements</h3>
+            <p>
+              After completing our research and analyzing the findings, we realized that we were asking the wrong question in our problem space. <b>It turns out that there is not much difficulty in finding an open seat in the CULC; the problem lies in finding an available table.</b>
+            </p>
+
             <p>This led us to shift our attention on finding available seating to finding available tables. During observations, it was made clear that there are plenty of unoccupied chairs. However, table space was precious and most tables were quick to be taken as soon as students left them. After talking to students, we were also interested in making refinements into how our solution could convey different information depending on context, such as if group seating is available or noise levels of the seats.</p>
 
 

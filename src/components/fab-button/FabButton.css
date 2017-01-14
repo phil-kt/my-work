@@ -2,6 +2,7 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
+    z-index: 1;
 }
 
 
@@ -14,6 +15,7 @@
     justify-content: center;
     display: flex;
     align-items: center;
+    user-select: none;
 }
 
 .fab-main {
@@ -21,10 +23,6 @@
     bottom: 20px;
     width: 56px;
     height: 56px;
-    transition: all .2s;
-}
-
-.fab-main i {
     transition: all .2s;
 }
 
@@ -56,11 +54,11 @@
 
 .fab-main span {
     margin-top: 4px;
-    user-select: none;
 }
 
 .fab-main span i {
     font-size: 28px;
+    transition: all .2s;
 }
 
 .fab-list {
