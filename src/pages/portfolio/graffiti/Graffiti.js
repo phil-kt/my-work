@@ -31,7 +31,6 @@ class Graffiti extends Component {
       <ProjectPage
         title="Graffiti"
         github="https://github.com/sayalvarun/graffiti"
-        devpost="https://devpost.com/software/graffiti-l3v85w"
         prototype="http://share.framerjs.com/e5fgdt2bh6l9"
         content={
           <span>
@@ -73,7 +72,7 @@ class Graffiti extends Component {
             <p>The end product, simply two screens, one to view others' graffiti with a spray can to start drawing, and another to actually create your art and then tag it into the world. Users can select stroke, color, and also add text to their graffiti.</p>
 
             <h3>Prototype</h3>
-             <iframe  className="framer-embed" src="http://share.framerjs.com/e5fgdt2bh6l9/" frameBorder="0" allowFullScreen="allowFullScreen"></iframe>
+             <iframe className="framer-embed" src="http://share.framerjs.com/e5fgdt2bh6l9/" frameBorder="0" allowFullScreen="allowFullScreen"></iframe>
 
             <h3>In the Wild</h3>
             <Slider {...sliderSettings}>
