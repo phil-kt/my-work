@@ -70,12 +70,27 @@ class Hive extends Component {
 
             <h3>Research</h3>
             <p>
-            After finding our problem space, we then began to conduct research on how exactly students use the CULC, how many have struggled finding a seat before, and other data points so that we could see if this was a real issue that needed solving. We began by distributing a <a href="https://gatech.qualtrics.com/SE/?SID=SV_bJDYgX6eSylMEfz" target="_blank">survey</a>, conducting semi-structured interviews with random individuals in the CULC, and observing how students use the CULC as well as how long it can take them to find seats.
+            After finding our problem space, we then began to conduct research on how exactly students use the CULC, how many have struggled finding a seat before, and other data points so that we could see if this was a real issue that needed solving. We began by distributing a survey, conducting semi-structured interviews with random individuals in the CULC, and observing how students use the CULC as well as how long it can take them to find seats.
             </p>
+            <div className="statistics">
+              <div className="statistic">
+                <h2 className="surveys">28</h2>
+                <p>survey responses</p>
+              </div>
+              <div className="statistic">
+                <h2 className="interviews">23</h2>
+                <p>students interviewed</p>
+              </div>
+              <div className="statistic">
+                <h2 className="observations">2</h2>
+                <p>hours of observations</p>
+              </div>
+            </div>
+            <p>Our research results revealed that students often use the CULC for group work due to its noisier nature compared to the library, and its central location. When questioning students about seats, some of them outright stated that they never had problems finding seats, but rather finding tables. Our observations enforced this point, as we noticed an abundance of free chairs in the CULC. So many free chairs in fact, students were using them as footrests or to create makeshift beds. However table space was scarce, and once students left a table it was quickly occupied by a new group. Some students opted to sit on the floor, even when there were open seats left, due to the space afforded by spreading stuff out on the ground.</p>
 
             <h3>Refinements</h3>
             <p>
-              After completing our research and analyzing the findings, we came up with three refinements to our problem space to better focus our efforts. <b>It turns out that there is not much difficulty in finding an open seat in the CULC; the problem lies in finding an available table.</b>
+              After completing our research and analyzing the findings, we realized that we were asking the wrong question in our problem space. <b>It turns out that there is not much difficulty in finding an open seat in the CULC; the problem lies in finding an available table.</b>
             </p>
 
             <Slider {...sliderSettings} className="carousel">
@@ -92,11 +107,9 @@ class Hive extends Component {
                 </p>
               </div>
             </Slider>
+            <p>This led us to shift our attention on finding available seating to finding available tables. During observations, it was made clear that there are plenty of unoccupied chairs. However, table space was precious and most tables were quick to be taken as soon as students left them. After talking to students, we were also interested in making refinements into how our solution could convey different information depending on context, such as if group seating is available or noise levels of the seats.</p>
 
 
-            <p>
-              This led us to shift our focus on finding available seating to finding available tables. During observations, it was made clear that there are plenty of unoccupied chairs; so many that students used them for other purposes like making a bed or keeping backpacks off of the floor. However, table space was precious and most tables were quick to be taken as soon as students left them.
-            </p>
 
             <h3>Design Ideas</h3>
             <p>

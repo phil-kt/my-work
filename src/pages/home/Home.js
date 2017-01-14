@@ -111,12 +111,12 @@ class Home extends Component {
                  iPhone={true}/>
 
         <Project title="Dots"
-                 description="An art video inspired by the Google Now dots that was purchased by Stony Brook’s president "
+                 description="An art video inspired by the Google Now dots that was purchased by Stony Brook’s president"
                  link="/dots"
                  image={dots}/>
 
         <Project title="Miscellaneous"
-                 description="Some other stuff I made"
+                 description="Some other stuff I've made"
                  link="/miscellaneous"
                  image={misc}/>
 

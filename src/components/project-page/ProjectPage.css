@@ -19,6 +19,10 @@
     padding-left: 25px;
 }
 
+.project-page ol.list {
+    padding-left: 23px;
+}
+
 .project-page .button a {
     color: #f5f4f4;
 }

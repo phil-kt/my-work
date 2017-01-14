@@ -5,3 +5,35 @@
 .Hive .header {
     background: url(../../../media/hive/hive-hero.png) center bottom;
 }
+
+.Hive .statistics {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Hive .statistics h2 {
+    width: 100px;
+    height: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 0;
+}
+
+.Hive .statistic {
+    display: inline-block;
+    text-align: center;
+}
+
+.Hive .surveys {
+    background-color: #90CAF9;
+}
+
+.Hive .interviews {
+    background-color: #F48FB1;
+}
+
+.Hive .observations {
+    background-color: #B0BEC5;
+}

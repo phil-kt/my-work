@@ -70,7 +70,7 @@ class ProjectPage extends Component {
           {this.props.content}
         </div>
 
-        <FabButton/>
+        <FabButton currentPage={this.props.title}/>
 
       </div>
     )

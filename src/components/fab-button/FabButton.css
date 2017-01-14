@@ -1,17 +1,57 @@
-.fab-main {
+.fab-menu {
     position: fixed;
-    right: 20px;
     bottom: 20px;
+    right: 20px;
+}
+
+
+.fab-main, .fab-sub {
     border-radius: 50%;
     background: #f5f4f4;
     color: #1F1E1E;
-    width: 56px;
-    height: 56px;
     box-shadow: 0 4px 8px rgba(0,0,0,.25);
     cursor: pointer;
     justify-content: center;
     display: flex;
     align-items: center;
+}
+
+.fab-main {
+    right: 20px;
+    bottom: 20px;
+    width: 56px;
+    height: 56px;
+    transition: all .2s;
+}
+
+.fab-main i {
+    transition: all .2s;
+}
+
+.fab-main-active i {
+    transform: rotate(180deg);
+}
+
+.fab-sub {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.fab-menu .show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.fab-menu .label {
+    position: absolute;
+    right: 60px;
+    border-radius: 2px;
+    color: #f5f4f4;
+    padding: 4px 8px;
+    background-color: #1f1e1e;
+    pointer-events: none;
+    white-space: nowrap;
 }
 
 .fab-main span {
@@ -20,4 +60,21 @@
 
 .fab-main span i {
     font-size: 28px;
+}
+
+.fab-list {
+    opacity: 0;
+    transition: visibility .2s, opacity .2s ease-out;
+    bottom: 80px;
+    right: 30px;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* for some reason back arrow is unreasonably long */
+.back i {
+    width: 24px;
 }

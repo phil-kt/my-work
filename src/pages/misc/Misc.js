@@ -112,7 +112,7 @@ class Home extends Component {
                       />
         </div>
 
-        <FabButton/>
+        <FabButton currentPage="Miscellaneous"/>
       </div>
     )
   }
