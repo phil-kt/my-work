@@ -56,6 +56,7 @@
 
 .fab-main span {
     margin-top: 4px;
+    user-select: none;
 }
 
 .fab-main span i {

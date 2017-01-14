@@ -49,6 +49,12 @@ class FabButton extends Component {
     })
   };
 
+  toggleMenu = (e) => {
+    this.setState({
+      menuVisible: !this.state.menuVisible
+    })
+  }
+
   render () {
 
     return (
@@ -68,7 +74,7 @@ class FabButton extends Component {
           </div>
 
         </div>
-        <div className={"fab-main " + (this.state.menuVisible ? "fab-main-active" : "")} onClick={this.showMenu} >
+        <div className={"fab-main " + (this.state.menuVisible ? "fab-main-active" : "")} onClick={this.toggleMenu} >
           <span><i className="material-icons">explore</i></span>
         </div>
       </div>

@@ -23,7 +23,7 @@ class Hive extends Component {
 
   render() {
 
-    var sliderSettings = {
+    let sliderSettings = {
       dots: true,
       draggable: true,
       accessibility: true,
