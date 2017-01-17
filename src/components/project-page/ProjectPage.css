@@ -10,6 +10,10 @@
     margin: auto;
 }
 
+.project-page .no-height-limit {
+    max-height: none;
+}
+
 .project-page a {
     color: #1F1E1E;
     text-decoration: none;

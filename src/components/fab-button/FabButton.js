@@ -60,17 +60,17 @@ class FabButton extends Component {
     return (
       <div className="fab-menu" onMouseEnter={this.showMenu} onMouseLeave={this.hideMenu}>
         <div className={"fab-list " + (this.state.menuVisible ? "show" : "")}>
-          <div className="fab-sub">
+          <div className="fab-sub" onClick={this.goHome}>
             <span className="label">Home</span>
-            <i className="material-icons" onClick={this.goHome}>home</i>
+            <i className="material-icons" >home</i>
           </div>
-          <div className="fab-sub back">
+          <div className="fab-sub back" onClick={this.goPrev}>
             <span className="label">{this.state.prevProject.name}</span>
-            <i className="material-icons" onClick={this.goPrev}>arrow_backward</i>
+            <i className="material-icons" >arrow_backward</i>
           </div>
-          <div className="fab-sub">
+          <div className="fab-sub" onClick={this.goNext}>
             <span className="label">{this.state.nextProject.name}</span>
-            <i className="material-icons" onClick={this.goNext}>arrow_forward</i>
+            <i className="material-icons" >arrow_forward</i>
           </div>
 
         </div>

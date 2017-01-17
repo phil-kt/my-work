@@ -44,7 +44,7 @@ class Graffiti extends Component {
                Want to make your mark on the world? Then try out Graffiti, a new app which lets you leave your virtual tag on any real life environment.
              </p>
              <p>
-               The concept of Graffiti came about by thinking about what avenues of social media haven't been explored to their full potential yet, and my friends and I all agreed we were most interested in the aspect of anonymous socializing, in the vein of YikYak or Secret, as well as the "in the moment" feeling of platforms like Snapchat and Twitter. We tried to think of the best way we could combine these two aspects, and add in a creative aspect to these ideas through art.
+               The concept of Graffiti came about by thinking about what avenues of social media haven't been explored to their full potential yet, and my friends and I all agreed we were most interested in the aspect of anonymous socializing, in the vein of YikYak or Secret, as well as the "in the moment" feeling of platforms like Snapchat and Twitter. We tried to think of the best way we could combine these two aspects, and add in a creative aspect to convey these ideas through art.
              </p>
             <h3>Implementation</h3>
             <p className="starting-paragraph">
@@ -53,7 +53,7 @@ class Graffiti extends Component {
 
             <h3>What I Did</h3>
             <p>
-              For this project I coded the front-end in Swift using AVFoundation and some invaluable cocoapods (<a href="https://github.com/SnapKit/SnapKit" target="_blanl">SnapKit</a>, <a href="https://github.com/gizmosachin/ColorSlider" target="_blank">ColorSlider</a>, jot, and <a href="https://github.com/scalessec/Toast-Swift" target="_blank">Toast-Swift</a>). I also created all the assets and screens you see. Much help to <a href="https://github.com/IFTTT/jot" target="_blank">IFTTT's jot libary</a> which was instrumental in finishing the app within 48 hours.
+              For this project I coded the front-end in Swift using AVFoundation and some invaluable cocoapods (<a href="https://github.com/SnapKit/SnapKit" target="_blanl">SnapKit</a>, <a href="https://github.com/gizmosachin/ColorSlider" target="_blank">ColorSlider</a>, jot, and <a href="https://github.com/scalessec/Toast-Swift" target="_blank">Toast-Swift</a>). I also created all the assets and screens you see. Much help to <a href="https://github.com/IFTTT/jot" target="_blank">IFTTT's jot library</a> which was instrumental in finishing the app within 48 hours.
             </p>
             <h3>Design Sketches</h3>
             <Slider {...sliderSettings}>

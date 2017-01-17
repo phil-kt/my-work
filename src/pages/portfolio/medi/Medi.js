@@ -19,8 +19,10 @@ import lofi_5 from '../../../media/medi/lofi/lofi_5.jpg';
 import lofi_6 from '../../../media/medi/lofi/lofi_6.jpg';
 import lofi_7 from '../../../media/medi/lofi/lofi_7.jpg';
 
+import persona from '../../../media/medi/persona.png';
 
 import autodesk from '../../../media/medi/physical/autodesk.png';
+import watch from '../../../media/medi/physical/watch.jpg';
 import brainstorming from '../../../media/medi/physical/brainstorming.jpg';
 import moodboard from '../../../media/medi/physical/moodboard.jpg'
 import faces from '../../../media/medi/physical/faces.png';
@@ -164,21 +166,12 @@ class Medi extends Component {
             <p>
               Based off of our initial scenario, we then developed personas to better flesh out the caretaker who would be using our app and the needs we would have to meet to ensure that they would use this app. So I further fleshed out the character of Thomas, and what he is looking for in taking care of his father.
             </p>
-            <p>
-              Thomas is a middle-aged accountant at KPMG, 46 years old, who is taking care of his 80 year old father Harrison, or Harry, who lives with him and his family. Harry is currently taking several different pain medications for arthritis that came with old age due to his profession as a mechanic, and has also been prescribed Thalitone for blood pressure in the mornings and Prilosec for heartburn. He must take these medications daily in order to maintain a healthy lifestyle, and Thomas is very worried about his father properly taking these medications.
-            </p>
-            <p>
-              In order to ensure his father takes his pills properly, Thomas is interested in a pill dispenser with a companion app that allows him to track his father’s pill intake and alerts him if his father misses a dose so he can follow up with his father or the doctor to keep Harrison healthy. Due to his work Thomas is often not home and although his family is there to help take care of Harry, he would like to have extra peace of mind so that it’s ensured that his father never forgets to take his medications.
-            </p>
-            <p>
-              Key Goals of Thomas:
-            </p>
-            <ol className="list">
-                <li>Be able to check his father’s medication schedule for the day</li>
-                <li>Be notified when his father misses a dose</li>
-                <li>Easy to contact his father or a doctor when a medication is missed</li>
-                <li>Be able to see when his father misses his medication over a week or month term so that he can see patterns if there are any as to why his father might miss a dose</li>
-              </ol>
+
+
+            <img src={persona}
+                 alt="Thomas (Tom) Dean. KPMG Accountant. Key quote: “I want to check up on my dad and make sure he’s taking the medications he needs to take.” Tom's Story: Thomas is a middle-aged accountant at KPMG, 46 years old, who is taking care of his 80 year old father Harrison, or Harry, who lives with him and his family. Harry is currently taking several different pain medications for arthritis that came with old age due to his profession as a mechanic, and has also been prescribed Thalitone for blood pressure in the mornings and Prilosec for heartburn. He must take these medications daily in order to maintain a healthy lifestyle, and Thomas is very worried about his father properly taking these medications. In order to ensure his father takes his pills properly, Thomas is interested in a pill dispenser with a companion app that allows him to track his father’s pill intake and alerts him if his father misses a dose so he can follow up with his father or the doctor to keep Harrison healthy. Due to his work Thomas is often not home and although his family is there to help take care of Harry, he would like to have extra peace of mind so that it’s ensured that his father never forgets to take his prescriptions. Tom's Demographics:	Married 18 years, father of two, B.S. in Accounting from NYU Stern, Uses tech on day to day basis, carries an iPhone and Windows laptop to work on the go Key goals of Tom: Be able to check his father’s medication schedule for the day, Be notified when his father misses a dose, Easy to contact his father or a doctor when a medication is missed, Be able to see when his father misses his medication over a week or month term so that he can see patterns if there are any as to why his father might miss a dose" className="no-height-limit"/>
+
+
             <h3>Medium Fidelity Prototype</h3>
             <p className="starting-paragraph">After low fidelity mockups came the medium fidelity ones which were used for user testing.</p>
             <iframe className="invision-embed" width="438" height="930" src="//invis.io/DX90SMQU4" frameBorder="0" allowFullScreen="true"></iframe>
@@ -258,6 +251,9 @@ class Medi extends Component {
               The final design in Autodesk Fusion 360
             </p>
             <p>The watch is a simple LCD screen watch, with two buttons on the side to interact with the device. (Our professor forbade us from using touch screens, so no touch interactions!) Too many buttons would only serve to confuse the user on functions, and on screen cues help guide the user on what to press. The buttons can also be twisted, to allow scrolling, and have different colors. The band can also be swapped out, for the fashion conscious.</p>
+
+            <img src={watch} alt="the 3d printed watch"/>
+            <p className="caption">Live and in the flesh!</p>
 
             <h3>Physical Prototype Display</h3>
 
