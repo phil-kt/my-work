@@ -69,7 +69,7 @@ class Medi extends Component {
             <img src={ecosystem} alt="phone, watch, and dispenser" />
             <h3>Origins</h3>
             <p className="starting-paragraph">
-              For fall semester of my master's program, I took a class called Interface Prototyping, ID6515, which focused on teaching how to design interfaces from low to high fidelity. For the class we were given an assignment to design an application that would assist both the elderly and their caretakers in taking prescription medication.
+              For fall semester of my master's program, I took a class called Interface Prototyping, ID6515, which focused on teaching how to design interfaces from low to high fidelity. For the class we were given an assignment to design an application that would assist both the elderly and their caretakers in taking prescription medication.  When designing these apps I was really influenced by the idea of <a href="https://medium.com/swarm-nyc/complexion-reduction-a-new-trend-in-mobile-design-cef033a0b978#.h55s4jdug" target="_blank">complexion reduction.</a>
             </p>
             <p>
               For this application, three aspects of a prototype were created:
