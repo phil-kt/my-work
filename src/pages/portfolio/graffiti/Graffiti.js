@@ -75,20 +75,22 @@ class Graffiti extends Component {
              <iframe className="framer-embed" src="http://share.framerjs.com/e5fgdt2bh6l9/" frameBorder="0" allowFullScreen="allowFullScreen"></iframe>
 
             <h3>In the Wild</h3>
-            <Slider {...sliderSettings}>
-              <div>
-                <img src={GraffitiMid} alt="real life use of graffiti"/>
-                <p>A person writing their own graffiti on a wall.</p>
-              </div>
-              <div>
-                <img src={GraffitiView} alt="viewing graffiti"/>
-                <p>Now they can view the graffiti they just drew.</p>
-              </div>
-              <div>
-                <img src={GraffitiOther} alt="viewing other's graffiti"/>
-                <p>Hey, they found someone else's graffiti!</p>
-              </div>
-            </Slider>
+            <p>
+              <Slider {...sliderSettings}>
+                <div>
+                  <img src={GraffitiMid} alt="real life use of graffiti"/>
+                  <p>A person writing their own graffiti on a wall.</p>
+                </div>
+                <div>
+                  <img src={GraffitiView} alt="viewing graffiti"/>
+                  <p>Now they can view the graffiti they just drew.</p>
+                </div>
+                <div>
+                  <img src={GraffitiOther} alt="viewing other's graffiti"/>
+                  <p>Hey, they found someone else's graffiti!</p>
+                </div>
+              </Slider>
+            </p>
           </span>
         }
       />

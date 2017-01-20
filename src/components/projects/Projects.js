@@ -33,10 +33,10 @@ class Projects {
       link: "/graffiti"
     },
     {
-      name: "Dots",
-      description: "An art video inspired by the Google Now dots that was purchased by Stony Brook’s president",
+      name: "Rendezvous",
+      description: "An iOS app to help you find your friends in a crowd or whenever you have no service",
       image: {dots},
-      link: "/dots"
+      link: "/rendezvous"
     },
     {
       name: "Miscellaneous",

@@ -31,7 +31,7 @@
 .home .social {
     display: flex;
     align-items: center;
-    width: 210px;
+    width: 230px;
     justify-content: space-between;
 }
 .home .social a {
@@ -72,6 +72,10 @@
     fill: #0077B5;
 }
 
+#untappd svg:hover {
+    fill: #ffcc09;
+}
+
 .home .Hive {
     background: #78909C;
 }
@@ -96,8 +100,8 @@
     background: #1DC7AA;
 }
 
-.home .Dots {
-    background: #1565C0;
+.home .Rendezvous {
+    background: #5C6BC0;
 }
 
 .home .Miscellaneous {
@@ -115,7 +119,8 @@
     display: block;
 }
 
-.home footer a {
+.home a {
     text-decoration: none;
-    color: #1da1f2;
+    color: #47c3fd;
+
 }

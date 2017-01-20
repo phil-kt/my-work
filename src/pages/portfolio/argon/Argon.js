@@ -31,7 +31,6 @@ class Argon extends Component {
       <ProjectPage
         title="Understanding AR"
         github="https://github.com/LinkCable/understanding-ar-twine"
-        nextProject="/portfolio/graffiti"
         content={
           <span>
             <h3>What is it?</h3>
