@@ -10,8 +10,8 @@ import dribbble from '../../media/social/dribbble.svg';
 import github from '../../media/social/github.svg';
 import twitter from '../../media/social/twitter.svg';
 import untappd from '../../media/social/untappd.svg';
-//import mail from '../../media/social/mail.svg';
 import linkedin from '../../media/social/linkedin.svg';
+import instagram from '../../media/social/instagram.svg';
 import tree from '../../media/home/tree.png';
 import graffiti from '../../media/home/graffiti-iphone.png';
 import medi from '../../media/home/medi-iphone.png';
@@ -41,56 +41,10 @@ class Home extends Component {
             <li>Passionate about emojis, mecha, and vaporwave</li>
             <li>Previously at HBO and Pypestream, seeking a summer 2017 internship</li>
           </ul>
-          <p>My goal in design is to never make the user feel inadequate.</p>
-          </div>
-
-          <div className="social">
-
+          <p>Check out my work below, or if you're short for time&nbsp;
             <a href={process.env.PUBLIC_URL + '/philippe_kimura-thollander_resume.pdf'} target="_blank" id="resume">
-              <Isvg src={resume}>
-                <img src={resume} alt="resume link" width="20px" />
-              </Isvg>
-            </a>
-
-            <a href="http://dribbble.com/linkcable" target="_blank" id="dribbble">
-              <Isvg src={dribbble}>
-                <img src={dribbble} alt="dribbbble link" width="20px" />
-              </Isvg>
-            </a>
-
-            <a href="http://github.com/linkcable" target="_blank" id="github">
-              <Isvg src={github}>
-                <img src={github} alt="github link" width="20px" />
-              </Isvg>
-            </a>
-
-            <a href="http://twitter.com/link_cable" target="_blank" id="twitter">
-              <Isvg src={twitter}>
-                <img src={twitter} alt="twitter link" width="20px" />
-              </Isvg>
-            </a>
-
-            <a href="http://linkedin.com/in/linkcable" target="_blank" id="linkedin">
-              <Isvg src={linkedin}>
-                <img src={linkedin} alt="linkedin link" width="20px" />
-              </Isvg>
-            </a>
-
-            <a href="https://untappd.com/user/LinkCable" target="_blank" id="untappd">
-              <Isvg src={untappd}>
-                <img src={untappd} alt="untappd link" width="20px" />
-              </Isvg>
-            </a>
-
-
-            {
-              /*
-               <a href="mailto:hi@philkt.me?Subject=Hi!" target="_blank" id="mail">
-               <Isvg src={mail}>
-               <img src={mail} alt="email link" width="20px" />
-               </Isvg>
-               </a> */
-            }
+              see my resume.</a>
+          </p>
           </div>
         </div>
 
@@ -100,17 +54,16 @@ class Home extends Component {
                   image={tree}
                   />
 
-        <Project title="Understanding AR"
-                 description="An augmented reality book about the history of augmented reality"
-                 link="/argon"
-                 image={argon}
-                 iPhone={true}/>
-
-
         <Project title="Medi"
                  description="An application ecosystem to ensure that elderly patients take their prescription medications"
                  link="/medi"
                  image={medi}
+                 iPhone={true}/>
+
+        <Project title="Understanding AR"
+                 description="An augmented reality book about the history of augmented reality"
+                 link="/argon"
+                 image={argon}
                  iPhone={true}/>
 
         <Project title="Graffiti"
@@ -134,8 +87,46 @@ class Home extends Component {
 
         <footer>
           <p>
-            <span>Designed and developed by me</span>
-            <a href="http://github.com/linkcable/my-work">View this site on Github</a>
+            <div className="social">
+
+              <a href="http://dribbble.com/linkcable" target="_blank" id="dribbble">
+                <Isvg src={dribbble}>
+                  <img src={dribbble} alt="dribbbble link" width="20px" />
+                </Isvg>
+              </a>
+
+              <a href="http://github.com/linkcable" target="_blank" id="github">
+                <Isvg src={github}>
+                  <img src={github} alt="github link" width="20px" />
+                </Isvg>
+              </a>
+
+              <a href="http://twitter.com/link_cable" target="_blank" id="twitter">
+                <Isvg src={twitter}>
+                  <img src={twitter} alt="twitter link" width="20px" />
+                </Isvg>
+              </a>
+
+              <a href="http://linkedin.com/in/linkcable" target="_blank" id="linkedin">
+                <Isvg src={linkedin}>
+                  <img src={linkedin} alt="linkedin link" width="20px" />
+                </Isvg>
+              </a>
+
+              <a href="https://instagram.com/link_cable" target="_blank" id="instagram">
+                <Isvg src={instagram}>
+                  <img src={instagram} alt="instagram link" width="20px" />
+                </Isvg>
+              </a>
+
+              <a href="https://untappd.com/user/LinkCable" target="_blank" id="untappd">
+                <Isvg src={untappd}>
+                  <img src={untappd} alt="untappd link" width="20px" />
+                </Isvg>
+              </a>
+            </div>
+            <span style={{margin: "5px 0"}}>This website designed and developed by me</span>
+            <a href="http://github.com/linkcable/my-work">View it on Github</a>
           </p>
         </footer>
       </div>

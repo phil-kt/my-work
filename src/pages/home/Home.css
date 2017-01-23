@@ -72,6 +72,10 @@
     fill: #0077B5;
 }
 
+#instagram svg:hover {
+    fill: #e95950;
+}
+
 #untappd svg:hover {
     fill: #ffcc09;
 }
@@ -109,10 +113,14 @@
 }
 
 .home footer {
-    height: 60px;
+    height: 100px;
     width: 90%;
     margin: auto;
     font-family: Consolas, Monaco, monospace;
+}
+
+.home footer a:hover {
+    cursor: pointer;
 }
 
 .home footer span {

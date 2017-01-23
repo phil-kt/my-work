@@ -15,16 +15,16 @@ class Projects {
       link: "/hive"
     },
     {
-      name: "Understanding AR",
-      description: "An augmented reality book about the history of augmented reality",
-      image: {ar},
-      link: "/argon"
-    },
-    {
       name: "Medi",
       description: "An application ecosystem to ensure that elderly patients take their prescription medications",
       image: {medi},
       link: "/medi"
+    },
+    {
+      name: "Understanding AR",
+      description: "An augmented reality book about the history of augmented reality",
+      image: {ar},
+      link: "/argon"
     },
     {
       name: "Graffiti",
