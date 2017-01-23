@@ -113,7 +113,8 @@
 }
 
 .home footer {
-    height: 100px;
+    height: auto;
+    padding: 20px 0;
     width: 90%;
     margin: auto;
     font-family: Consolas, Monaco, monospace;

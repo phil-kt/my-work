@@ -9,6 +9,7 @@ class Project extends Component {
     description: React.PropTypes.string.isRequired,
     link: React.PropTypes.string.isRequired,
     image: React.PropTypes.string.isRequired,
+    tags: React.PropTypes.string.isRequired,
     iPhone: React.PropTypes.bool
   }
 
@@ -17,6 +18,7 @@ class Project extends Component {
     description: undefined,
     link: undefined,
     image: undefined,
+    tags: undefined,
     iPhone: false
   }
 
@@ -33,6 +35,7 @@ class Project extends Component {
             <img src={this.props.image} alt={this.props.title + " preview"}/>
           </div>
         </div>
+        <p className="tag">{this.props.tags}</p>
       </div>
     )
   }

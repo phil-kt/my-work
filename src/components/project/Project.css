@@ -4,6 +4,7 @@
     display: flex;
     color: #F5F4F4;
     overflow: hidden;
+    position: relative;
 }
 
 .project .content {
@@ -50,4 +51,11 @@
     max-width: 200px;
     margin: auto;
     display: block;
+}
+
+.project .tag {
+    position: absolute;
+    margin: 15px 0;
+    left: 5%;
+    bottom: 0;
 }

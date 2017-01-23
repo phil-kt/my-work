@@ -52,82 +52,86 @@ class Home extends Component {
                  description="A case study about how to optimize finding a seat in Georgia Tech’s library"
                   link="/hive"
                   image={tree}
+                  tags="UX Research, Prototyping"
                   />
 
         <Project title="Medi"
                  description="An application ecosystem to ensure that elderly patients take their prescription medications"
                  link="/medi"
                  image={medi}
+                 tags="UI Design, Prototyping"
                  iPhone={true}/>
 
         <Project title="Understanding AR"
                  description="An augmented reality book about the history of augmented reality"
                  link="/argon"
                  image={argon}
+                 tags="Research, Development"
                  iPhone={true}/>
 
         <Project title="Graffiti"
                  description="An augmented reality iOS app to draw virtual graffiti on real world objects"
                  link="/graffiti"
                  image={graffiti}
+                 tags="UI Design, Development"
                  iPhone={true}/>
 
         <Project title="Rendezvous"
                  description="An iOS app to help you find your friends in a crowd or to promote spontaneous encounters"
                  link="/rendezvous"
                  image={rendezvous}
+                 tags="UI Design, Development"
                  iPhone={true}/>
 
         <Project title="Miscellaneous"
                  description="Some other stuff I've made"
                  link="/miscellaneous"
-                 image={misc}/>
+                 image={misc}
+                 tags=""/>
 
 
 
         <footer>
-          <p>
-            <div className="social">
+          <div className="social">
 
-              <a href="http://dribbble.com/linkcable" target="_blank" id="dribbble">
-                <Isvg src={dribbble}>
-                  <img src={dribbble} alt="dribbbble link" width="20px" />
-                </Isvg>
-              </a>
+            <a href="http://dribbble.com/linkcable" target="_blank" id="dribbble">
+              <Isvg src={dribbble}>
+                <img src={dribbble} alt="dribbbble link" width="20px" />
+              </Isvg>
+            </a>
 
-              <a href="http://github.com/linkcable" target="_blank" id="github">
-                <Isvg src={github}>
-                  <img src={github} alt="github link" width="20px" />
-                </Isvg>
-              </a>
+            <a href="http://github.com/linkcable" target="_blank" id="github">
+              <Isvg src={github}>
+                <img src={github} alt="github link" width="20px" />
+              </Isvg>
+            </a>
 
-              <a href="http://twitter.com/link_cable" target="_blank" id="twitter">
-                <Isvg src={twitter}>
-                  <img src={twitter} alt="twitter link" width="20px" />
-                </Isvg>
-              </a>
+            <a href="http://twitter.com/link_cable" target="_blank" id="twitter">
+              <Isvg src={twitter}>
+                <img src={twitter} alt="twitter link" width="20px" />
+              </Isvg>
+            </a>
 
-              <a href="http://linkedin.com/in/linkcable" target="_blank" id="linkedin">
-                <Isvg src={linkedin}>
-                  <img src={linkedin} alt="linkedin link" width="20px" />
-                </Isvg>
-              </a>
+            <a href="http://linkedin.com/in/linkcable" target="_blank" id="linkedin">
+              <Isvg src={linkedin}>
+                <img src={linkedin} alt="linkedin link" width="20px" />
+              </Isvg>
+            </a>
 
-              <a href="https://instagram.com/link_cable" target="_blank" id="instagram">
-                <Isvg src={instagram}>
-                  <img src={instagram} alt="instagram link" width="20px" />
-                </Isvg>
-              </a>
+            <a href="https://instagram.com/link_cable" target="_blank" id="instagram">
+              <Isvg src={instagram}>
+                <img src={instagram} alt="instagram link" width="20px" />
+              </Isvg>
+            </a>
 
-              <a href="https://untappd.com/user/LinkCable" target="_blank" id="untappd">
-                <Isvg src={untappd}>
-                  <img src={untappd} alt="untappd link" width="20px" />
-                </Isvg>
-              </a>
-            </div>
-            <span style={{margin: "5px 0"}}>This website designed and developed by me</span>
-            <a href="http://github.com/linkcable/my-work">View it on Github</a>
-          </p>
+            <a href="https://untappd.com/user/LinkCable" target="_blank" id="untappd">
+              <Isvg src={untappd}>
+                <img src={untappd} alt="untappd link" width="20px" />
+              </Isvg>
+            </a>
+          </div>
+          <span style={{margin: "5px 0"}}>This website designed and developed by me</span>
+          <a href="http://github.com/linkcable/my-work">View it on Github</a>
         </footer>
       </div>
     )
