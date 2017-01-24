@@ -9,6 +9,7 @@ import App from './App';
 import Hive from './pages/portfolio/hive/Hive';
 import Argon from './pages/portfolio/argon/Argon';
 import Medi from './pages/portfolio/medi/Medi';
+import SousChef from './pages/portfolio/sous-chef/SousChef';
 import Graffiti from './pages/portfolio/graffiti/Graffiti';
 import Rendezvous from './pages/portfolio/rendezvous/Rendezvous';
 import Misc from './pages/misc/Misc'
@@ -35,6 +36,7 @@ ReactDOM.render((
     <Route path="/hive" component={Hive}/>
     <Route path="/argon" component={Argon}/>
     <Route path="/medi" component={Medi}/>
+    <Route path="/sous-chef" component={SousChef}/>
     <Route path="/graffiti" component={Graffiti}/>
     <Route path="/rendezvous" component={Rendezvous}/>
     <Route path="/miscellaneous" component={Misc}/>

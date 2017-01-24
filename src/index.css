@@ -46,6 +46,12 @@ h3 {
   font-size: 2em;
 }
 
+h4 {
+  font-size: 1.75em;
+  font-family: Lora, serif;
+  margin: 20px 0;
+}
+
 .no-select {
   -webkit-touch-callout: none;
   -webkit-user-select: none;

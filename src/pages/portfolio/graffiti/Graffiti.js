@@ -34,28 +34,25 @@ class Graffiti extends Component {
         prototype="http://share.framerjs.com/e5fgdt2bh6l9"
         content={
           <span>
-            <h3>What is it?</h3>
+            <h4>What is it?</h4>
             <p>
               An augmented reality iOS app that allows you to draw virtual graffiti onto the real world.
             </p>
             <img src={leadin} alt="graffiti sneak peak" />
-            <h3>Origins</h3>
-             <p className="starting-paragraph">
-               Want to make your mark on the world? Then try out Graffiti, a new app which lets you leave your virtual tag on any real life environment.
-             </p>
+            <h4>Origins</h4>
              <p>
                The concept of Graffiti came about by thinking about what avenues of social media haven't been explored to their full potential yet, and my friends and I all agreed we were most interested in the aspect of anonymous socializing, in the vein of YikYak or Secret, as well as the "in the moment" feeling of platforms like Snapchat and Twitter. We tried to think of the best way we could combine these two aspects, and add in a creative aspect to convey these ideas through art.
              </p>
-            <h3>Implementation</h3>
+            <h4>Implementation</h4>
             <p className="starting-paragraph">
                We eventually landed on an augmented reality app that allows you to draw on any surface around you, and when you or anyone else with the app comes by that same spot they can see what you drew! All drawings are anonymous, and can only be viewed by those in the same location as you looking at the same wall, ceiling, floor, what have you. In order for graffiti to work we used the gyroscope and GPS to gather location and orientation data to maintain the context the graffiti is drawn on so that you don't see random drawings floating in the air (unless intended to be placed there!)
             </p>
 
-            <h3>What I Did</h3>
+            <h4>What I Did</h4>
             <p>
               For this project I coded the front-end in Swift using AVFoundation and some invaluable cocoapods (<a href="https://github.com/SnapKit/SnapKit" target="_blanl">SnapKit</a>, <a href="https://github.com/gizmosachin/ColorSlider" target="_blank">ColorSlider</a>, jot, and <a href="https://github.com/scalessec/Toast-Swift" target="_blank">Toast-Swift</a>). I also created all the assets and screens you see. Much help to <a href="https://github.com/IFTTT/jot" target="_blank">IFTTT's jot library</a> which was instrumental in finishing the app within 48 hours.
             </p>
-            <h3>Design Sketches</h3>
+            <h4>Design Sketches</h4>
             <Slider {...sliderSettings}>
               <div>
                 <img src={front} alt="front end logic of graffiti" className="portrait"/>
@@ -67,14 +64,14 @@ class Graffiti extends Component {
               </div>
             </Slider>
 
-            <h3>Wireframes</h3>
+            <h4>Wireframes</h4>
             <img src={screens} alt="drawing and tagging screens" className="screens" />
             <p>The end product, simply two screens, one to view others' graffiti with a spray can to start drawing, and another to actually create your art and then tag it into the world. Users can select stroke, color, and also add text to their graffiti.</p>
 
-            <h3>Prototype</h3>
+            <h4>Prototype</h4>
              <iframe className="framer-embed" src="http://share.framerjs.com/e5fgdt2bh6l9/" frameBorder="0" allowFullScreen="allowFullScreen"></iframe>
 
-            <h3>In the Wild</h3>
+            <h4>In the Wild</h4>
             <p>
               <Slider {...sliderSettings}>
                 <div>

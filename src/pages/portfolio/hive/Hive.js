@@ -5,6 +5,7 @@ import './Hive.css';
 import ProjectPage from '../../../components/project-page/ProjectPage';
 
 import leadin from '../../../media/hive/lead-in.png';
+import crowded from '../../../media/hive/crowded.jpg';
 import affinity_map from '../../../media/hive/affinity-resize.jpg';
 import task_analysis from '../../../media/hive/task-analysis.png';
 import screen from '../../../media/hive/designs/screen.png';
@@ -41,19 +42,21 @@ class Hive extends Component {
         prototype="http://linkcable.github.io/The-Hive"
         content={
           <span>
-            <h3>What is it?</h3>
+            <h4>What is it?</h4>
             <p>
             The Hive is both an art installation and a design solution to finding seats in a crowded library. The Hive was conceived through research done for Georgia Tech's MS-HCI program, and aims to make it simpler and faster to find study spots for students at Georgia Tech's library, the Clough Undergraduate Learning Center (CULC).
             </p>
 
             <img src={leadin} alt="preview of the hive" />
 
-            <h3>Problem Space</h3>
+            <h4>Problem Space</h4>
             <p>
               The concept for The Hive came about after noticing that students at the library often struggle to find seats, due to there being no easy way to see if certain seats were taken or not, which led to students walking around different floors for several minutes trying to find a suitable studying space. Having personally experienced this ourselves as well, we thought it would be useful to try and solve the problem of finding a seat so students could focus on studying, not searching for a place to work.
             </p>
+            <img src={crowded} alt="no seaing library"/>
+            <p className="caption">The struggle is real come finals time</p>
 
-            <h3>What I Did</h3>
+            <h4>What I Did</h4>
             <p>
             My contributions to this project include:
             </p>
@@ -65,10 +68,10 @@ class Hive extends Component {
                 <li>Development of a persona for a potential user</li>
                 <li>Brainstorming of design solutions</li>
                 <li>Modeling and coding of a Unity prototype for The Hive</li>
-                <li>Conducting user tests with both virtual and physical prototypes in the CULC</li>
+                <li>Conducting user tests with both virtual and physical prototypes in the library</li>
               </ul>
 
-            <h3>Research</h3>
+            <h4>Research</h4>
             <p>
               After finding our problem space, we then began to conduct research on how exactly students use the CULC, how many have struggled finding a seat before, and other data points so that we could see if this was a real issue that needed solving. We began by distributing a survey, conducting semi-structured interviews with random individuals in the library, and observing how students use the space as well as how long it can take them to find seats.  <b>We primarily based our results on the semi-structured interviews, as they allowed us to really understand the behavior of the students and what leads them to come to library and how they approach studying there.</b>
             </p>
@@ -103,7 +106,7 @@ class Hive extends Component {
               </div>
             </Slider>
 
-            <h3>Refinements</h3>
+            <h4>Refinements</h4>
             <p>
               After completing our research and analyzing the findings, we realized that we were asking the wrong question in our problem space. <b>It turns out that there is not much difficulty in finding an open seat in the CULC; the problem lies in finding an available table.</b>
             </p>
@@ -112,12 +115,12 @@ class Hive extends Component {
 
 
 
-            <h3>Design Ideas</h3>
+            <h4>Design Ideas</h4>
             <p>
               Based on this new problem area and the data we collected, we then began to ideate on possible solutions for finding tables in the library. We went through an exhaustive list of design possibilities, which ranged concepts such as a flag to indicate if you were open to others sitting at your table to stringing ropes across the CULC to create a sort of large scale hammock for people to sit and work on, we eventually narrowed down to three final designs:
             </p>
 
-            <h3>Solution 1</h3>
+            <h4>Solution 1</h4>
             <p className="sub-header-p">Display a screen at every floor showing seat distribution so students know where to find a seat, while also projecting seat information onto the wooden railings on each staircase.</p>
 
 
@@ -132,7 +135,7 @@ class Hive extends Component {
               </div>
             </Slider>
 
-            <h3>Solution 2</h3>
+            <h4>Solution 2</h4>
             <p className="sub-header-p">
               Introduce modular furniture that can be a seat or a table depending on the need, therefore increasing the amount of tables in circulation and making seating exist wherever it is needed.
             </p>
@@ -150,7 +153,7 @@ class Hive extends Component {
             </Slider>
 
 
-            <h3>Solution 3</h3>
+            <h4>Solution 3</h4>
             <p>A tree installation that can show students where seats are available from a glance, by following the path of branches lit by fiber optics, which change brightness depending on crowdedness and pulse based on noise levels.</p>
 
             <Slider {...sliderSettings}>
@@ -177,7 +180,7 @@ class Hive extends Component {
             Both solution 1 and 3 are based on the first approach, as they aim to make it easier and faster for students to find an available table at the library and begin their work. However, not wanting to overlook an obvious solution of simply adding more tables, we also designed a solution that would provide students with more workspaces, which solution 2 comes from.
             </p>
 
-            <h3>The Tree</h3>
+            <h4>The Tree</h4>
             <p>
             After feedback from our peers and discussion amongst ourselves, we decided to go with solution 3, the tree. The reason being that although solution 1 was conventional and certainly would have worked, the tree grants the benefit of knowing which floor to go to immediately instead of having to climb past every floor to see that statistics for the floor. The other reason being we wanted a solution with a spirit of art in it. Solution 2 was abandoned as it featured no computer in its design, and this being a human-computer interaction course we were forced to leave it behind.
             </p>
@@ -192,7 +195,7 @@ class Hive extends Component {
               <li>It looks prettier</li>
             </ol>
 
-            <h3>Prototype</h3>
+            <h4>Prototype</h4>
             <p>
             In order to prototype and test The Hive, it we required a bit of creativity on our part. Sadly we did not have the funds or feasibility to construct a full scale model of a tree in the CULC, so we made a small physical model out of cardboard, an Arduino, and EL wire to produce the desired effect of The Hive.
             </p>
@@ -215,7 +218,7 @@ class Hive extends Component {
               Using these two prototypes, we set up in the library and asked random individuals who were passing by to test our solution if they had the time. They were assigned a task of finding a seat using the Unity prototype, and then asked several questions regarding the physical prototype, such as where they would go based on the current orientation of the tree, differentiation of the colors, and then were given a post-testing interview consisting of several questions to gather feedback design recommendations.
             </p>
 
-            <h3>Feedback</h3>
+            <h4>Feedback</h4>
             <p>
               After conducting several user tests, this was the feedback we received on our prototype:
             </p>
@@ -229,7 +232,7 @@ class Hive extends Component {
               Overall, it seems as though people liked the concept of the tree, however the colors needed to be tweaked for the final product, as well as the overall aesthetic of the tree changed to match the CULC's in order for it to match. Thankfully these complaints are mostly about things that were decided on due to our constraint on time to produce this interim prototype, and were further explored in our next round of testing.
             </p>
 
-            <h3>Testing Round 2</h3>
+            <h4>Testing Round 2</h4>
             <p>
               After making revisions on our prototype, we then tested our prototype again, once more asking random passerbys in the library if they'd like to participate in a brief experiment. The process for this testing was a lot more structured than the first time:
             </p>
@@ -243,7 +246,7 @@ class Hive extends Component {
             <img src={tree_v2} alt="newer version of tree" />
             <p className="caption">A look at the updated model</p>
 
-            <h3>Final Results</h3>
+            <h4>Final Results</h4>
             <div className="statistics">
               <div className="statistic">
                 <h2 className="surveys">5</h2>
@@ -258,7 +261,7 @@ class Hive extends Component {
               We tested five students, and each student had a <b>reduction of at least 50% time in finding a seat</b> between the standard library model and the tree model. Seats weren't placed in the same location, but were on the same floors to try and keep times somewhat standard across tests. Students were also able to quickly discern the meaning behind the tree's colors and branches during their think-aloud.
             </p>
 
-            <p>We also received several design suggestions from our testers that could be implemented in a future model. Suggestions included that the Hive would not be able to display the seating towards the hallways of the CULC, which would leave out a smaller, but significant, portion of the total available seating. Some suggestions to extend functionality included the use of “flower” branches or “roots” intertwining with the overhead lights. For this prototype however, we decided to assist students in finding seats only in the main areas because those seats largely fit students’ needs that we gathered from interviews such as chairs with desks, outlets and tables. We also received several design suggestions aimed at displaying group seating, the most common was using granular light displays, which we couldn't do with our EL wire nor the Unity model due to time constraints.</p>
+            <p>We also received several design suggestions from our testers that could be implemented in a future model. Suggestions included that the Hive would not be able to display the seating towards the hallways of the library, which would leave out a smaller, but significant, portion of the total available seating. Some suggestions to extend functionality included the use of “flower” branches or “roots” intertwining with the overhead lights. For this prototype however, we decided to assist students in finding seats only in the main areas because those seats largely fit students’ needs that we gathered from interviews such as chairs with desks, outlets and tables. We also received several design suggestions aimed at displaying group seating, the most common was using granular light displays, which we couldn't do with our EL wire nor the Unity model due to time constraints.</p>
 
             <p>
               During our questionnaire we also had students flip through slides of two colors, asking them to mark one as "positive" and the other "negative", or that neither stood out. This was to help us determine what colors would work best to color the Hive. We ended up with a hierarchy like this:
@@ -270,7 +273,7 @@ class Hive extends Component {
               This scale informs us of a gradient system that could be implemented in order to have a more continuous display of availability instead of the current binary mode. Interestingly, the scale moves from colors that are generally seen as “cool” to those thought of as “warm,” meaning the idea of “availability” may just be a converse rating of activity.
             </p>
 
-            <h3>Further Design Considerations</h3>
+            <h4>Further Design Considerations</h4>
             <p>
               <b>Test colors pairings to convey available or unavailable areas.</b> <br/>
               For the physical prototypes we were limited to a certain set of colors that were available in the form of EL wires which were green and blue. After testing different colors on the 3D model and questionnaires, the pair of colors that seemed to communicate empty and full most clearly were green and red. Therefore, for future iterations we would need to test with different hues and lightness of the two colors to find a specific pair that are visible with sunlight as well not being intrusive for students studying or lacking accessibility.

@@ -5,17 +5,18 @@ import './Home.css';
 import Project from '../../components/project/Project';
 
 import computers from '../../media/home/im_so_computers.png';
-import resume from '../../media/social/resume.svg';
 import dribbble from '../../media/social/dribbble.svg';
 import github from '../../media/social/github.svg';
 import twitter from '../../media/social/twitter.svg';
 import untappd from '../../media/social/untappd.svg';
 import linkedin from '../../media/social/linkedin.svg';
 import instagram from '../../media/social/instagram.svg';
+import mal from '../../media/social/MAL.svg';
 import tree from '../../media/home/tree.png';
 import graffiti from '../../media/home/graffiti-iphone.png';
 import medi from '../../media/home/medi-iphone.png';
 import argon from '../../media/home/argon-iphone.png';
+import sous_chef from '../../media/home/sous-chef.png';
 import rendezvous from '../../media/home/rendezvous-iphone.png';
 import misc from '../../media/home/logo.png';
 
@@ -69,12 +70,20 @@ class Home extends Component {
                  tags="Research, Development"
                  iPhone={true}/>
 
+        <Project title="Sous Chef"
+                 description="An Amazon Echo skill that allows Alexa to be your companion cook in the kitchen"
+                 link="/sous-chef"
+                 image={sous_chef}
+                 tags="VUI Design, Development"
+                 />
+
         <Project title="Graffiti"
                  description="An augmented reality iOS app to draw virtual graffiti on real world objects"
                  link="/graffiti"
                  image={graffiti}
                  tags="UI Design, Development"
-                 iPhone={true}/>
+                 iPhone={true}
+                 />
 
         <Project title="Rendezvous"
                  description="An iOS app to help you find your friends in a crowd or to promote spontaneous encounters"
@@ -127,6 +136,12 @@ class Home extends Component {
             <a href="https://untappd.com/user/LinkCable" target="_blank" id="untappd">
               <Isvg src={untappd}>
                 <img src={untappd} alt="untappd link" width="20px" />
+              </Isvg>
+            </a>
+
+            <a href="https://myanimelist.net/profile/LinkCable" target="_blank" id="mal">
+              <Isvg src={mal}>
+                <img src={mal} alt="my anime list link" width="20px" />
               </Isvg>
             </a>
           </div>

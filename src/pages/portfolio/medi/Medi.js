@@ -62,12 +62,12 @@ class Medi extends Component {
         nextProject="/portfolio/argon"
         content={
           <span>
-            <h3>What is it?</h3>
+            <h4>What is it?</h4>
             <p>
               An app ecosystem to support the elderly and their caretakers in taking their prescribed medication properly and on time.
             </p>
             <img src={ecosystem} alt="phone, watch, and dispenser" />
-            <h3>Origins</h3>
+            <h4>Origins</h4>
             <p className="starting-paragraph">
               For fall semester of my master's program, I took a class which focused on teaching how to design interfaces from low to high fidelity. We were given an assignment to design an application that would assist both the elderly and their caretakers in taking prescription medication.  When designing these apps I was really influenced by the idea of <a href="https://medium.com/swarm-nyc/complexion-reduction-a-new-trend-in-mobile-design-cef033a0b978#.h55s4jdug" target="_blank">complexion reduction.</a>
             </p>
@@ -79,17 +79,17 @@ class Medi extends Component {
                 <li>A physical artifact which allows the patient to track their medication</li>
                 <li>An automatic pill dispensing device for the patient with an embedded screen</li>
               </ul>
-            <h3>Problem Space</h3>
+            <h4>Problem Space</h4>
             <p>
               As the elderly population continues to increase, so too does the amount of prescriptions given out per year. Elderly patients can often forget to take their doses, or take them late, which can affect the effectiveness of a medication, or can cause medical complications. Caretakers and doctors are concerned about ensuring patients take their medications on time, and it would be useful if there were a way to monitor and track if patients do. Medi aims to solve this issue.</p>
             <p>
               (Note: this project was for a class, more emphasis was on interface design than user research)
             </p>
-            <h3>Ideation</h3>
+            <h4>Ideation</h4>
             <p className="starting-paragraph">
               For the development of the mobile app, our professor assigned us to write a scenario/persona for the average caretaker who would find this app useful and better than the current method they are using. Although this is nowhere as good as user research, for the purpose of this class it made sense as the professor already had the app and its general features in mind.
             </p>
-            <h3>Scenario</h3>
+            <h4>Scenario</h4>
             <p className="starting-paragraph">Thomas is a middle-aged businessman taking care of his older father, Harry, who is now living in his family’s home. Harry is about 80 years old and has to take several pain medications for this arthritis, and has recently been diagnosed with depression due to his lack of ability from old age. However, Thomas has many clients across the country requiring him to travel often and not be home to check on his father.
             </p>
             <p>
@@ -107,7 +107,7 @@ class Medi extends Component {
             <p>
               Thomas is very happy with his new app which allows him to monitor his father’s health while on the go, and is excited to see what other features this dispenser and app combo have to ensure his father continues to live a healthy life. Without this app, Thomas would have no way to consistently and easily keep tabs on his father, and would not be able to ensure that his father is taking the medicine he needs to stay healthy. His father also gets the benefits of consistent reminders, and peace of mind knowing that the machine handles the task of tracking medication for him.
             </p>
-            <h3>Concept Drawings</h3>
+            <h4>Concept Drawings</h4>
             <p>
               <Slider {...sliderSettings}>
                 <div>
@@ -128,7 +128,7 @@ class Medi extends Component {
                 </div>
               </Slider>
             </p>
-            <h3>Low Fidelity Prototypes</h3>
+            <h4>Low Fidelity Prototypes</h4>
             <p className="starting-paragraph">
               Using the concept drawings I drew up some low fidelity prototypes, fleshing out the details a bit more.
             </p>
@@ -162,7 +162,8 @@ class Medi extends Component {
                 <p>Missed medication notification</p>
               </div>
             </Slider>
-            <h3>Persona</h3>
+
+            <h4>Persona</h4>
             <p>
               Based off of our initial scenario, we then developed personas to better flesh out the caretaker who would be using our app and the needs we would have to meet to ensure that they would use this app. So I further fleshed out the character of Thomas, and what he is looking for in taking care of his father.
             </p>
@@ -172,7 +173,7 @@ class Medi extends Component {
                  alt="Thomas (Tom) Dean. KPMG Accountant. Key quote: “I want to check up on my dad and make sure he’s taking the medications he needs to take.” Tom's Story: Thomas is a middle-aged accountant at KPMG, 46 years old, who is taking care of his 80 year old father Harrison, or Harry, who lives with him and his family. Harry is currently taking several different pain medications for arthritis that came with old age due to his profession as a mechanic, and has also been prescribed Thalitone for blood pressure in the mornings and Prilosec for heartburn. He must take these medications daily in order to maintain a healthy lifestyle, and Thomas is very worried about his father properly taking these medications. In order to ensure his father takes his pills properly, Thomas is interested in a pill dispenser with a companion app that allows him to track his father’s pill intake and alerts him if his father misses a dose so he can follow up with his father or the doctor to keep Harrison healthy. Due to his work Thomas is often not home and although his family is there to help take care of Harry, he would like to have extra peace of mind so that it’s ensured that his father never forgets to take his prescriptions. Tom's Demographics:	Married 18 years, father of two, B.S. in Accounting from NYU Stern, Uses tech on day to day basis, carries an iPhone and Windows laptop to work on the go Key goals of Tom: Be able to check his father’s medication schedule for the day, Be notified when his father misses a dose, Easy to contact his father or a doctor when a medication is missed, Be able to see when his father misses his medication over a week or month term so that he can see patterns if there are any as to why his father might miss a dose" className="no-height-limit"/>
 
 
-            <h3>Medium Fidelity Prototype</h3>
+            <h4>Medium Fidelity Prototype</h4>
             <p className="starting-paragraph">After low fidelity mockups came the medium fidelity ones which were used for user testing.</p>
             <iframe className="invision-embed" width="438" height="930" src="//invis.io/DX90SMQU4" frameBorder="0" allowFullScreen="true"></iframe>
             <p>
@@ -195,7 +196,8 @@ class Medi extends Component {
                   When a medication is missed, the app gives a notification that a user can tap to see details on the missed medication and act upon it if they want to (see this <a href="https://invis.io/ES90SOATH#/198511415_Home_Screen">here</a>)
                 </li>
               </ul>
-            <h3>User Testing</h3>
+
+            <h4>User Testing</h4>
             <p>Using the medium fidelity prototype on Invision, I sent it out to two people for user testing:
             </p>
             <ol className="list">
@@ -226,7 +228,8 @@ class Medi extends Component {
             <p>
               After this feedback it is clear that I should incorporate a proper onboarding process to describe what exactly the priorities mean. In further user testing if it proves too confusing, perhaps remove the user feature altogether. I should also emphasize how this app is catered toward caretakers not patients, and perhaps change the wording of “Profile” to “Patient”. As well as add a memo feature, and also change the calendar display.
             </p>
-            <h3>Physical Prototype</h3>
+
+            <h4>Physical Prototype</h4>
             <p>The professor also has a history of 3d prototyping in the industry, so he had us design a physical artifact that the patient could wear to remind them of prescription times. This was my first foray into industrial design, so working with Autodesk Fusion 360 was pretty fun, and getting to 3D print our design was awesome to say the least. </p>
 
             <Slider {...sliderSettings}>
@@ -255,8 +258,7 @@ class Medi extends Component {
             <img src={watch} alt="the 3d printed watch"/>
             <p className="caption">Live and in the flesh!</p>
 
-            <h3>Physical Prototype Display</h3>
-
+            <h4>Physical Prototype Display</h4>
             <p>
             <img src={faces} alt="wireframe of physical watch"/>
             </p>
@@ -269,7 +271,7 @@ class Medi extends Component {
 
             <p>Overall the industrial design part was the most fun part of the project for me, as I was introduced to new tools and design constraints by working in a physical space. I also think I made a pretty slick lookin' watch.</p>
 
-            <h3>High Fidelity Prototype</h3>
+            <h4>High Fidelity Prototype</h4>
             <p>For the final leg of this project, we had to create a high fidelity prototype of the interface that would be on the pill dispensing machine. The dimensions were 480 by 320, and the design of the device itself was given to us, we just had to make the interface. </p>
 
             <p>The device itself is meant to be able to be a standalone device, which means that all settings, interactions, controls, etc, had to be on the embedded screen, no accompanying app. Features of the device include:
@@ -307,7 +309,8 @@ class Medi extends Component {
                 <li>View the settings and change the volume</li>
                 <li>Go through the process of dispensing a pill by using the debug button in the upper left of the Schedule screen</li>
               </ul>
-            <h3>Conclusion</h3>
+
+            <h4>Conclusion</h4>
             <p>This project taught me a lot about prototyping from low fidelity to high fidelity in terms of techniques and tools. I was able to learn a lot about Framer.js, and also a little about how physical design works with Autodesk Fusion 360.
             </p>
             <p>
