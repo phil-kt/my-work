@@ -70,12 +70,14 @@ class Home extends Component {
                  tags="Research, Development"
                  iPhone={true}/>
 
+        {/*
         <Project title="Sous Chef"
                  description="An Amazon Echo skill that allows Alexa to be your companion cook in the kitchen"
                  link="/sous-chef"
                  image={sous_chef}
                  tags="VUI Design, Development"
                  />
+                 */}
 
         <Project title="Graffiti"
                  description="An augmented reality iOS app to draw virtual graffiti on real world objects"
