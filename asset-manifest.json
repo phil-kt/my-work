@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.8b570875.css",
-  "main.css.map": "static/css/main.8b570875.css.map",
-  "main.js": "static/js/main.2cad24a9.js",
-  "main.js.map": "static/js/main.2cad24a9.js.map",
+  "main.css": "static/css/main.208fed65.css",
+  "main.css.map": "static/css/main.208fed65.css.map",
+  "main.js": "static/js/main.d8e443b6.js",
+  "main.js.map": "static/js/main.d8e443b6.js.map",
   "static/media/Consolas.eot": "static/media/Consolas.bcf880b1.eot",
   "static/media/Consolas.ttf": "static/media/Consolas.05deb0ee.ttf",
   "static/media/Consolas.woff": "static/media/Consolas.d9fc0a5e.woff",
@@ -45,6 +45,7 @@
   "static/media/graffiti_view.jpg": "static/media/graffiti_view.b74a5345.jpg",
   "static/media/hive-hero.png": "static/media/hive-hero.b711ccf9.png",
   "static/media/instagram.svg": "static/media/instagram.e5c92a3c.svg",
+  "static/media/iphone.png": "static/media/iphone.15685834.png",
   "static/media/lead-in.png": "static/media/lead-in.1d03652d.png",
   "static/media/linkedin.svg": "static/media/linkedin.8220d480.svg",
   "static/media/lofi_1.jpg": "static/media/lofi_1.5f88166b.jpg",
@@ -70,6 +71,7 @@
   "static/media/screen.png": "static/media/screen.e9cddacf.png",
   "static/media/screen_storyboard.png": "static/media/screen_storyboard.72c80eb2.png",
   "static/media/screens.png": "static/media/screens.f729bf30.png",
+  "static/media/sous-chef-hero.png": "static/media/sous-chef-hero.6ee452bb.png",
   "static/media/sous-chef.png": "static/media/sous-chef.8472c01e.png",
   "static/media/squidward.gif": "static/media/squidward.89f68a03.gif",
   "static/media/stokr.svg": "static/media/stokr.74f089f9.svg",
@@ -83,6 +85,8 @@
   "static/media/twitter.svg": "static/media/twitter.5ad82ff2.svg",
   "static/media/untappd.svg": "static/media/untappd.723ac2bb.svg",
   "static/media/view_other.jpg": "static/media/view_other.0600f2a0.jpg",
+  "static/media/vui_draft.jpg": "static/media/vui_draft.491fd0a2.jpg",
+  "static/media/vui_flow.jpg": "static/media/vui_flow.6d3a6000.jpg",
   "static/media/watch.jpg": "static/media/watch.f7f02976.jpg",
   "static/media/wireframe.png": "static/media/wireframe.90a3729b.png"
 }
