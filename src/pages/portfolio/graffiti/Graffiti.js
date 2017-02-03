@@ -43,15 +43,15 @@ class Graffiti extends Component {
              <p>
                The concept of Graffiti came about by thinking about what avenues of social media haven't been explored to their full potential yet, and my friends and I all agreed we were most interested in the aspect of anonymous socializing, in the vein of YikYak or Secret, as well as the "in the moment" feeling of platforms like Snapchat and Twitter. We tried to think of the best way we could combine these two aspects, and add in a creative aspect to convey these ideas through art.
              </p>
+            <h4>What I Did</h4>
+            <p>
+              For this project I coded the front-end in Swift using AVFoundation and some invaluable cocoapods (<a href="https://github.com/SnapKit/SnapKit" target="_blanl">SnapKit</a>, <a href="https://github.com/gizmosachin/ColorSlider" target="_blank">ColorSlider</a>, jot, and <a href="https://github.com/scalessec/Toast-Swift" target="_blank">Toast-Swift</a>). I also created all the assets and screens you see. Much help to <a href="https://github.com/IFTTT/jot" target="_blank">IFTTT's jot library</a> which was instrumental in finishing the app within 48 hours.
+            </p>
             <h4>Implementation</h4>
             <p className="starting-paragraph">
                We eventually landed on an augmented reality app that allows you to draw on any surface around you, and when you or anyone else with the app comes by that same spot they can see what you drew! All drawings are anonymous, and can only be viewed by those in the same location as you looking at the same wall, ceiling, floor, what have you. In order for graffiti to work we used the gyroscope and GPS to gather location and orientation data to maintain the context the graffiti is drawn on so that you don't see random drawings floating in the air (unless intended to be placed there!)
             </p>
 
-            <h4>What I Did</h4>
-            <p>
-              For this project I coded the front-end in Swift using AVFoundation and some invaluable cocoapods (<a href="https://github.com/SnapKit/SnapKit" target="_blanl">SnapKit</a>, <a href="https://github.com/gizmosachin/ColorSlider" target="_blank">ColorSlider</a>, jot, and <a href="https://github.com/scalessec/Toast-Swift" target="_blank">Toast-Swift</a>). I also created all the assets and screens you see. Much help to <a href="https://github.com/IFTTT/jot" target="_blank">IFTTT's jot library</a> which was instrumental in finishing the app within 48 hours.
-            </p>
             <h4>Design Sketches</h4>
             <Slider {...sliderSettings}>
               <div>
@@ -76,15 +76,15 @@ class Graffiti extends Component {
               <Slider {...sliderSettings}>
                 <div>
                   <img src={GraffitiMid} alt="real life use of graffiti"/>
-                  <p>A person writing their own graffiti on a wall.</p>
+                  <p className="caption">A person writing their own graffiti on a wall.</p>
                 </div>
                 <div>
                   <img src={GraffitiView} alt="viewing graffiti"/>
-                  <p>Now they can view the graffiti they just drew.</p>
+                  <p className="caption">Now they can view the graffiti they just drew.</p>
                 </div>
                 <div>
                   <img src={GraffitiOther} alt="viewing other's graffiti"/>
-                  <p>Hey, they found someone else's graffiti!</p>
+                  <p className="caption">Hey, they found someone else's graffiti!</p>
                 </div>
               </Slider>
             </p>

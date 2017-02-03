@@ -53,14 +53,15 @@ class Rendezvous extends Component {
             <p>
               Rendezvous was inspired by the very hackathon it was created for. When our team first arrived at the huge Wells Fargo Center where PennApps XII was being held, we couldn't find each other and barely had cell service! This led us struggling for a solid hour to try and find where we as a team had settled down to work. Based on this, we thought an app which allowed you to find friends when you have no cell service would be awesome to have in certain situations.
             </p>
-            <h4>Implementation</h4>
-            <p>
-              At its core, Rendezvous is an app utilizing Apple's iBeacon/LBTE technology to discover friends around you who are also using it, and where you're close to each other Rendezvous will guide you to one another. Thus, when two friends happen to be close to each other, such as at the same dining hall or in the library, you can be notified that your friends are nearby! It's also useful if you lose a friend at a concert or in the woods where you have no cell service.
-            </p>
             <h4>What I Did</h4>
             <p>
               For this app I made the front-end in Swift, integrated it with the backend logic such as the accelerometer data, and designed all the screens you see below.
             </p>
+            <h4>Implementation</h4>
+            <p>
+              At its core, Rendezvous is an app utilizing Apple's iBeacon/LBTE technology to discover friends around you who are also using it, and where you're close to each other Rendezvous will guide you to one another. Thus, when two friends happen to be close to each other, such as at the same dining hall or in the library, you can be notified that your friends are nearby! It's also useful if you lose a friend at a concert or in the woods where you have no cell service.
+            </p>
+
             <h4>Wireframes</h4>
             <p>
               <img src={wireframes} alt="rendezvous wireframes" />
@@ -77,11 +78,11 @@ class Rendezvous extends Component {
              <Slider {...sliderSettings}>
                <div>
                  <img src={phone_mockup} alt="phone mockup"/>
-                 <p>Use Rendezvous on your phone...</p>
+                 <p className="caption">Use Rendezvous on your phone...</p>
                </div>
                <div>
                   <img src={watch_mockup} alt="watch mockup"/>
-                  <p>Or your watch!</p>
+                  <p className="caption">Or your watch!</p>
                </div>
              </Slider>
             </p>

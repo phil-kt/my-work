@@ -9,6 +9,12 @@ class Projects {
 
   projects = [
     {
+      name: "Untappd Redesign",
+      description: "An in-progress case study and redesign of the popular beer app Untappd",
+      image: null,
+      link: "/untappd"
+    },
+    {
       name: "The Hive",
       description: "A case study about how to optimize finding a seat in Georgia Tech’s library",
       image: {hive},
@@ -24,7 +30,13 @@ class Projects {
       name: "Understanding AR",
       description: "An augmented reality book about the history of augmented reality",
       image: {ar},
-      link: "/argon"
+      link: "/understanding-ar"
+    },
+    {
+      name: "Sous Chef",
+      description: "An Amazon Echo skill that makes Alexa your personal assistant cook",
+      image: {},
+      link: "/sous-chef"
     },
     {
       name: "Graffiti",

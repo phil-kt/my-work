@@ -6,6 +6,7 @@ import ProjectPage from '../../../components/project-page/ProjectPage';
 
 import leadin from '../../../media/hive/lead-in.png';
 import crowded from '../../../media/hive/crowded.jpg';
+import process from '../../../media/hive/process.svg';
 import affinity_map from '../../../media/hive/affinity-resize.jpg';
 import task_analysis from '../../../media/hive/task-analysis.png';
 import screen from '../../../media/hive/designs/screen.png';
@@ -71,6 +72,9 @@ class Hive extends Component {
                 <li>Conducting user tests with both virtual and physical prototypes in the library</li>
               </ul>
 
+            <h4>Process</h4>
+            <img className="process" src={process} alt="Survey & interviews, Pattern analysis, Refine problem, Ideation, Prototype, User Testing, Feedback, Findings" />
+
             <h4>Research</h4>
             <p>
               After finding our problem space, we then began to conduct research on how exactly students use the CULC, how many have struggled finding a seat before, and other data points so that we could see if this was a real issue that needed solving. We began by distributing a survey, conducting semi-structured interviews with random individuals in the library, and observing how students use the space as well as how long it can take them to find seats.  <b>We primarily based our results on the semi-structured interviews, as they allowed us to really understand the behavior of the students and what leads them to come to library and how they approach studying there.</b>
@@ -94,13 +98,13 @@ class Hive extends Component {
             <Slider {...sliderSettings} className="carousel">
               <div>
                 <img src={affinity_map} alt="affinity map" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
-                <p>
+                <p className="caption">
                   Affinity mapping out our research data
                 </p>
               </div>
               <div>
                 <img src={task_analysis} alt="task analysis" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
-                <p>
+                <p className="caption">
                   A task analysis I derived from our research
                 </p>
               </div>
@@ -127,11 +131,11 @@ class Hive extends Component {
             <Slider {...sliderSettings}>
               <div>
                 <img src={screen} alt="screen solution"/>
-                <p>Possible visualizations of the heatmap and seat occupancy levels</p>
+                <p className="caption">Possible visualizations of the heatmap and seat occupancy levels</p>
               </div>
               <div>
                 <img src={screen_storyboard} alt="screen storyboard"/>
-                <p>A storyboard for the screen solution</p>
+                <p className="caption">A storyboard for the screen solution</p>
               </div>
             </Slider>
 
@@ -144,11 +148,11 @@ class Hive extends Component {
             <Slider {...sliderSettings}>
               <div>
                 <img src={furniture} alt="modular furniture"/>
-                <p>Some concepts of what the furniture could look like</p>
+                <p className="caption">Some concepts of what the furniture could look like</p>
               </div>
               <div>
                 <img src={furniture_storyboard} alt="modular furniture storyboard"/>
-                <p>A storyboard for modular furniture</p>
+                <p className="caption">A storyboard for modular furniture</p>
               </div>
             </Slider>
 
@@ -159,11 +163,11 @@ class Hive extends Component {
             <Slider {...sliderSettings}>
               <div>
                 <img src={tree} alt="tree solution"/>
-                <p>A concept drawing of the tree</p>
+                <p className="caption">A concept drawing of the tree</p>
               </div>
               <div>
                 <img src={tree_storyboard} alt="tree storyboard"/>
-                <p>A storyboard for the tree's role in finding a seat</p>
+                <p className="caption">A storyboard for the tree's role in finding a seat</p>
               </div>
             </Slider>
 
@@ -286,9 +290,6 @@ class Hive extends Component {
               <b>Work on a final architectural design of the tree.</b> <br/>
               The largest design challenge that we had while working on this project was creating a sculpture that maintained a tree-like appearance with enough branches so that it did not seem empty while also having the required number of branches so that users did not get confused as to which branch was pointing to which area or floor. Therefore, a future design implication could be to create large main branches that point to the main seating areas and have smaller, minor branches to point towards smaller seating areas.
             </p>
-
-
-
           </span>
                    }/>
     )

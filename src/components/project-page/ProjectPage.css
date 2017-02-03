@@ -14,9 +14,12 @@
     max-height: none;
 }
 
-.project-page a {
+.project-page .content a {
     color: #1F1E1E;
     text-decoration: none;
+}
+.project-page .content a:hover {
+    border-bottom: 2px solid #1F1E1E;
 }
 
 .project-page ul.list {
@@ -31,9 +34,10 @@
     color: #f5f4f4;
 }
 
+
 .project-page .caption {
     text-align: center;
-    font-size: 0.75em;
+    font-size: 0.8em;
 }
 
 .project-page .slick-slider .slick-list, .slick-slider .slick-track{
@@ -47,7 +51,7 @@
 }
 
 .project-page .slick-dots {
-    bottom: -5px;
+    bottom: -10px;
 }
 
 
@@ -109,29 +113,55 @@
     background-size: cover;
 }
 
-.header h1 {
+.project-page .header h1 {
     margin-top: 0;
     margin-bottom: 20px;
     padding-top: 150px;
     text-align: center;
 }
 
-.header .links {
+.project-page .header .links {
     display: flex;
     justify-content: center;
 }
 
-.header .links .button:not(:last-child) {
+.project-page .header .links .button:not(:last-child) {
     margin-right: 15px;
 }
 
-.content {
-    width: 90%;
+.project-page .content {
+    width: 80%;
     margin: auto;
     padding-bottom: 50px;
 }
 
-.content h3 {
+.project-page .content h3 {
     margin-bottom: 0;
     font-family: Lora, serif;
+}
+
+
+.project-page .statistics {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-page .statistics h2, .project-page .statistics h3 {
+    width: 100px;
+    height: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 0;
+}
+
+
+.project-page .statistic {
+    display: inline-block;
+    text-align: center;
+}
+
+.project-page .process {
+    width: 100%;
 }

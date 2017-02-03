@@ -10,7 +10,6 @@ import tachiyomi_flow from '../../media/misc/tachiyomi/tachiyomi-flow.png';
 import roam from '../../media/misc/roam/roam.png';
 import stokr from '../../media/misc/stokr/stokr.svg';
 import dots from '../../media/home/dots.svg';
-import rendezvous from '../../media/misc/rendezvous.png';
 import ai from '../../media/misc/ai/ai.png';
 import ai_prev from '../../media/misc/ai/elsie.png';
 

@@ -5,6 +5,8 @@ import PortfolioPage from '../../../components/project-page/ProjectPage';
 import Slider from 'react-slick';
 
 import ecosystem from '../../../media/medi/ecosystem.png';
+import container from '../../../media/medi/container.jpg';
+import process from '../../../media/medi/process.svg';
 
 import figure_1 from '../../../media/medi/figures/figure_1.jpg';
 import figure_2 from '../../../media/medi/figures/figure_2.jpg';
@@ -85,6 +87,13 @@ class Medi extends Component {
             <p>
               (Note: this project was for a class, more emphasis was on interface design than user research)
             </p>
+            <img src={container} alt="daily pill container"/>
+            <p className="caption">A 21st century solution to this</p>
+
+
+            <h4>Process</h4>
+            <img className="process" src={process} alt="scenario, low fidelity, persona, medium fidelity, user testing, 3d model and printing, high fidelity"/>
+
             <h4>Ideation</h4>
             <p className="starting-paragraph">
               For the development of the mobile app, our professor assigned us to write a scenario/persona for the average caretaker who would find this app useful and better than the current method they are using. Although this is nowhere as good as user research, for the purpose of this class it made sense as the professor already had the app and its general features in mind.
@@ -112,19 +121,19 @@ class Medi extends Component {
               <Slider {...sliderSettings}>
                 <div>
                   <img className="concepts" src={figure_1} alt="schedule"/>
-                  <p>Figure 1: A schedule of the day</p>
+                  <p className="caption">Figure 1: A schedule of the day</p>
                 </div>
                 <div>
                   <img className="concepts" src={figure_2} alt="detail view"/>
-                  <p>Figure 2: A detail of the medication</p>
+                  <p className="caption">Figure 2: A detail of the medication</p>
                 </div>
                 <div>
                   <img className="concepts" src={figure_3} alt="editing view"/>
-                  <p>Figure 3: Editing a medication's details</p>
+                  <p className="caption">Figure 3: Editing a medication's details</p>
                 </div>
                 <div>
                   <img className="concepts" src={figure_4} alt="missed medication"/>
-                  <p>Figure 4: Push notification for a missed medication</p>
+                  <p className="caption">Figure 4: Push notification for a missed medication</p>
                 </div>
               </Slider>
             </p>
@@ -135,31 +144,31 @@ class Medi extends Component {
             <Slider {...sliderSettings}>
               <div>
                 <img src={lofi_1} alt="Lofi schedule" className="portrait"/>
-                <p>The schedule screen</p>
+                <p className="caption">The schedule screen</p>
               </div>
               <div>
                 <img src={lofi_3} alt="Lofi medication view" className="portrait"/>
-                <p>Medication detail view</p>
+                <p className="caption">Medication detail view</p>
               </div>
               <div>
                 <img src={lofi_2} alt="Lofi medication editing" className="portrait"/>
-                <p>Editing a medication</p>
+                <p className="caption">Editing a medication</p>
               </div>
               <div>
                 <img src={lofi_4} alt="Lofi list of medications" className="portrait"/>
-                <p>Viewing the list of medication</p>
+                <p className="caption">Viewing the list of medication</p>
               </div>
               <div>
                 <img src={lofi_5} alt="Lofi calendar view" className="portrait"/>
-                <p>Calendar view of medications</p>
+                <p className="caption">Calendar view of medications</p>
               </div>
               <div>
                 <img src={lofi_6} alt="Lofi profile view" className="portrait"/>
-                <p>A profile of the patient</p>
+                <p className="caption">A profile of the patient</p>
               </div>
               <div>
                 <img src={lofi_7} alt="Lofi missed medication view" className="portrait"/>
-                <p>Missed medication notification</p>
+                <p className="caption">Missed medication notification</p>
               </div>
             </Slider>
 
@@ -235,13 +244,13 @@ class Medi extends Component {
             <Slider {...sliderSettings}>
                <div>
                 <img src={brainstorming} alt="notes of designs" className="portrait"/>
-                <p>
+                <p className="caption">
                   Brainstorming the physical device and its screens
                 </p>
                </div>
               <div>
                 <img src={moodboard} alt="moodboard" className="portrait"/>
-                <p>
+                <p className="caption">
                   A moodboard showing inspirations and guiding principles
                 </p>
                </div>

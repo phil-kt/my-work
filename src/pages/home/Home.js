@@ -22,6 +22,39 @@ import misc from '../../media/home/logo.png';
 
 class Home extends Component {
 
+  state = {
+    headlines: [
+      "UX Designer and Developer 💻",
+      "Advocate for the User 🗣️",
+      "Total Otaku 🔰",
+      "Craft Beer Aficionado 🍺",
+      "Emoji Lover 😍"
+    ],
+    index : 0
+  }
+
+
+  cycle = (e) => {
+    if (this.state.index > this.state.headlines.length - 2){
+      this.state.index = 0
+    }
+    else{
+      this.state.index += 1
+    }
+
+    let header = e.target
+    header.style.opacity = 0;
+
+    let self = this
+
+    // Wait for the transition
+    setTimeout(function(){
+      header.innerHTML = self.state.headlines[self.state.index];
+      header.style.opacity = 1;
+    },300);
+
+    }
+
   render() {
     return (
       <div className="home">
@@ -30,7 +63,7 @@ class Home extends Component {
             <img src={computers} alt="im so computers" width="30px"/>
           </a>
           <h1 className="name">Philippe Kimura-Thollander</h1>
-          <h3 className="byline">A developer turned designer</h3>
+          <h3 className="byline" onClick={this.cycle}>{this.state.headlines[this.state.index]}</h3>
 
           <div className="about">
           <span>
@@ -49,6 +82,13 @@ class Home extends Component {
           </div>
         </div>
 
+        <Project title="Untappd Redesign"
+                 description="An in-progress case study and redesign of the popular beer app Untappd"
+                 link="/untappd"
+                 image={untappd}
+                 tags="UX Research, In Progress"
+        />
+
         <Project title="The Hive"
                  description="A case study about how to optimize finding a seat in Georgia Tech’s library"
                   link="/hive"
@@ -60,30 +100,29 @@ class Home extends Component {
                  description="An application ecosystem to ensure that elderly patients take their prescription medications"
                  link="/medi"
                  image={medi}
-                 tags="UI Design, Prototyping"
+                 tags="UX Design, Prototyping"
                  iPhone={true}/>
 
         <Project title="Understanding AR"
                  description="An augmented reality book about the history of augmented reality"
-                 link="/argon"
+                 link="/understanding-ar"
                  image={argon}
-                 tags="Research, Development"
+                 tags="UX Design, Development"
                  iPhone={true}/>
 
-        {/*
         <Project title="Sous Chef"
-                 description="An Amazon Echo skill that allows Alexa to be your companion cook in the kitchen"
+                 description="An Amazon Echo skill that allows Alexa to be your companion cook"
                  link="/sous-chef"
                  image={sous_chef}
-                 tags="VUI Design, Development"
-                 />
-                 */}
+                 tags="VUI Design, Development, Hackathon"
+        />
+
 
         <Project title="Graffiti"
                  description="An augmented reality iOS app to draw virtual graffiti on real world objects"
                  link="/graffiti"
                  image={graffiti}
-                 tags="UI Design, Development"
+                 tags="UI Design, Development, Hackathon"
                  iPhone={true}
                  />
 
@@ -91,14 +130,14 @@ class Home extends Component {
                  description="An iOS app to help you find your friends in a crowd or to promote spontaneous encounters"
                  link="/rendezvous"
                  image={rendezvous}
-                 tags="UI Design, Development"
+                 tags="UI Design, Development, Hackathon"
                  iPhone={true}/>
 
         <Project title="Miscellaneous"
                  description="Some other stuff I've made"
                  link="/miscellaneous"
                  image={misc}
-                 tags=""/>
+                 tags="Otaku, Hackathon"/>
 
 
 
@@ -148,12 +187,12 @@ class Home extends Component {
             </a>
           </div>
           <span style={{margin: "5px 0"}}>This website designed and developed by me</span>
-          <a href="http://github.com/linkcable/my-work">View it on Github</a>
+          <a className="website-link" href="http://github.com/linkcable/my-work">View it on Github</a>
         </footer>
       </div>
     )
   }
-  
+
 }
 
 export default Home;

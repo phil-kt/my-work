@@ -1,0 +1,11 @@
+.Untappd {
+    background: #F57F17;
+}
+
+.Untappd .header {
+    background-image: url('../../../media/untappd/beer.jpg');
+}
+
+.Untappd .surveys {
+    background-color: #1F1E1E;
+}

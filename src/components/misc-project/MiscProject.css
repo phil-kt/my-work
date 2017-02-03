@@ -31,6 +31,14 @@
     color: #1F1E1E;
     text-decoration: none;
 }
+.misc-project .description a:hover {
+    border-bottom: 2px solid #1F1E1E;
+}
+
+.misc-project .description a {
+    color: #1F1E1E;
+    text-decoration: none;
+}
 
 .misc-project .buttons .button {
     display: inline-block;

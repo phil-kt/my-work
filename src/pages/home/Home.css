@@ -17,7 +17,11 @@
     font-weight: normal;
     margin-top: 15px;
     font-family: Consolas, Monaco, monospace;
+    cursor: pointer;
+    user-select: none;
+    transition: opacity .3s ease-in-out;
 }
+
 
 .home .about {
     font-family: Consolas, Monaco, monospace;
@@ -84,6 +88,10 @@
     fill: #2D50A1;
 }
 
+.home .Untappd {
+    background: #F57F17
+}
+
 .home .Hive {
     background: #78909C;
 }
@@ -143,5 +151,7 @@
 .home a {
     text-decoration: none;
     color: #47c3fd;
-
+}
+.home p a:hover, .website-link:hover {
+    border-bottom: 2px solid #47c3fd;
 }

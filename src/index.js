@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, browserHistory, hashHistory } from 'react-router';
+import { Router, Route, browserHistory } from 'react-router';
 import ReactGA from 'react-ga';
-import { useBasename } from 'history'
+//import { useBasename } from 'history'
 
 
 import App from './App';
+import Untappd from './pages/portfolio/untappd/Untappd';
 import Hive from './pages/portfolio/hive/Hive';
 import Argon from './pages/portfolio/argon/Argon';
 import Medi from './pages/portfolio/medi/Medi';
@@ -33,8 +34,9 @@ function logPageView() {
 ReactDOM.render((
   <Router history={browserHistory} onUpdate={logPageView}>
     <Route path="/" component={App}/>
+    <Route path="/untappd" component={Untappd}/>
     <Route path="/hive" component={Hive}/>
-    <Route path="/argon" component={Argon}/>
+    <Route path="/understanding-ar" component={Argon}/>
     <Route path="/medi" component={Medi}/>
     <Route path="/sous-chef" component={SousChef}/>
     <Route path="/graffiti" component={Graffiti}/>

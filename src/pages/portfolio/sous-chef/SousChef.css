@@ -8,3 +8,7 @@
     padding-top: 25px;
     height: 0;
 }
+
+.Sous .header {
+    background: url(../../../media/sous-chef/sous-chef-hero.png) center center;
+}
