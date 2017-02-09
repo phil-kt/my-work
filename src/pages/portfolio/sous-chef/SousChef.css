@@ -11,4 +11,5 @@
 
 .Sous .header {
     background: url(../../../media/sous-chef/sous-chef-hero.png) center center;
+    background-size: cover;
 }

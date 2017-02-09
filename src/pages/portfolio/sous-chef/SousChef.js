@@ -71,6 +71,8 @@ class SousChef extends Component {
             <div className="aspect-keeper" style={{marginBottom: '60px'}}>
               <iframe src="https://www.youtube.com/embed/wuWsyD-bAOk" allowFullScreen="allowFullScreen" frameBorder="0"></iframe>
             </div>
+            <h4>Conclusion</h4>
+            <p>This was my first time designing and developing for a voice interface, and within 36 hours was a very small time constraint to learn best practices and also the code for Alexa. I learned that developing for Alexa's voice can kind of suck due to the limitations imposed upon you by Amazon regarding voice recognition, and that it's difficult to balance how much a device talks to you versus how much you talk to it.</p>
           </span>
         }
       />

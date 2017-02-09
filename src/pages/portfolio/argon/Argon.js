@@ -122,6 +122,8 @@ class Argon extends Component {
                 <p className="caption">What you actually see from the iPhone itself</p>
               </div>
             </Slider>
+            <h4>Conclusion</h4>
+            <p>Overall from this project I came to understand that AR on the web is still very much in its infancy, but that there are not very high barriers to entry from both the developer and the consumer side, which is promising for the future of mobile web augmented reality. I also learned a lot aout the history and how AR got to where it is today.</p>
           </span>
         }
       />

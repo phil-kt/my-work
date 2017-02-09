@@ -88,6 +88,10 @@ class Graffiti extends Component {
                 </div>
               </Slider>
             </p>
+            <h4>Conclusion</h4>
+            <p>
+              Making graffiti taught me that AR on an iPhone isn't that tricky, all you do is simply overlay a screen over a camera view and bam, augmented reality. Interacting with that reality is much trickier though, and I had a tough time figuring out how to get the drawing working properly on the app. However I'm happy with the end product and also am not ashamed of being so inspired by Snapchat's design.
+            </p>
           </span>
         }
       />

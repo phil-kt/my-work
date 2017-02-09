@@ -3,9 +3,13 @@
 }
 
 .Untappd .header {
-    background-image: url('../../../media/untappd/beer.jpg');
+    background-image: url('../../../media/untappd/beer.png');
 }
 
 .Untappd .surveys {
     background-color: #1F1E1E;
+}
+
+.Untappd .stats {
+    max-height: 380px;
 }

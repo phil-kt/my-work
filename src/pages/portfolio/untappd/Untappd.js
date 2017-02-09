@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Slider from 'react-slick';
 import './Untappd.css';
 
 import ProjectPage from '../../../components/project-page/ProjectPage';
@@ -7,10 +8,30 @@ import usage from '../../../media/untappd/survey/usage.png';
 import friends from '../../../media/untappd/survey/friends.png';
 import venues from '../../../media/untappd/survey/venues.png';
 import explore from '../../../media/untappd/survey/explore.png';
+import concept from '../../../media/untappd/lofi/lofi_concept.png';
+import ia from '../../../media/untappd/lofi/lofi_ia.png';
+import current_untappd from '../../../media/untappd/designs/current_untappd.png';
+import new_untappd from '../../../media/untappd/designs/new_untappd.png';
+import home_comp from '../../../media/untappd/designs/home_vs.png';
+import cards from '../../../media/untappd/designs/cards.png';
+import explore_comp from '../../../media/untappd/designs/explore_vs.png'
+import messages from '../../../media/untappd/designs/messages.png';
+import profile_comp from '../../../media/untappd/designs/profile_vs.png';
 
 class Untappd extends Component {
 
   render() {
+
+    let sliderSettings = {
+      dots: true,
+      draggable: true,
+      accessibility: true,
+      lazyLoad: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    };
 
     return (
       <ProjectPage
@@ -40,27 +61,27 @@ class Untappd extends Component {
             <p>
               Out of all the users surveyed, here's the breakdown of how they primarily use the app:
             </p>
-            <img src={usage} alt="usage statistics" />
+            <img className="stats" src={usage} alt="usage statistics" />
 
             <p>As is evident, most (87%) users of Untappd use the app as a personal beer log. However, one of the interesting insights is that double the people actually use the app to check a beer's rating than check what their friends are drinking (8% versus 4%). Interesting for an app that is supposed to be a social network.</p>
 
             <p>
               To further reinforce that point of a lack of social interaction, here's the responses for the question <b>how many friends do you have on Untappd?</b>
             </p>
-            <img src={friends} alt="friends on untappd" />
+            <img className="stats" src={friends} alt="friends on untappd" />
             <p>As you can see, most users of Untappd only have up to 30 friends on Untappd (89%). In fact, 60% of the people surveyed only have around 1 to 10 friends! This is an astoundingly small number for a social networking app, and reinforces the idea that most people on Untappd keep to themselves.</p>
 
             <p>
               Although users don't seem to be all that interested in interacting with each other, <b>about half of them are following venues:</b>
             </p>
-            <img src={venues} alt="following venues"/>
+            <img className="stats" src={venues} alt="following venues"/>
             <p>
               With this we see an interesting trend, that although users don't really want to interact with each other all that much, they are interested in interacting with a venue, which can include bars, breweries, restaurants, and beer stores. Most users said they were doing so in order to get updates from their beer list so they knew when they should go check out a new beer, either from a local place or from a brewery. Untappd users are very keen on keeping up to date on beers and tracking them, other survey questions revealed that of the 44% of users who add beers to their wishlist on Untappd, 73% are doing so to keep reminders on beers they'd like to try. Untappd users are also focused on badges, which they receive from drinking certain beers or performing certain actions in the app, one user explicitly said they added a beer to their wishlist "for the badge."
             </p>
             <p>
               Finally, my last set of questions involved the Explore tab of Untappd, due to the relative popularity the Explore tab in Instagram has been enjoying and driving discovery of users, I was wondering how Untappd's fared:
             </p>
-            <img src={explore} alt="explore results"/>
+            <img className="stats" src={explore} alt="explore results"/>
 
             <p>
               In two words: not well. 75% of users rarely or never use it, and <b>out of all surveyed 22% did not even know the Explore tab existed. </b> This can explain why a lot of users do not have friends or do not socially interact with others all that much, most users aren't exploring the content on Untappd beyond what they or their friends create. Untappd boasts 5 million users according to Wikipedia, and most of that content is going undiscovered.
@@ -100,10 +121,72 @@ class Untappd extends Component {
             <p>
               These insights provided a great guide into what to incorporate on my redesign of Untappd to make it more social and to help foster a community on Untappd.
             </p>
-            <h4>Redesign - In Progress</h4>
+            <h4>Brainstorming</h4>
             <p>
-              I'm currently drawing wireframes and pushing pixels to devise a redesign Untappd to show to the world. Check back here soon!
+              I began by drawing out some concepts onto my sketchbook based on the insights I gained. One thing I knew for sure was that I wanted to <b>redesign the Explore tab</b>, in order to foster more community involvement. I also wanted to <b>introduce a new Messaging feature to the app</b> to encourage users to talk to one another and foster dialogue about beer.
             </p>
+            <Slider {...sliderSettings}>
+              <div>
+                <img src={concept} alt="drawing out concepts"/>
+                <p className="caption">Sketches on how to design the four new tabs</p>
+              </div>
+              <div>
+                <img src={ia} alt="info arch"/>
+                <p className="caption">Some notes from the information architecture breakdown</p>
+              </div>
+            </Slider>
+            <p>I eventually settled on reducing the number of tabs to four and making those tabs Home, Explore, Messasing, and Profile. I eliminated the Friends tab, as a user rarely looks at their friends list and it pretty much existed solely to accept friend request. Users can instead interact with friends from the new Messages tab, and accept friend requests from their notifications. I also drew up some sketches of how a new Explore tab might look, and refined it further while designing in Sketch. I also went through several key tabs and made note of the information architecture, to get an idea of what information the app would still need to convey amongst the four tabs and how the information hierarchy is currently organized.</p>
+            <h4>Designs</h4>
+            <p>
+             So before I go into detail I imagine you'd like to see what the current version of Untappd looks like:
+            </p>
+            <img src={current_untappd} alt="the current home screen of untappd"/>
+            <p className="caption">A look at the current tabs of Untappd</p>
+            <p>
+              And here's what I came up with:
+            </p>
+            <img src={new_untappd} alt="the new designs"/>
+            <p className="caption">My version of Untappd</p>
+            <p>
+              As you can see, I decreased the number of tabs from 5 to 4, and also introduced the Messages tab mentioned before. I cut the Friends and Notifications tabs, and moved that information to different locations (Notifications to the status bar, Friends to your profile). I also introduced a floating action button to make it easier and more intuitive to check in, as the current design requires you to hit the search button in the corner to initiate a check-in, when it really should be obvious and easily accessible, since it is the primary focus for people using the app. Now let's break down screen by screen the design decisions:
+            </p>
+            <b>Home</b>
+            <p>
+            <img src={home_comp} alt="the two home designs"/>
+            </p>
+            <p>
+              As you can see, I kept most of the elements of the home screen the same. I simply moved around some visual elements, but all of the information is still present one way or another. The most glaring omission is the removal of the "Friends, Nearby, Groups" tab. I moved the content of Nearby to the Explore tab, since I felt it more in the spirit of exploring what is going on around you, and removed the Groups tab as most users in the research did not even know it existed, or what it did.
+            </p>
+            <p>Also for the home screen, the use of cards is important as they contain a single post and have a variety of posts. I decided to eliminate the margins on the cards as it felt like it was constraining the app vertically with no real benefit, and allowed more space on the card. I darkened the text on reviews, as your friends comments on a beer are really the most important part of a post, and moved the number of toasts and comment information into the card instead of having it hover underneath. I also added a star in the right corner to wishlist a beer that a friend commented on so you can easily keep tabs on beers you'd like to try.
+            </p>
+            <img src={cards} alt="all the card states"/>
+            <p className="caption">All possible card states</p>
+            <b>Explore</b>
+            <p>
+            <img src={explore_comp} alt="explore comparisons"/>
+            </p>
+            <p>
+              The Explore tab is the screen with the most work done to it. Instead of having a long list of clickable items, I instead choose to show some items in the list, and give the user the option to see more. I also introduced a similar users category so that you can find people who like the same beers you do outside of your friend circle and start using Untappd more socially. Also I decided to introduce a bottom tab to allow you to toggle between nearby and global instead of having them be two different list items, simply tap to see the global popular beers or people.
+            </p>
+            <b>Messages</b>
+            <p>
+              <img src={messages} alt="messages screen"/>
+            </p>
+            <p>
+              The Messages screen is obviously an original invention, and serves to make it so you can interact with your friends on Untappd in a more meaningful manner that just comments. Introduce yourself to fellow beer fans nationwide, organize beer trades, set up a bar crawl, all of these are potential applications of talking with other Untappd fans within the app. In addition you can from a glance see some of your friends who have recently had a drink, and message them about it or click the beer to see its details. This helps foster discussion between beer fans and creates a sense of community, which Untappd lacks.
+            </p>
+            <b>Profile</b>
+            <p>
+              <img src={profile_comp} alt="profile comparison"/>
+            </p>
+            <p>
+              For this screen I aimed to reduce the list on the screen to more compact and visual representations. Beer list and badges are already accessible by clicking the number, so no need for them to be doubly listed, and subscriptions can be folded into the beer and venue screen themselves instead of having a dedicated list item. Users can also see the number of friends on their profile to reinforce Untappd's role as a social network, but not overtly so as the main focus of the app is still beer so those stats feature most prominently.
+            </p>
+            <p>
+              Below the fold on the current app design is the list of your check-ins, so I decided to move that up and condense the information in the profile card. Now a user can simply tab between their check-ins, photos, and what they've toasted to get a good sense of their or others' activity.
+            </p>
+            <h4>Prototype</h4>
+            <p>Coming soon, a high fidelity prototype with more than just these screens!</p>
           </span>
         }
       />

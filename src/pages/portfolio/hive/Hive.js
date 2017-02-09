@@ -186,7 +186,7 @@ class Hive extends Component {
 
             <h4>The Tree</h4>
             <p>
-            After feedback from our peers and discussion amongst ourselves, we decided to go with solution 3, the tree. The reason being that although solution 1 was conventional and certainly would have worked, the tree grants the benefit of knowing which floor to go to immediately instead of having to climb past every floor to see that statistics for the floor. The other reason being we wanted a solution with a spirit of art in it. Solution 2 was abandoned as it featured no computer in its design, and this being a human-computer interaction course we were forced to leave it behind.
+            After feedback from our peers and discussion amongst ourselves, we decided to go with solution 3, the tree. The reason being that although solution 1 was conventional and certainly would have worked, the tree grants the benefit of knowing which floor to go to immediately instead of having to climb past every floor to see that statistics for the floor. The other reason being we wanted a solution with a spirit of art in it. Solution 2 was abandoned as it featured no computer in its design, and this being a human-computer interaction course our professor told us no, haha.
             </p>
 
             <p>

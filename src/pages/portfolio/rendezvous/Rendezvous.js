@@ -86,6 +86,9 @@ class Rendezvous extends Component {
                </div>
              </Slider>
             </p>
+
+            <h4>Conclusion</h4>
+            <p>Working on this project taught me that LBTE, or iBeacons for Apple, are still very limited in what information it can transmit and that the documentation is very convoluted. Much of our hackathon time was spent working with Apple engineers who were just as confused as we were on some things we tried to implement from the documentation. Overall it was one of my first successful hacks though and I'm pretty proud of it.</p>
           </span>
         }
 
