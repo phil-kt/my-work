@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Collapse from 'react-collapse';
 import './Medi.css';
 
 import PortfolioPage from '../../../components/project-page/ProjectPage';
@@ -33,6 +34,50 @@ import poster from '../../../media/medi/physical/poster.png';
 import wireframe from '../../../media/medi/hifi/wireframe.png';
 
 class Medi extends Component {
+
+  state = {
+    scenarioDetails: false,
+    physicalDetails: false,
+    posterDetails: false,
+    feedbackDetails: false,
+    wireframeDetails: false
+  }
+
+  collapseScenario = () => {
+    this.setState({
+      scenarioDetails: !this.state.scenarioDetails,
+    })
+  }
+
+  collapsePhysical = () => {
+    this.setState({
+      physicalDetails: !this.state.physicalDetails
+    })
+  }
+
+  collapsePoster = () => {
+    this.setState({
+      posterDetails: !this.state.posterDetails
+    })
+  }
+
+  collapseFeedback = () => {
+    this.setState({
+      feedbackDetails: !this.state.feedbackDetails
+    })
+  }
+
+  collapseFeedback = () => {
+    this.setState({
+      feedbackDetails: !this.state.feedbackDetails
+    })
+  }
+
+  collapseWireframe = () => {
+    this.setState({
+      wireframeDetails: !this.state.wireframeDetails
+    })
+  }
 
   render() {
 
@@ -98,48 +143,56 @@ class Medi extends Component {
             <p className="starting-paragraph">
               For the development of the mobile app, our professor assigned us to write a scenario/persona for the average caretaker who would find this app useful and better than the current method they are using. Although this is nowhere as good as user research, for the purpose of this class it made sense as the professor already had the app and its general features in mind.
             </p>
-            <h4>Scenario</h4>
-            <p className="starting-paragraph">Thomas is a middle-aged businessman taking care of his older father, Harry, who is now living in his family’s home. Harry is about 80 years old and has to take several pain medications for this arthritis, and has recently been diagnosed with depression due to his lack of ability from old age. However, Thomas has many clients across the country requiring him to travel often and not be home to check on his father.
-            </p>
-            <p>
-              For his depression, Harry has been prescribed Zoloft, and Thomas is very concerned that Harry takes it properly to keep his father in good spirits, along with his regular pain medications. To help alleviate his fear, Thomas has bought a new internet connected pill dispenser which allows Thomas to check on Harry’s medicine schedule from wherever he may be. The device has segmented areas for different pills, and allows Thomas to set individual times for each pill to be dispensed from a companion iOS app.
-            </p>
-            <p>
-              The companion app pairs with the pill dispenser through NFC, so that it can be used by other members of Harry’s family to check in on him. The app itself shows a daily schedule of what pills Harry needs to take for the day, <a className="figure figure-1" href="#">(Figure 1)</a> and can provide detailed information about any medication, such as what its was prescribed for, what its possible side effects are, and when the next refill is required, with a simple tap. <a className="figure figure-2" href="#">(Figure 2)</a> Harry can also choose to refill in advance if he so feels from the screen, which will contact the pharmacy on file to schedule a refill for him to pick up.
-            </p>
-            <p>
-              Thomas can also edit information about the medicine, including its dosages and reminder times. He can set different priorities on the pills, so that Thomas can be notified immediately if Harry does not take his Xanax, but is less concerned about whether Harry takes all of his pain medications or not <a className="figure figure-3" href="#">(Figure 3)</a>, as well as see a weekly and monthly breakdown of how vigilant his father is at taking his medications.
-            </p>
-            <p>
-              In case Harry does miss a medication, Thomas will get a push notification with information about what medication his father didn’t take, and can choose to take action about it, at which point he will see detailed info about the medicine his father missed, and given the option to call Harry, their doctor, or 911 depending on the severity of the situation. <a className="figure figure-4" href="#">(Figure 4)</a>
-            </p>
-            <p>
-              Thomas is very happy with his new app which allows him to monitor his father’s health while on the go, and is excited to see what other features this dispenser and app combo have to ensure his father continues to live a healthy life. Without this app, Thomas would have no way to consistently and easily keep tabs on his father, and would not be able to ensure that his father is taking the medicine he needs to stay healthy. His father also gets the benefits of consistent reminders, and peace of mind knowing that the machine handles the task of tracking medication for him.
-            </p>
-            <h4>Concept Drawings</h4>
-            <p>
-              <Slider {...sliderSettings}>
-                <div>
-                  <img className="concepts" src={figure_1} alt="schedule"/>
-                  <p className="caption">Figure 1: A schedule of the day</p>
-                </div>
-                <div>
-                  <img className="concepts" src={figure_2} alt="detail view"/>
-                  <p className="caption">Figure 2: A detail of the medication</p>
-                </div>
-                <div>
-                  <img className="concepts" src={figure_3} alt="editing view"/>
-                  <p className="caption">Figure 3: Editing a medication's details</p>
-                </div>
-                <div>
-                  <img className="concepts" src={figure_4} alt="missed medication"/>
-                  <p className="caption">Figure 4: Push notification for a missed medication</p>
-                </div>
-              </Slider>
-            </p>
+
+            <div className="button collapse" onClick={this.collapseScenario}>
+              <a>{this.state.scenarioDetails ? "Hide Scenario" : "Show Scenario"}</a>
+            </div>
+            <Collapse isOpened={this.state.scenarioDetails} keepCollapsedContent={true}>
+              <div>
+                <h4>Scenario</h4>
+                <p className="starting-paragraph">Thomas is a middle-aged businessman taking care of his older father, Harry, who is now living in his family’s home. Harry is about 80 years old and has to take several pain medications for this arthritis, and has recently been diagnosed with depression due to his lack of ability from old age. However, Thomas has many clients across the country requiring him to travel often and not be home to check on his father.
+                </p>
+                <p>
+                  For his depression, Harry has been prescribed Zoloft, and Thomas is very concerned that Harry takes it properly to keep his father in good spirits, along with his regular pain medications. To help alleviate his fear, Thomas has bought a new internet connected pill dispenser which allows Thomas to check on Harry’s medicine schedule from wherever he may be. The device has segmented areas for different pills, and allows Thomas to set individual times for each pill to be dispensed from a companion iOS app.
+                </p>
+                <p>
+                  The companion app pairs with the pill dispenser through NFC, so that it can be used by other members of Harry’s family to check in on him. The app itself shows a daily schedule of what pills Harry needs to take for the day, <a className="figure figure-1" href="#">(Figure 1)</a> and can provide detailed information about any medication, such as what its was prescribed for, what its possible side effects are, and when the next refill is required, with a simple tap. <a className="figure figure-2" href="#">(Figure 2)</a> Harry can also choose to refill in advance if he so feels from the screen, which will contact the pharmacy on file to schedule a refill for him to pick up.
+                </p>
+                <p>
+                  Thomas can also edit information about the medicine, including its dosages and reminder times. He can set different priorities on the pills, so that Thomas can be notified immediately if Harry does not take his Xanax, but is less concerned about whether Harry takes all of his pain medications or not <a className="figure figure-3" href="#">(Figure 3)</a>, as well as see a weekly and monthly breakdown of how vigilant his father is at taking his medications.
+                </p>
+                <p>
+                  In case Harry does miss a medication, Thomas will get a push notification with information about what medication his father didn’t take, and can choose to take action about it, at which point he will see detailed info about the medicine his father missed, and given the option to call Harry, their doctor, or 911 depending on the severity of the situation. <a className="figure figure-4" href="#">(Figure 4)</a>
+                </p>
+                <p>
+                  Thomas is very happy with his new app which allows him to monitor his father’s health while on the go, and is excited to see what other features this dispenser and app combo have to ensure his father continues to live a healthy life. Without this app, Thomas would have no way to consistently and easily keep tabs on his father, and would not be able to ensure that his father is taking the medicine he needs to stay healthy. His father also gets the benefits of consistent reminders, and peace of mind knowing that the machine handles the task of tracking medication for him.
+                </p>
+                <h4>Concept Drawings</h4>
+                <p>
+                  <Slider {...sliderSettings}>
+                    <div>
+                      <img className="concepts" src={figure_1} alt="schedule"/>
+                      <p className="caption">Figure 1: A schedule of the day</p>
+                    </div>
+                    <div>
+                      <img className="concepts" src={figure_2} alt="detail view"/>
+                      <p className="caption">Figure 2: A detail of the medication</p>
+                    </div>
+                    <div>
+                      <img className="concepts" src={figure_3} alt="editing view"/>
+                      <p className="caption">Figure 3: Editing a medication's details</p>
+                    </div>
+                    <div>
+                      <img className="concepts" src={figure_4} alt="missed medication"/>
+                      <p className="caption">Figure 4: Push notification for a missed medication</p>
+                    </div>
+                  </Slider>
+                </p>
+              </div>
+            </Collapse>
             <h4>Low Fidelity Prototypes</h4>
             <p className="starting-paragraph">
-              Using the concept drawings I drew up some low fidelity prototypes, fleshing out the details a bit more.
+              Using the concept drawings for the scenario I drew up some low fidelity prototypes, fleshing out the details a bit more.
             </p>
             <Slider {...sliderSettings}>
               <div>
@@ -213,55 +266,69 @@ class Medi extends Component {
                 <li>my mother, a licensed physician who is currently practicing in a private clinic and could provide insight from a medical perspective</li>
                 <li>a fellow MSHCI graduate student who could find simple usability issues and heuristically evaluate it</li>
               </ol>
+            <div className="button collapse" onClick={this.collapseFeedback}>
+              <a>{this.state.feedbackDetails ? "Hide Feedback" : "Show Feedback"}</a>
+            </div>
+            <Collapse isOpened={this.state.feedbackDetails} keepCollapsedContent={true}>
+            <div>
+              <p>
+                My mother provided some great feedback (as mothers tend to do) from a doctor's point of view:
+              </p>
+               <ul className="list">
+                  <li>"Time of medication should be simpler, either 9am or 9:30am"</li>
+                  <li>“Priorities classification is not useful”</li>
+                  <li>“No one calls the doctor for one missed dose”</li>
+                  <li>Appreciated how medication details show the side effects, and have refill button available</li>
+                  <li>Likes the ability to see purpose and potential side effects of a medication</li>
+                  <li>Maybe only show pills he misses on the calendar, otherwise can get busy</li>
+                  <li>Would like to be able to make memos on the calendar on patient’s condition to discuss with doctor next visit</li>
+                </ul>
+              <p>
+                As for my fellow classmate, choice feedback included:
+              </p>
+              <ul className="list">
+                  <li>Priorities are a bit confusing</li>
+                  <li>It was hard to figure out how to call my patient</li>
+                  <li>Calendar was intuitive to see days he missed</li>
+                  <li>Intuitive and makes clear use of iOS design guidelines</li>
+                </ul>
+            </div>
+            </Collapse>
             <p>
-              My mother provided some great feedback (as mothers tend to do) from a doctor's point of view:
-            </p>
-             <ul className="list">
-                <li>"Time of medication should be simpler, either 9am or 9:30am"</li>
-                <li>“Priorities classification is not useful”</li>
-                <li>“No one calls the doctor for one missed dose”</li>
-                <li>Appreciated how medication details show the side effects, and have refill button available</li>
-                <li>Likes the ability to see purpose and potential side effects of a medication</li>
-                <li>Maybe only show pills he misses on the calendar, otherwise can get busy</li>
-                <li>Would like to be able to make memos on the calendar on patient’s condition to discuss with doctor next visit</li>
-              </ul>
-            <p>
-              As for my fellow classmate, choice feedback included:
-            </p>
-            <ul className="list">
-                <li>Priorities are a bit confusing</li>
-                <li>It was hard to figure out how to call my patient</li>
-                <li>Calendar was intuitive to see days he missed</li>
-                <li>Intuitive and makes clear use of iOS design guidelines</li>
-              </ul>
-            <p>
-              After this feedback it is clear that I should incorporate a proper onboarding process to describe what exactly the priorities mean. In further user testing if it proves too confusing, perhaps remove the user feature altogether. I should also emphasize how this app is catered toward caretakers not patients, and perhaps change the wording of “Profile” to “Patient”. As well as add a memo feature, and also change the calendar display.
+              After  feedback it became clear that I should incorporate a proper onboarding process to describe what exactly the priorities mean. In further user testing if it proves too confusing, perhaps remove the user feature altogether. I should also emphasize how this app is catered toward caretakers not patients, and perhaps change the wording of “Profile” to “Patient”. As well as add a memo feature, and also change the calendar display.
             </p>
 
             <h4>Physical Prototype</h4>
             <p>The professor also has a history of 3d prototyping in the industry, so he had us design a physical artifact that the patient could wear to remind them of prescription times. This was my first foray into industrial design, so working with Autodesk Fusion 360 was pretty fun, and getting to 3D print our design was awesome to say the least. </p>
 
-            <Slider {...sliderSettings}>
-               <div>
-                <img src={brainstorming} alt="notes of designs" className="portrait"/>
-                <p className="caption">
-                  Brainstorming the physical device and its screens
-                </p>
-               </div>
-              <div>
-                <img src={moodboard} alt="moodboard" className="portrait"/>
-                <p className="caption">
-                  A moodboard showing inspirations and guiding principles
-                </p>
-               </div>
-            </Slider>
+            <div className="button collapse" onClick={this.collapsePhysical}>
+              <a>{this.state.physicalDetails ? "Hide Process" : "Show Process"}</a>
+            </div>
+            <Collapse isOpened={this.state.physicalDetails} keepCollapsedContent={true}>
+            <div>
+              <Slider {...sliderSettings}>
+                 <div>
+                  <img src={brainstorming} alt="notes of designs" className="portrait"/>
+                  <p className="caption">
+                    Brainstorming the physical device and its screens
+                  </p>
+                 </div>
+                <div>
+                  <img src={moodboard} alt="moodboard" className="portrait"/>
+                  <p className="caption">
+                    A moodboard showing inspirations and guiding principles
+                  </p>
+                 </div>
+              </Slider>
 
-            <p>For my design, I decided to make my physical design a watch, as it is ubiquitous, its form is familiar to the older generation and they are also more likely to wear a watch. It is also less cumbersome, and has the advantage of being able to give subtle vibrations as a notification system. </p>
+              <p>For my design, I decided to make my physical design a watch, as it is ubiquitous, its form is familiar to the older generation and they are also more likely to wear a watch. It is also less cumbersome, and has the advantage of being able to give subtle vibrations as a notification system. </p>
 
-            <img src={autodesk} alt="designing in fusion"/>
-            <p className="caption">
-              The final design in Autodesk Fusion 360
-            </p>
+              <img src={autodesk} alt="designing in fusion"/>
+              <p className="caption">
+                The final design in Autodesk Fusion 360
+              </p>
+            </div>
+            </Collapse>
             <p>The watch is a simple LCD screen watch, with two buttons on the side to interact with the device. (Our professor forbade us from using touch screens, so no touch interactions!) Too many buttons would only serve to confuse the user on functions, and on screen cues help guide the user on what to press. The buttons can also be twisted, to allow scrolling, and have different colors. The band can also be swapped out, for the fashion conscious.</p>
 
             <img src={watch} alt="the 3d printed watch"/>
@@ -275,10 +342,19 @@ class Medi extends Component {
 
             <p>On its standard state, the watch simply shows the time and when your next dose is, as well as what you've taken so far using the color coded system. When it's time for a dosage, the watch notifies the user, and requires the patient to dismiss the screen as a form of confirmation.</p>
 
-            <img src={poster} alt="medi poster pitch" className="portrait" />
-            <p className="caption">A poster created to pitch medi watch</p>
+            <div className="button collapse" onClick={this.collapsePoster}>
+              <a>{this.state.posterDetails ? "Hide Poster" : "Show Poster"}</a>
+            </div>
+            <Collapse isOpened={this.state.posterDetails} keepCollapsedContent={true}>
+            <div>
+              <p>
+              <img src={poster} alt="medi poster pitch" className="portrait" />
+              </p>
+              <p className="caption">A poster created to pitch medi watch</p>
 
-            <p>Overall the industrial design part was the most fun part of the project for me, as I was introduced to new tools and design constraints by working in a physical space. I also think I made a pretty slick lookin' watch.</p>
+              <p>Overall the industrial design part was the most fun part of the project for me, as I was introduced to new tools and design constraints by working in a physical space. I also think I made a pretty slick lookin' watch.</p>
+            </div>
+            </Collapse>
 
             <h4>High Fidelity Prototype</h4>
             <p>For the final leg of this project, we had to create a high fidelity prototype of the interface that would be on the pill dispensing machine. The dimensions were 480 by 320, and the design of the device itself was given to us, we just had to make the interface. </p>
@@ -293,11 +369,20 @@ class Medi extends Component {
                 <li>Standby or day to day operation</li>
               </ol>
 
-            <img src={wireframe} alt="wireframe of device" className="no-height-limit" />
+            <div className="button collapse" onClick={this.collapseWireframe}>
+              <a>{this.state.wireframeDetails ? "Hide Wireframe" : "Show Wireframe"}</a>
+            </div>
+            <Collapse isOpened={this.state.wireframeDetails} keepCollapsedContent={true}>
+              <div>
+                <p>
+                  <img src={wireframe} alt="wireframe of device" className="no-height-limit" />
+                </p>
 
-            <p>
-              With these features in mind, it was relatively quick to create a wireframe of the device as I had standard assets across all three devices. Once these wireframes were reviewed by my professor, I then created an interactable prototype in Framer.js, fleshing out the interactions.
-            </p>
+                <p>
+                  With these features in mind, it was relatively quick to create a wireframe of the device as I had standard assets across all three devices. Once these wireframes were reviewed by my professor, I then created an interactable prototype in Framer.js, fleshing out the interactions.
+                </p>
+              </div>
+            </Collapse>
 
             <iframe className="device" src="https://framer.cloud/WQdrl/" frameBorder="0" allowFullScreen="allowFullScreen"/>
             <p className="caption">

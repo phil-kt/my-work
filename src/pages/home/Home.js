@@ -12,6 +12,7 @@ import untappd from '../../media/social/untappd.svg';
 import linkedin from '../../media/social/linkedin.svg';
 import instagram from '../../media/social/instagram.svg';
 import mal from '../../media/social/MAL.svg';
+import untappd_phone from '../../media/home/untappd-phone.png';
 import tree from '../../media/home/tree.png';
 import graffiti from '../../media/home/graffiti-iphone.png';
 import medi from '../../media/home/medi-iphone.png';
@@ -85,8 +86,9 @@ class Home extends Component {
         <Project title="Untappd Redesign"
                  description="An in-progress case study and redesign of the popular beer app Untappd"
                  link="/untappd"
-                 image={untappd}
-                 tags="UX Research, In Progress"
+                 image={untappd_phone}
+                 iPhone={true}
+                 tags="UX Research, UI Design"
         />
 
         <Project title="The Hive"

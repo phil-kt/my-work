@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
+import Collapse from 'react-collapse';
 import './Untappd.css';
 
 import ProjectPage from '../../../components/project-page/ProjectPage';
@@ -19,6 +20,24 @@ import messages from '../../../media/untappd/designs/messages.png';
 import profile_comp from '../../../media/untappd/designs/profile_vs.png';
 
 class Untappd extends Component {
+
+  state = {
+    surveyDetails: false,
+    mockupDetails: false
+  };
+
+  collapseSurvey = () => {
+    this.setState({
+      surveyDetails: !this.state.surveyDetails
+    })
+  }
+
+  collapseMocks = () => {
+    this.setState({
+      mockupDetails: !this.state.mockupDetails
+    })
+  };
+
 
   render() {
 
@@ -58,8 +77,25 @@ class Untappd extends Component {
             <p>
               All of my survey was multiple choice so that I would not waste users time and could hopefully convince more of them to finish. I focused on asking about whether people used certain parts of the app I did leave certain options open to write in answers, as well as left a general feedback section for those who wanted it. (44 out of the 257 did!)
             </p>
+            <p className="list">As a brief summary of the data gained from this survey:</p>
+            <ul>
+              <li>74% of users use the app at least once a week</li>
+              <li>87% use it primarily as a beer log</li>
+              <li>More people (8%) use it to check beer ratings than check up on their friends (4%)</li>
+              <li>89% only have up to 30 friends, 60% between 1-10</li>
+              <li>48% of users follow venues, and mostly (78%) for beer menu updates</li>
+              <li>44% of users also add beers to their wishlist, to keep reminders on beers to try (73%)</li>
+              <li>One user did it “for the badge”</li>
+              <li>1% use the explore tab always, 75% rarely or never use it, 22% were even unaware it existed!</li>
+              <li>Those who do use it, 42% are looking for nearby venues and their beers, or other beer related things such as nearby beers or breweries</li>
+            </ul>
+             <div className="button collapse" onClick={this.collapseSurvey}>
+              <a>{this.state.surveyDetails ? "Hide Data" : "Show Data"}</a>
+            </div>
+            <Collapse isOpened={this.state.surveyDetails} keepCollapsedContent={true}>
+            <div>
             <p>
-              Out of all the users surveyed, here's the breakdown of how they primarily use the app:
+              Out of all the users surveyed, here's the stats of how they primarily use the app:
             </p>
             <img className="stats" src={usage} alt="usage statistics" />
 
@@ -86,19 +122,8 @@ class Untappd extends Component {
             <p>
               In two words: not well. 75% of users rarely or never use it, and <b>out of all surveyed 22% did not even know the Explore tab existed. </b> This can explain why a lot of users do not have friends or do not socially interact with others all that much, most users aren't exploring the content on Untappd beyond what they or their friends create. Untappd boasts 5 million users according to Wikipedia, and most of that content is going undiscovered.
             </p>
-
-            <p className="list">To summarize the data gained from this survey:</p>
-            <ul>
-              <li>74% of users use the app at least once a week</li>
-              <li>87% use it primarily as a beer log</li>
-              <li>More people (8%) use it to check beer ratings than check up on their friends (4%)</li>
-              <li>89% only have up to 30 friends, 60% between 1-10</li>
-              <li>48% of users follow venues, and mostly (78%) for beer menu updates</li>
-              <li>44% of users also add beers to their wishlist, to keep reminders on beers to try (73%)</li>
-              <li>One user did it “for the badge”</li>
-              <li>1% use the explore tab always, 75% rarely or never use it, 22% were even unaware it existed!</li>
-              <li>Those who do use it, 42% are looking for nearby venues and their beers, or other beer related things such as nearby beers or breweries</li>
-            </ul>
+            </div>
+            </Collapse>
 
             <h4>Insights</h4>
             <p>Based on these results, I concluded the following about Untappd and its users:</p>
@@ -135,7 +160,7 @@ class Untappd extends Component {
                 <p className="caption">Some notes from the information architecture breakdown</p>
               </div>
             </Slider>
-            <p>I eventually settled on reducing the number of tabs to four and making those tabs Home, Explore, Messasing, and Profile. I eliminated the Friends tab, as a user rarely looks at their friends list and it pretty much existed solely to accept friend request. Users can instead interact with friends from the new Messages tab, and accept friend requests from their notifications. I also drew up some sketches of how a new Explore tab might look, and refined it further while designing in Sketch. I also went through several key tabs and made note of the information architecture, to get an idea of what information the app would still need to convey amongst the four tabs and how the information hierarchy is currently organized.</p>
+            <p>I eventually settled on reducing the number of tabs to four and making those tabs Home, Explore, Messaging, and Profile. I eliminated the Friends tab, as a user rarely looks at their friends list and it pretty much existed solely to accept friend request. Users can instead interact with friends from the new Messages tab, and accept friend requests from their notifications. I also drew up some sketches of how a new Explore tab might look, and refined it further while designing in Sketch. I also went through several key tabs and made note of the information architecture, to get an idea of what information the app would still need to convey amongst the four tabs and how the information hierarchy is currently organized.</p>
             <h4>Designs</h4>
             <p>
              So before I go into detail I imagine you'd like to see what the current version of Untappd looks like:
@@ -148,14 +173,19 @@ class Untappd extends Component {
             <img src={new_untappd} alt="the new designs"/>
             <p className="caption">My version of Untappd</p>
             <p>
-              As you can see, I decreased the number of tabs from 5 to 4, and also introduced the Messages tab mentioned before. I cut the Friends and Notifications tabs, and moved that information to different locations (Notifications to the status bar, Friends to your profile). I also introduced a floating action button to make it easier and more intuitive to check in, as the current design requires you to hit the search button in the corner to initiate a check-in, when it really should be obvious and easily accessible, since it is the primary focus for people using the app. Now let's break down screen by screen the design decisions:
+              As you can see, I decreased the number of tabs from 5 to 4, and also introduced the Messages tab mentioned before. I cut the Friends and Notifications tabs, and moved that information to different locations (Notifications to the status bar, Friends to your profile). I also introduced a floating action button to make it easier and more intuitive to check in, as the current design requires you to hit the search button in the corner to initiate a check-in, when it really should be obvious and easily accessible, since it is the primary focus for people using the app. Now let's go through screen by screen the design decisions:
             </p>
+            <div className="button collapse" onClick={this.collapseMocks}>
+              <a>{this.state.mockupDetails ? "Hide Breakdown" : "Show Breakdown"}</a>
+            </div>
+            <Collapse isOpened={this.state.mockupDetails} keepCollapsedContent={true}>
+            <div>
             <b>Home</b>
             <p>
             <img src={home_comp} alt="the two home designs"/>
             </p>
             <p>
-              As you can see, I kept most of the elements of the home screen the same. I simply moved around some visual elements, but all of the information is still present one way or another. The most glaring omission is the removal of the "Friends, Nearby, Groups" tab. I moved the content of Nearby to the Explore tab, since I felt it more in the spirit of exploring what is going on around you, and removed the Groups tab as most users in the research did not even know it existed, or what it did.
+              I kept most of the elements of the home screen the same. I simply moved around some visual elements, but all of the information is still present one way or another. The most glaring omission is the removal of the "Friends, Nearby, Groups" tab. I moved the content of Nearby to the Explore tab, since I felt it more in the spirit of exploring what is going on around you, and removed the Groups tab as most users in the research did not even know it existed, or what it did.
             </p>
             <p>Also for the home screen, the use of cards is important as they contain a single post and have a variety of posts. I decided to eliminate the margins on the cards as it felt like it was constraining the app vertically with no real benefit, and allowed more space on the card. I darkened the text on reviews, as your friends comments on a beer are really the most important part of a post, and moved the number of toasts and comment information into the card instead of having it hover underneath. I also added a star in the right corner to wishlist a beer that a friend commented on so you can easily keep tabs on beers you'd like to try.
             </p>
@@ -185,6 +215,8 @@ class Untappd extends Component {
             <p>
               Below the fold on the current app design is the list of your check-ins, so I decided to move that up and condense the information in the profile card. Now a user can simply tab between their check-ins, photos, and what they've toasted to get a good sense of their or others' activity.
             </p>
+            </div>
+            </Collapse>
             <h4>Prototype</h4>
             <p>Coming soon, a high fidelity prototype with more than just these screens!</p>
           </span>

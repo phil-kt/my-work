@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
+import Collapse from 'react-collapse';
 import './Hive.css';
 
 import ProjectPage from '../../../components/project-page/ProjectPage';
@@ -22,6 +23,30 @@ import colors from '../../../media/hive/colors.png';
 
 
 class Hive extends Component {
+
+  state = {
+    researchDetails: false,
+    designDetails: false,
+    resultDetails: false
+  }
+
+  collapseResearch = () => {
+    this.setState({
+      researchDetails: !this.state.researchDetails
+    })
+  }
+
+  collapseDesign = () => {
+    this.setState({
+      designDetails: !this.state.designDetails
+    })
+  }
+
+  collapseResult = () => {
+    this.setState({
+      resultDetails: !this.state.resultDetails
+    })
+  }
 
   render() {
 
@@ -82,17 +107,22 @@ class Hive extends Component {
             <div className="statistics">
               <div className="statistic">
                 <h2 className="surveys">28</h2>
-                <p>survey responses</p>
+                <p>survey <br/> responses</p>
               </div>
               <div className="statistic">
                 <h2 className="interviews">23</h2>
-                <p>students interviewed</p>
+                <p>students <br/>interviewed</p>
               </div>
               <div className="statistic">
                 <h2 className="observations">2</h2>
-                <p>hours of observations</p>
+                <p>hours of <br/> observations</p>
               </div>
             </div>
+            <div className="button collapse" onClick={this.collapseResearch}>
+              <a>{this.state.researchDetails ? "Less Details" : "More Details"}</a>
+            </div>
+            <Collapse isOpened={this.state.researchDetails} keepCollapsedContent={true}>
+            <div>
             <p>Our research results revealed that students often use the library for group work due to its noisier nature compared to the library, and its central location. When questioning students about seats, some of them outright stated that they never had problems finding seats, but rather finding tables. Our observations enforced this point, as we noticed an abundance of free chairs in the library. So many free chairs in fact, students were using them as footrests or to create makeshift beds. However table space was scarce, and once students left a table it was quickly occupied by a new group. Some students opted to sit on the floor, even when there were open seats left, due to the space afforded by spreading stuff out on the ground.</p>
 
             <Slider {...sliderSettings} className="carousel">
@@ -109,8 +139,10 @@ class Hive extends Component {
                 </p>
               </div>
             </Slider>
+            </div>
+            </Collapse>
 
-            <h4>Refinements</h4>
+            <h4>Insights</h4>
             <p>
               After completing our research and analyzing the findings, we realized that we were asking the wrong question in our problem space. <b>It turns out that there is not much difficulty in finding an open seat in the CULC; the problem lies in finding an available table.</b>
             </p>
@@ -118,43 +150,49 @@ class Hive extends Component {
             <p>This led us to shift our attention on finding available seating to finding available tables. During observations, it was made clear that there are plenty of unoccupied chairs. However, table space was precious and most tables were quick to be taken as soon as students left them. After talking to students, we were also interested in making refinements into how our solution could convey different information depending on context, such as if group seating is available or noise levels of the seats.</p>
 
 
-
             <h4>Design Ideas</h4>
             <p>
-              Based on this new problem area and the data we collected, we then began to ideate on possible solutions for finding tables in the library. We went through an exhaustive list of design possibilities, which ranged concepts such as a flag to indicate if you were open to others sitting at your table to stringing ropes across the CULC to create a sort of large scale hammock for people to sit and work on, we eventually narrowed down to three final designs:
+              Based on this new problem area and the data we collected, we then began to ideate on possible solutions for finding tables in the library. We went through an exhaustive list of design possibilities, which ranged concepts such as a flag to indicate if you were open to others sitting at your table to stringing ropes across the CULC to create a sort of large scale hammock for people to sit and work on, we eventually narrowed down to three final designs.
             </p>
 
-            <h4>Solution 1</h4>
-            <p className="sub-header-p">Display a screen at every floor showing seat distribution so students know where to find a seat, while also projecting seat information onto the wooden railings on each staircase.</p>
+            <div className="button collapse" onClick={this.collapseDesign}>
+              <a>{this.state.designDetails ? "Hide Other Designs" : "Show Other Designs"}</a>
+            </div>
+            <Collapse isOpened={this.state.designDetails} keepCollapsedContent={true}>
+            <div>
+              <h4>Solution 1</h4>
+              <p className="sub-header-p">Display a screen at every floor showing seat distribution so students know where to find a seat, while also projecting seat information onto the wooden railings on each staircase.</p>
 
 
-            <Slider {...sliderSettings}>
-              <div>
-                <img src={screen} alt="screen solution"/>
-                <p className="caption">Possible visualizations of the heatmap and seat occupancy levels</p>
-              </div>
-              <div>
-                <img src={screen_storyboard} alt="screen storyboard"/>
-                <p className="caption">A storyboard for the screen solution</p>
-              </div>
-            </Slider>
+              <Slider {...sliderSettings}>
+                <div>
+                  <img src={screen} alt="screen solution"/>
+                  <p className="caption">Possible visualizations of the heatmap and seat occupancy levels</p>
+                </div>
+                <div>
+                  <img src={screen_storyboard} alt="screen storyboard"/>
+                  <p className="caption">A storyboard for the screen solution</p>
+                </div>
+              </Slider>
 
-            <h4>Solution 2</h4>
-            <p className="sub-header-p">
-              Introduce modular furniture that can be a seat or a table depending on the need, therefore increasing the amount of tables in circulation and making seating exist wherever it is needed.
-            </p>
+              <h4>Solution 2</h4>
+              <p className="sub-header-p">
+                Introduce modular furniture that can be a seat or a table depending on the need, therefore increasing the amount of tables in circulation and making seating exist wherever it is needed.
+              </p>
 
 
-            <Slider {...sliderSettings}>
-              <div>
-                <img src={furniture} alt="modular furniture"/>
-                <p className="caption">Some concepts of what the furniture could look like</p>
-              </div>
-              <div>
-                <img src={furniture_storyboard} alt="modular furniture storyboard"/>
-                <p className="caption">A storyboard for modular furniture</p>
-              </div>
-            </Slider>
+              <Slider {...sliderSettings}>
+                <div>
+                  <img src={furniture} alt="modular furniture"/>
+                  <p className="caption">Some concepts of what the furniture could look like</p>
+                </div>
+                <div>
+                  <img src={furniture_storyboard} alt="modular furniture storyboard"/>
+                  <p className="caption">A storyboard for modular furniture</p>
+                </div>
+              </Slider>
+            </div>
+            </Collapse>
 
 
             <h4>Solution 3</h4>
@@ -184,7 +222,7 @@ class Hive extends Component {
             Both solution 1 and 3 are based on the first approach, as they aim to make it easier and faster for students to find an available table at the library and begin their work. However, not wanting to overlook an obvious solution of simply adding more tables, we also designed a solution that would provide students with more workspaces, which solution 2 comes from.
             </p>
 
-            <h4>The Tree</h4>
+            <h4>Decision</h4>
             <p>
             After feedback from our peers and discussion amongst ourselves, we decided to go with solution 3, the tree. The reason being that although solution 1 was conventional and certainly would have worked, the tree grants the benefit of knowing which floor to go to immediately instead of having to climb past every floor to see that statistics for the floor. The other reason being we wanted a solution with a spirit of art in it. Solution 2 was abandoned as it featured no computer in its design, and this being a human-computer interaction course our professor told us no, haha.
             </p>
@@ -264,18 +302,24 @@ class Hive extends Component {
             <p>
               We tested five students, and each student had a <b>reduction of at least 50% time in finding a seat</b> between the standard library model and the tree model. Seats weren't placed in the same location, but were on the same floors to try and keep times somewhat standard across tests. Students were also able to quickly discern the meaning behind the tree's colors and branches during their think-aloud.
             </p>
+            <div className="button collapse" onClick={this.collapseResult}>
+              <a>{this.state.resultDetails ? "Less Results" : "More Results"}</a>
+            </div>
+            <Collapse isOpened={this.state.resultDetails} keepCollapsedContent={true}>
+            <div>
+              <p>We also received several design suggestions from our testers that could be implemented in a future model. Suggestions included that the Hive would not be able to display the seating towards the hallways of the library, which would leave out a smaller, but significant, portion of the total available seating. Some suggestions to extend functionality included the use of “flower” branches or “roots” intertwining with the overhead lights. For this prototype however, we decided to assist students in finding seats only in the main areas because those seats largely fit students’ needs that we gathered from interviews such as chairs with desks, outlets and tables. We also received several design suggestions aimed at displaying group seating, the most common was using granular light displays, which we couldn't do with our EL wire nor the Unity model due to time constraints.</p>
 
-            <p>We also received several design suggestions from our testers that could be implemented in a future model. Suggestions included that the Hive would not be able to display the seating towards the hallways of the library, which would leave out a smaller, but significant, portion of the total available seating. Some suggestions to extend functionality included the use of “flower” branches or “roots” intertwining with the overhead lights. For this prototype however, we decided to assist students in finding seats only in the main areas because those seats largely fit students’ needs that we gathered from interviews such as chairs with desks, outlets and tables. We also received several design suggestions aimed at displaying group seating, the most common was using granular light displays, which we couldn't do with our EL wire nor the Unity model due to time constraints.</p>
+              <p>
+                During our questionnaire we also had students flip through slides of two colors, asking them to mark one as "positive" and the other "negative", or that neither stood out. This was to help us determine what colors would work best to color the Hive. We ended up with a hierarchy like this:
+              </p>
+              <img src={colors} alt="green blue violet yellow orange red"/>
+              <p className="caption">From available to unavailable seating</p>
 
-            <p>
-              During our questionnaire we also had students flip through slides of two colors, asking them to mark one as "positive" and the other "negative", or that neither stood out. This was to help us determine what colors would work best to color the Hive. We ended up with a hierarchy like this:
-            </p>
-            <img src={colors} alt="green blue violet yellow orange red"/>
-            <p className="caption">From available to unavailable seating</p>
-
-            <p>
-              This scale informs us of a gradient system that could be implemented in order to have a more continuous display of availability instead of the current binary mode. Interestingly, the scale moves from colors that are generally seen as “cool” to those thought of as “warm,” meaning the idea of “availability” may just be a converse rating of activity.
-            </p>
+              <p>
+                This scale informs us of a gradient system that could be implemented in order to have a more continuous display of availability instead of the current binary mode. Interestingly, the scale moves from colors that are generally seen as “cool” to those thought of as “warm,” meaning the idea of “availability” may just be a converse rating of activity.
+              </p>
+            </div>
+            </Collapse>
 
             <h4>Further Design Considerations</h4>
             <p>
