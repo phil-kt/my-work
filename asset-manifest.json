@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.fb3d8bc4.css",
   "main.css.map": "static/css/main.fb3d8bc4.css.map",
-  "main.js": "static/js/main.9a7e9a55.js",
-  "main.js.map": "static/js/main.9a7e9a55.js.map",
+  "main.js": "static/js/main.f83b02a1.js",
+  "main.js.map": "static/js/main.f83b02a1.js.map",
   "static/media/Consolas.eot": "static/media/Consolas.bcf880b1.eot",
   "static/media/Consolas.ttf": "static/media/Consolas.05deb0ee.ttf",
   "static/media/Consolas.woff": "static/media/Consolas.d9fc0a5e.woff",
@@ -99,6 +99,7 @@
   "static/media/tree_v2.png": "static/media/tree_v2.9ddf0a06.png",
   "static/media/twine.png": "static/media/twine.1bfcc2fb.png",
   "static/media/twitter.svg": "static/media/twitter.5ad82ff2.svg",
+  "static/media/untappd-phone.png": "static/media/untappd-phone.518904f7.png",
   "static/media/untappd.svg": "static/media/untappd.723ac2bb.svg",
   "static/media/usage.png": "static/media/usage.2aff50dd.png",
   "static/media/view_other.jpg": "static/media/view_other.0600f2a0.jpg",
