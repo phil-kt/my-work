@@ -69,7 +69,7 @@ class Graffiti extends Component {
             <p>The end product, simply two screens, one to view others' graffiti with a spray can to start drawing, and another to actually create your art and then tag it into the world. Users can select stroke, color, and also add text to their graffiti.</p>
 
             <h4>Prototype</h4>
-             <iframe className="framer-embed" src="http://share.framerjs.com/e5fgdt2bh6l9/" frameBorder="0" allowFullScreen="allowFullScreen"></iframe>
+             <iframe className="framer-embed" src="https://framer.cloud/mbzbA/" frameBorder="0" allowFullScreen="allowFullScreen"></iframe>
 
             <h4>In the Wild</h4>
             <p>
