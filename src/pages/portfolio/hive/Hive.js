@@ -370,7 +370,9 @@ class Hive extends Component {
                     <p>
                       During our questionnaire we also had students flip through slides of two colors, asking them to mark one as "positive" and the other "negative", or that neither stood out. This was to help us determine what colors would work best to color the Hive. We ended up with a hierarchy like this:
                     </p>
-                    <img src={colors} alt="green blue violet yellow orange red"/>
+                    <p>
+                      <img src={colors} alt="green blue violet yellow orange red"/>
+                    </p>
                     <p className="caption">From available to unavailable seating</p>
 
                     <p>

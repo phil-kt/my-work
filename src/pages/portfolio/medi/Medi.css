@@ -1,10 +1,16 @@
-.Medi {
-    background: #DB4D32;
+.Medi .header {
+    color: #DB4D32;
 }
 
-.Medi .header {
-    background: url(../../../media/medi/medi-hero.png) center top;
+.Medi .header .button a {
+    background-image: linear-gradient(to bottom, transparent 50%, #DB4D32 50%);
 }
+
+.Medi .hero {
+    background-image: url(../../../media/medi/hero.jpg)
+}
+
+
 
 
 .Medi .landscape {
@@ -12,7 +18,7 @@
 }
 
 .Medi .device {
-    width: 100%;
+    width: 80%;
     height: 520px;
 }
 
@@ -45,4 +51,21 @@
 
 .Medi .figure-4:hover:after {
     content: url(../../../media/medi/figures/figure_4.jpg);
+}
+
+.Medi .project-section a {
+    color: #DB4D32;
+}
+
+.Medi .project-section a:hover{
+    border-bottom: 2px solid #DB4D32;
+}
+
+.Medi .project-section .button a {
+    background-image: linear-gradient(to bottom, transparent 50%, #DB4D32 50%);
+}
+
+
+.Medi .fab-main span i {
+    color: #db4d32;
 }

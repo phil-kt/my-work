@@ -36,7 +36,6 @@
     padding-left: 38px;
 }
 
-
 /* slick css rules */
 .project-section .slick-slider {
     width: 80%;
@@ -59,7 +58,6 @@
     width: 100%;
     max-width: 100%;
 }
-
 
 .project-section .slick-next:before, .slick-prev:before {
     color: #1f1e1e;

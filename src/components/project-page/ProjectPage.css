@@ -24,13 +24,13 @@
 
 
 
-.project-page .button a {
+.project-page .button a, .project-page .project-section .button a{
     width: initial;
     color: #1F1E1E;
     border: 3px solid #1f1e1e;
 }
 
-.project-page .button a:hover{
+.project-page .button a:hover, .project-page .project-section .button a:hover{
     border-bottom: 3px solid #1f1e1e;
     color: #f5f4f4;
 }
