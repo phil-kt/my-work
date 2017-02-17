@@ -7,7 +7,7 @@
     position: relative;
 }
 
-.project .content {
+.project .preview-content {
     width: 90%;
     margin: auto;
     display: flex;

@@ -22,8 +22,6 @@
     max-height: none;
 }
 
-
-
 .project-page .button a, .project-page .project-section .button a{
     width: initial;
     color: #1F1E1E;
@@ -41,7 +39,8 @@
 }
 
 .project-page iframe {
-    margin: 20px auto 20px auto;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
 }
 
@@ -73,27 +72,35 @@
     text-align: center;
 }
 
-.header {
-    height: 170px;
+.project-page .header {
+    height: inherit;
     padding: 30px 0 0 0;
+    margin-bottom: 40px;
 }
 
 .project-page .header h1 {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
-.project-page .header .links {
-    display: flex;
-    justify-content: center;
+.project-page .header p {
+    width: 80%;
+    max-width: 500px;
+    color: #1f1e1e;
+    text-align: center;
+    margin: auto;
 }
 
-.project-page .header .links .button:not(:last-child) {
+.project-page .links {
+    display: flex;
+}
+
+.project-page .links .button:not(:last-child) {
     margin-right: 15px;
 }
 
-.project-page .content {
+.project-page {
 
     padding-bottom: 50px;
 }

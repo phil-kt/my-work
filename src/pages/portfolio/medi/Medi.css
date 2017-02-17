@@ -10,9 +10,6 @@
     background-image: url(../../../media/medi/hero.jpg)
 }
 
-
-
-
 .Medi .landscape {
     max-height: none;
 }
@@ -20,6 +17,7 @@
 .Medi .device {
     width: 80%;
     height: 520px;
+    margin: 20px auto;
 }
 
 .Medi .figure:hover {

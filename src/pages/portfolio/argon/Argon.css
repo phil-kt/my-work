@@ -1,10 +1,30 @@
-.AR {
-    background: #d0a70f;
+.AR .header {
+    color: #d0a70f;
 }
 
-.AR .header {
-    background: url(../../../media/argon/argon-hero.png) center center;
-    background-size: cover;
+.AR .header .button a {
+    background-image: linear-gradient(to bottom, transparent 50%, #d0a70f 50%);
+}
+
+.AR .hero {
+    background-image: url(../../../media/argon/argon-hero.png);
+}
+
+.AR .project-section a {
+    color: #d0a70f;
+}
+
+.AR .project-section a:hover{
+    border-bottom: 2px solid #d0a70f;
+}
+
+.AR .project-section .button a {
+    background-image: linear-gradient(to bottom, transparent 50%, #d0a70f 50%);
+}
+
+
+.AR .fab-main span i {
+    color: #d0a70f;
 }
 
 @media screen and (max-width: 520px) {

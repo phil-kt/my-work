@@ -64,21 +64,11 @@ class Hive extends Component {
     return (
       <ProjectPage
         title="The Hive"
+        description=" An art installation and design solution to make it simpler and faster for students at Georgia Tech to find study spots in the library"
         github="http://www.github.com/linkcable/the-hive"
         prototype="http://linkcable.github.io/The-Hive"
         content={
           <span>
-            <ProjectSection title="What is it?"
-              content={
-                <span>
-                  <p>
-                  The Hive is both an art installation and a design solution to finding seats in a crowded library. The Hive was conceived through research done for Georgia Tech's MS-HCI program, and aims to make it simpler and faster to find study spots for students at Georgia Tech's library, the Clough Undergraduate Learning Center (CULC).
-                  </p>
-
-                  <img src={leadin} alt="preview of the hive" className="extend"/>
-                </span>
-              }
-            />
 
             <ProjectSection title="Problem Space"
               content={
@@ -116,7 +106,7 @@ class Hive extends Component {
 
             <ProjectSection title="Process"
               content={
-                <img className="extend" src={process} alt="Survey & interviews, Pattern analysis, Refine problem, Ideation, Prototype, User Testing, Feedback, Findings" />
+                <img className="process" src={process} alt="Survey & interviews, Pattern analysis, Refine problem, Ideation, Prototype, User Testing, Feedback, Findings" />
               }
             />
 

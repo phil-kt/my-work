@@ -3,16 +3,19 @@ import './ProjectPage.css';
 
 import Button from '../button/Button';
 import FabButton from '../fab-button/FabButton';
+import ProjectSection from '../project-section/ProjectSection'
 
 class ProjectPage extends Component {
 
   static propTypes = {
     title: React.PropTypes.string.isRequired,
+    description: React.PropTypes.string.isRequired,
     content: React.PropTypes.object.isRequired,
   }
 
   static defaultProps = {
     title: undefined,
+    description: undefined,
     content: undefined,
     github: undefined,
     devpost: undefined,
@@ -37,39 +40,47 @@ class ProjectPage extends Component {
       <div className={"project-page " + this.props.title}>
         <div className="header">
           <h1>{this.props.title}</h1>
-          <div className="links">
-            {this.props.github ?
-              <Button
-                content="github"
-                link={this.props.github}
-              />
-              : null
-            }
+          <p>{this.props.description}</p>
+          {/*
 
-            {this.props.devpost ?
-              <Button
-                content="devpost"
-                link={this.props.devpost}
-              />
-              : null
-            }
-
-            {this.props.prototype ?
-              <Button
-                content="prototype"
-                link={this.props.prototype}
-              />
-              : null
-            }
-
-            {linksList}
-
-          </div>
+           */}
         </div>
         <div className="hero"></div>
         <div className="content">
           {this.props.content}
         </div>
+
+        <ProjectSection title="Links"
+          content={
+            <p className="links">
+              {this.props.github ?
+                <Button
+                  content="github"
+                  link={this.props.github}
+                />
+                : null
+              }
+
+              {this.props.devpost ?
+                <Button
+                  content="devpost"
+                  link={this.props.devpost}
+                />
+                : null
+              }
+
+              {this.props.prototype ?
+                <Button
+                  content="prototype"
+                  link={this.props.prototype}
+                />
+                : null
+              }
+
+              {linksList}
+            </p>
+          }
+        />
 
         <FabButton currentPage={this.props.title}/>
 

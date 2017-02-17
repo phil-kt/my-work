@@ -25,7 +25,7 @@ class Project extends Component {
   render () {
     return (
       <div className={"project " + this.props.title}>
-        <div className="content">
+        <div className="preview-content">
           <div className="left">
             <h2>{this.props.title}</h2>
             <p>{this.props.description}</p>

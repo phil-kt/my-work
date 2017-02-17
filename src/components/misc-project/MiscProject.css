@@ -1,5 +1,8 @@
 .misc-project {
     padding-top: 40px;
+    width: 80%;
+    margin: auto;
+    max-width: 750px;
 }
 
 .misc-project .header {
@@ -8,6 +11,7 @@
     height: inherit;
     margin-bottom: 20px;
 }
+
 
 .misc-project .badge {
     margin-right: 15px;
@@ -42,6 +46,27 @@
 
 .misc-project .buttons .button {
     display: inline-block;
+}
+
+
+.misc-project .button a{
+    width: initial;
+    color: #1F1E1E;
+    border: 3px solid #1f1e1e;
+    background-image: linear-gradient(to bottom, transparent 50%, #4CAF50 50%);
+}
+
+.misc-project .button a:hover{
+    border-bottom: 3px solid #1f1e1e;
+    color: #f5f4f4;
+}
+
+.misc-project .description a {
+    color: #4CAF50;
+}
+
+.misc-project .description a:hover {
+    border-bottom: 2px solid #4CAF50;
 }
 
 .misc-project .buttons .button:not(:last-child) {

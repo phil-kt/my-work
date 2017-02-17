@@ -1,5 +1,25 @@
-.Sous {
-    background-color: #03A9F4;
+.Sous .header {
+    color: #03A9F4;
+}
+
+.Sous .header .button a {
+    background-image: linear-gradient(to bottom, transparent 50%, #03A9F4 50%);
+}
+
+.Sous .project-section a {
+    color: #03A9F4;
+}
+
+.Sous .project-section a:hover{
+    border-bottom: 2px solid #03A9F4;
+}
+
+.Sous .project-section .button a {
+    background-image: linear-gradient(to bottom, transparent 50%, #03A9F4 50%);
+}
+
+.Sous .fab-main span i {
+    color: #03A9F4;
 }
 
 .Sous .aspect-keeper {
@@ -7,9 +27,10 @@
     padding-bottom: 56.25%; /* 16:9 */
     padding-top: 25px;
     height: 0;
+    width: 80%;
+    margin: auto;
 }
 
-.Sous .header {
-    background: url(../../../media/sous-chef/sous-chef-hero.png) center center;
-    background-size: cover;
+.Sous .hero {
+    background-image: url(../../../media/sous-chef/sous-chef-hero.png);
 }

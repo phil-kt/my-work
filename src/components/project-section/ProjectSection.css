@@ -14,11 +14,13 @@
 }
 
 .project-section .extend {
-    width: 80%;
-    max-width: 100%;
-    max-height: none;
+    max-width: 80%;
+    max-height: 600px;
 }
 
+.project-section .process {
+    width: 80%;
+}
 
 .project-section a {
     color: #1F1E1E;

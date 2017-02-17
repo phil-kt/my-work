@@ -97,6 +97,7 @@ class Medi extends Component {
     return (
       <PortfolioPage
         title="Medi"
+        description=" An app ecosystem to support the elderly and their caretakers in taking their prescribed medication properly and on time"
         customLinks={[
           {
             name: "Prototype 1",
@@ -110,16 +111,6 @@ class Medi extends Component {
         nextProject="/portfolio/argon"
         content={
           <span>
-            <ProjectSection title="What is it?"
-              content={
-                <span>
-                  <p>
-                    An app ecosystem to support the elderly and their caretakers in taking their prescribed medication properly and on time.
-                  </p>
-                  <img className="extend" src={ecosystem} alt="phone, watch, and dispenser" />
-                </span>
-              }
-            />
 
             <ProjectSection title="Origins"
               content={
@@ -157,7 +148,7 @@ class Medi extends Component {
 
             <ProjectSection title="Process"
               content={
-                <img className="extend" src={process} alt="scenario, low fidelity, persona, medium fidelity, user testing, 3d model and printing, high fidelity"/>
+                <img className="process" src={process} alt="scenario, low fidelity, persona, medium fidelity, user testing, 3d model and printing, high fidelity"/>
               }
             />
 

@@ -1,7 +1,7 @@
-.Rendezvous {
-    background-color: #5C6BC0;
+.Rendezvous .header {
+    color: #5C6BC0;
 }
 
-.Rendezvous .header {
-    background-image: url(../../../media/rendezvous/rendezvous-hero.png);
+.Rendezvous .hero {
+    background-image: url(../../../media/rendezvous/rendezvous_mockup.jpg);
 }

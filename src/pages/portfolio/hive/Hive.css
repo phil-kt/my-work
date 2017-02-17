@@ -11,7 +11,7 @@
     background: url(../../../media/hive/hive-hero.png) center bottom;
 }
 
-.Hive .content .button a {
+.Hive .project-section .button a {
     background-image: linear-gradient(to bottom, transparent 50%, #78909C 50%);
 }
 

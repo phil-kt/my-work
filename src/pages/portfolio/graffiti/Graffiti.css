@@ -1,10 +1,14 @@
-.Graffiti {
-    background: #1DC7AA;
+.Graffiti .header {
+    color: #1DC7AA;
 }
 
-.Graffiti .header {
-    background: url(../../../media/graffiti/graffiti-hero.png) center center;
-    background-size: cover;
+
+.Graffiti .header .button a {
+    background-image: linear-gradient(to bottom, transparent 50%, #1DC7AA 50%);
+}
+
+.Graffiti .hero {
+    background-image: url(../../../media/graffiti/graffiti-leadin.jpg);
 }
 
 .graffiti-logos {
@@ -12,3 +16,6 @@
     width: auto !important;
 }
 
+.Graffiti .fab-main span i {
+    color: #1dc7aa;
+}

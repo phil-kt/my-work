@@ -56,17 +56,10 @@ class Untappd extends Component {
     return (
       <ProjectPage
         title="Untappd Redesign"
+        description="A material redesign of Untappd, an app used by beer fans to log their beers and see what their friends are drinking."
         content={
           <span>
-            <ProjectSection title="What is it?"
-              content={
-                <span>
-                  <p>
-                    A redesign of <a href="https://untappd.com" target="_blank">Untappd</a>, an app used by beer drinkers to log their beers and see what their friends are drinking.
-                  </p>
-                </span>
-              }
-            />
+
             <ProjectSection title="Origins"
               content={
                 <p>
