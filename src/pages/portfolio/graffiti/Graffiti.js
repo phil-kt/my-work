@@ -31,6 +31,7 @@ class Graffiti extends Component {
         title="Graffiti"
         github="https://github.com/sayalvarun/graffiti"
         prototype="http://share.framerjs.com/e5fgdt2bh6l9"
+        devpost="https://devpost.com/software/graffiti-l3v85w"
         description="An augmented reality iOS app that allows you to draw virtual graffiti onto the real world"
         content={
           <span>
@@ -53,9 +54,14 @@ class Graffiti extends Component {
 
             <ProjectSection title="Implementation"
               content={
-                <p className="starting-paragraph">
-                  We eventually landed on an augmented reality app that allows you to draw on any surface around you, and when you or anyone else with the app comes by that same spot they can see what you drew! All drawings are anonymous, and can only be viewed by those in the same location as you looking at the same wall, ceiling, floor, what have you. In order for graffiti to work we used the gyroscope and GPS to gather location and orientation data to maintain the context the graffiti is drawn on so that you don't see random drawings floating in the air (unless intended to be placed there!).
-                </p>
+                <span>
+                  <p className="starting-paragraph">
+                    We eventually landed on an augmented reality app that allows you to draw on any surface around you, and when you or anyone else with the app comes by that same spot they can see what you drew! All drawings are anonymous, and can only be viewed by those in the same location as you looking at the same wall, ceiling, floor, what have you.
+                  </p>
+                  <p>
+                    In order for graffiti to work we used the gyroscope and GPS to gather location and orientation data to maintain the context the graffiti is drawn on so that you don't see random drawings floating in the air (unless intended to be placed there!)
+                  </p>
+                </span>
               }
             />
             

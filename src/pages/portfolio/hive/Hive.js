@@ -5,7 +5,6 @@ import './Hive.css';
 
 import ProjectPage from '../../../components/project-page/ProjectPage';
 import ProjectSection from '../../../components/project-section/ProjectSection';
-import leadin from '../../../media/hive/lead-in.png';
 import crowded from '../../../media/hive/crowded.jpg';
 import process from '../../../media/hive/process.svg';
 import affinity_map from '../../../media/hive/affinity-resize.jpg';

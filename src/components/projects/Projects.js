@@ -1,9 +1,4 @@
 
-import hive from '../../media/hive/hive-hero.png';
-import ar from '../../media/argon/argon-hero.png';
-import medi from '../../media/medi/medi-hero.png';
-import graffiti from '../../media/graffiti/graffiti-hero.png';
-import dots from '../../media/dots-hero.png';
 
 class Projects {
 
@@ -17,19 +12,16 @@ class Projects {
     {
       name: "The Hive",
       description: "A case study about how to optimize finding a seat in Georgia Tech’s library",
-      image: {hive},
       link: "/hive"
     },
     {
       name: "Medi",
       description: "An application ecosystem to ensure that elderly patients take their prescription medications",
-      image: {medi},
       link: "/medi"
     },
     {
       name: "Understanding AR",
       description: "An augmented reality book about the history of augmented reality",
-      image: {ar},
       link: "/understanding-ar"
     },
     {
@@ -41,13 +33,13 @@ class Projects {
     {
       name: "Graffiti",
       description: "An augmented reality iOS app to draw virtual graffiti on real world objects",
-      image: {graffiti},
+      image: {},
       link: "/graffiti"
     },
     {
       name: "Rendezvous",
       description: "An iOS app to help you find your friends in a crowd or whenever you have no service",
-      image: {dots},
+      image: {},
       link: "/rendezvous"
     },
     {

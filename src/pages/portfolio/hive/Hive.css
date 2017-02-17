@@ -8,7 +8,7 @@
 }
 
 .Hive .hero {
-    background: url(../../../media/hive/hive-hero.png) center bottom;
+    background-image: url(../../../media/hive/hero.jpg);
 }
 
 .Hive .project-section .button a {

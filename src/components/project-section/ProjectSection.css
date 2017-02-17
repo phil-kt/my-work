@@ -41,9 +41,8 @@
 /* slick css rules */
 .project-section .slick-slider {
     width: 80%;
-    margin: auto;
+    margin: 20px auto;
 }
-
 
 .project-section .slick-slider .slick-list, .slick-slider .slick-track{
     text-align: center;

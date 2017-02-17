@@ -35,6 +35,8 @@ class ProjectPage extends Component {
       );
     });
 
+    console.log(linksList);
+
 
     return (
       <div className={"project-page " + this.props.title}>
@@ -50,37 +52,40 @@ class ProjectPage extends Component {
           {this.props.content}
         </div>
 
-        <ProjectSection title="Links"
-          content={
-            <p className="links">
-              {this.props.github ?
-                <Button
-                  content="github"
-                  link={this.props.github}
-                />
-                : null
-              }
+        {linksList.length || this.props.github || this.props.devpost || this.props.prototype ?
+          <ProjectSection title="Links"
+            content={
+              <p className="links">
+                {this.props.github ?
+                  <Button
+                    content="github"
+                    link={this.props.github}
+                  />
+                  : null
+                }
 
-              {this.props.devpost ?
-                <Button
-                  content="devpost"
-                  link={this.props.devpost}
-                />
-                : null
-              }
+                {this.props.devpost ?
+                  <Button
+                    content="devpost"
+                    link={this.props.devpost}
+                  />
+                  : null
+                }
 
-              {this.props.prototype ?
-                <Button
-                  content="prototype"
-                  link={this.props.prototype}
-                />
-                : null
-              }
+                {this.props.prototype ?
+                  <Button
+                    content="prototype"
+                    link={this.props.prototype}
+                  />
+                  : null
+                }
 
-              {linksList}
-            </p>
-          }
-        />
+                {linksList}
+              </p>
+            }
+          /> :
+          null
+        }
 
         <FabButton currentPage={this.props.title}/>
 

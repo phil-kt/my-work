@@ -17,6 +17,7 @@ class SousChef extends Component {
         title="Sous Chef"
         description="An Alexa skill that allows you to ask your Amazon Echo for recipes, have it read out ingredients to you, and get step by step instructions, all with your voice"
         github="https://github.com/abapat/alexa-sous-chef"
+        devpost="https://devpost.com/software/alexa-sous-chef"
         content={
           <span>
 

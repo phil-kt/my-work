@@ -6,7 +6,6 @@ import PortfolioPage from '../../../components/project-page/ProjectPage';
 import ProjectSection from '../../../components/project-section/ProjectSection';
 import Slider from 'react-slick';
 
-import ecosystem from '../../../media/medi/ecosystem.png';
 import container from '../../../media/medi/container.jpg';
 import process from '../../../media/medi/process.svg';
 
