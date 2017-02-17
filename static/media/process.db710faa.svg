@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="395px" height="75px" viewBox="0 0 395 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="V1-Copy" transform="translate(-439.000000, -586.000000)">
+            <g id="Hive-Copy" transform="translate(63.000000, 508.000000)">
+                <g id="Content" transform="translate(376.000000, 0.000000)">
+                    <g id="Group-2" transform="translate(1.000000, 76.000000)">
+                        <g id="Timeline-Copy" transform="translate(0.000000, 16.000000)">
+                            <rect id="Rectangle-3" fill="#000000" x="6" y="23.5" width="351" height="1.5"></rect>
+                            <circle id="Oval-2" stroke="#000000" stroke-width="1.5" fill="#FFFFFF" cx="4.5" cy="24" r="4.5"></circle>
+                            <ellipse id="Oval-4" stroke="#000000" stroke-width="1.5" cx="308.5" cy="14.5" rx="6" ry="10.5"></ellipse>
+                            <circle id="Oval-3" stroke="#000000" stroke-width="1.5" fill="#FFFFFF" cx="70.5" cy="24" r="4.5"></circle>
+                            <circle id="Oval-3-Copy-2" stroke="#000000" stroke-width="1.5" fill="#FFFFFF" cx="127.5" cy="24" r="4.5"></circle>
+                            <circle id="Oval-3-Copy-3" stroke="#000000" stroke-width="1.5" fill="#FFFFFF" cx="189.5" cy="24" r="4.5"></circle>
+                            <circle id="Oval-3-Copy-7" stroke="#000000" stroke-width="1.5" fill="#FFFFFF" cx="245.5" cy="24" r="4.5"></circle>
+                            <circle id="Oval-3-Copy-4" stroke="#000000" stroke-width="1.5" fill="#FFFFFF" cx="308.5" cy="24" r="4.5"></circle>
+                            <ellipse id="Oval-3-Copy-6" stroke="#000000" stroke-width="1.5" fill="#FFFFFF" cx="308.5" cy="4.5" rx="4.5" ry="4.5"></ellipse>
+                            <circle id="Oval-3-Copy-5" stroke="#000000" stroke-width="1.5" fill="#FFFFFF" cx="360.5" cy="24" r="4.5"></circle>
+                        </g>
+                        <g id="Desc-Copy" font-size="10" font-family="DINPro-Regular, DINPro" fill="#212121" font-weight="normal">
+                            <text id="Surveys-&amp;-Interviews" line-spacing="13">
+                                <tspan x="0" y="60">Surveys &amp;</tspan>
+                                <tspan x="0" y="73">Interviews</tspan>
+                            </text>
+                            <text id="Pattern-Analysis" line-spacing="13">
+                                <tspan x="66" y="60">Pattern</tspan>
+                                <tspan x="66" y="73">Analysis</tspan>
+                            </text>
+                            <text id="Personas">
+                                <tspan x="123" y="60">Personas</tspan>
+                            </text>
+                            <text id="Ideation-Copy">
+                                <tspan x="185" y="60">Ideation</tspan>
+                            </text>
+                            <text id="Prototype">
+                                <tspan x="241" y="60">Prototype</tspan>
+                            </text>
+                            <text id="User-Testing" line-spacing="13">
+                                <tspan x="304" y="60">User</tspan>
+                                <tspan x="304" y="73">Testing</tspan>
+                            </text>
+                            <text id="Findings">
+                                <tspan x="356" y="60">Findings</tspan>
+                            </text>
+                            <text id="Refine">
+                                <tspan x="304" y="10">Refine</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
