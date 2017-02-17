@@ -1,9 +1,18 @@
-.Hive {
-    background: #78909C;
-}
 
 .Hive .header {
+    color: #78909C;
+}
+
+.Hive .header .button a {
+    background-image: linear-gradient(to bottom, transparent 50%, #78909C 50%);
+}
+
+.Hive .hero {
     background: url(../../../media/hive/hive-hero.png) center bottom;
+}
+
+.Hive .content .button a {
+    background-image: linear-gradient(to bottom, transparent 50%, #78909C 50%);
 }
 
 .Hive .surveys {
@@ -16,4 +25,9 @@
 
 .Hive .observations {
     background-color: #B0BEC5;
+}
+
+
+.Hive .fab-main span i {
+    color: #78909c;
 }

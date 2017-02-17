@@ -37,11 +37,13 @@ class Argon extends Component {
         github="https://github.com/LinkCable/understanding-ar-twine"
         content={
           <span>
+            <section>
             <h4>What is it?</h4>
             <p>
               An augmented reality storybook telling the history of augmented reality through a digital pop up storybook. (meta huh?)
             </p>
             <img src={live} alt="ar sneak peak" />
+            </section>
             <h4>Origins</h4>
             <p className="starting-paragraph">
               Over the summer, I, like many others, became obsessed with the augmented reality game known as Pokemon Go, and found myself every day after my internship trekking through Central Park to hunt some Pokemon. During this playtime, and after the craze died down, I was interested in designing and developing an augmented reality experience of my own for people to try out.

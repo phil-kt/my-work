@@ -66,6 +66,7 @@ class ProjectPage extends Component {
 
           </div>
         </div>
+        <div className="hero"></div>
         <div className="content">
           {this.props.content}
         </div>

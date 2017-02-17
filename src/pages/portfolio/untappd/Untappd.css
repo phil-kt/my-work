@@ -1,8 +1,8 @@
-.Untappd {
-    background: #F57F17;
+.Untappd .header {
+    color: #F57F17;
 }
 
-.Untappd .header {
+.Untappd .hero {
     background-image: url('../../../media/untappd/beer.png');
 }
 
@@ -12,4 +12,21 @@
 
 .Untappd .stats {
     max-height: 380px;
+    width: auto;
+}
+
+.Untappd .project-section a {
+    color: #F57F17;
+}
+
+.Untappd .project-section a:hover {
+    border-bottom: 2px solid #F57F17;
+}
+
+.Untappd .project-section .button a {
+    background-image: linear-gradient(to bottom, transparent 50%, #F57F17 50%);
+}
+
+.Untappd .fab-main span i {
+    color: #F57F17;
 }

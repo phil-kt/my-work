@@ -89,7 +89,7 @@
 }
 
 .home .Untappd {
-    background: #F57F17
+    background: #F57F17;
 }
 
 .home .Hive {
@@ -154,4 +154,7 @@
 }
 .home p a:hover, .website-link:hover {
     border-bottom: 2px solid #47c3fd;
+}
+
+.home .button a {
 }

@@ -9,12 +9,13 @@
     background-image: linear-gradient(to bottom, transparent 50%, #1F1E1E 50%);
     text-transform: uppercase;
     display: inline-block;
-    transition: background-position 0.3s;
+    transition: all 0.3s;
 }
 
 .button a:hover {
     background-position: 0% 100%;
     cursor: pointer;
+    background-image: linear-gradient(to bottom, transparent 50%, #1F1E1E 50%);;
 }
 
 .win .button a {

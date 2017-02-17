@@ -1,0 +1,85 @@
+
+.project-section h4, .project-section p, .project-section ol, .project-section ul {
+    width: 80%;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-section .list li {
+    margin-left: 0 ;
+}
+
+.project-section img {
+}
+
+.project-section .extend {
+    width: 80%;
+    max-width: 100%;
+    max-height: none;
+}
+
+
+.project-section a {
+    color: #1F1E1E;
+    text-decoration: none;
+}
+.project-section a:hover {
+    border-bottom: 2px solid #1F1E1E;
+}
+
+.project-section ul.list {
+    padding-left: 40px;
+}
+
+.project-section ol.list {
+    padding-left: 38px;
+}
+
+
+/* slick css rules */
+.project-section .slick-slider {
+    width: 80%;
+    margin: auto;
+}
+
+
+.project-section .slick-slider .slick-list, .slick-slider .slick-track{
+    text-align: center;
+}
+
+.project-section .slick-slide img {
+    max-width: 100%;
+    max-height: 600px;
+    display: inline;
+}
+
+.project-section .slick-dots {
+    bottom: -10px;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+.project-section .slick-next:before, .slick-prev:before {
+    color: #1f1e1e;
+}
+
+.project-section .slick-prev {
+    left: -10px;
+    z-index: 1;
+}
+
+.project-section .slick-next {
+    right: -10px;
+    z-index: 1;
+}
+
+.project-section .slick-dots li button:before {
+    color: #1F1E1E;
+    opacity: 0.65;
+}
+.project-section .slick-dots li.slick-active button:before {
+    color: #1f1e1e;
+    opacity: 1;
+}
