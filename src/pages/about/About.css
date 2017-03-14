@@ -1,0 +1,36 @@
+.about-page {
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+.about-page .my-face  {
+    width: 350px;
+    height: 350px;
+    border-radius: 999px;
+    background: url(../../media/about/me.jpg);
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    margin: auto;
+}
+
+.about-page .project-section a {
+    text-decoration: none;
+    color: #47c3fd;
+}
+
+.about-page .project-section a:hover {
+    border-bottom: 2px solid #47c3fd;
+}
+
+
+.about-page .button {
+    text-align: center;
+}
+
+.about-page .section-content .button a {
+    border: 3px solid #1f1e1e;
+    color: #1f1e1e;
+    background-image: linear-gradient(to bottom, transparent 50%, white 50%);
+
+}

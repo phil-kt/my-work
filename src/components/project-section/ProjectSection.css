@@ -6,16 +6,49 @@
     margin-right: auto;
 }
 
-.project-section .list li {
-    margin-left: 0 ;
+/*
+.project-section .list  {
+    margin-top: 7px;
+    padding-left: 10px;
+    list-style: none;
 }
 
-.project-section img {
+.project-section .list li {
+    margin-bottom: 7px;
+    margin-left: 0;
+}
+
+.project-section ul.list li:before {
+    padding-right: 15px;
+    content: '•';
+}
+
+.project-section ol.list li:before {
+    counter-increment: post;
+    content: counter(post) ".";
+}*/
+
+.project-section .list {
+    margin-top: 7px;
+    line-height: 1.3em;
+}
+
+.project-section .list li {
+    margin-bottom: 7px;
+}
+
+.project-section .list li span {
+    padding-left: 5px;
+    display: inline-flex;
+}
+
+.project-section .before-list {
+    margin-bottom: 0;
 }
 
 .project-section .extend {
     max-width: 80%;
-    max-height: 600px;
+    max-height: none;
 }
 
 .project-section .process {
@@ -30,13 +63,13 @@
     border-bottom: 2px solid #1F1E1E;
 }
 
-.project-section ul.list {
-    padding-left: 40px;
+
+.project-section .subheader {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    font-weight: bold;
 }
 
-.project-section ol.list {
-    padding-left: 38px;
-}
 
 /* slick css rules */
 .project-section .slick-slider {

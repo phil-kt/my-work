@@ -9,7 +9,7 @@
 
 .project .preview-content {
     width: 90%;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;

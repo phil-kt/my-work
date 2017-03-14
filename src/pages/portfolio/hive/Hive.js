@@ -86,7 +86,7 @@ class Hive extends Component {
             <ProjectSection title="What I Did"
               content={
                 <span>
-                  <p>
+                  <p className="before-list">
                     My contributions to this project include:
                   </p>
                   <ul className="list">
@@ -230,7 +230,7 @@ class Hive extends Component {
                   </Slider>
 
 
-                  <p>
+                  <p className="before-list">
                     We arrived at these designs by following two different approaches for our solution:
                   </p>
                  <ol className="list">
@@ -252,7 +252,7 @@ class Hive extends Component {
                   After feedback from our peers and discussion amongst ourselves, we decided to go with solution 3, the tree. The reason being that although solution 1 was conventional and certainly would have worked, the tree grants the benefit of knowing which floor to go to immediately instead of having to climb past every floor to see that statistics for the floor. The other reason being we wanted a solution with a spirit of art in it. Solution 2 was abandoned as it featured no computer in its design, and this being a human-computer interaction course our professor told us no, haha.
                   </p>
 
-                  <p>
+                  <p className="before-list">
                   The advantages of the tree, or The Hive as I will refer to it from now on, are several:
                   </p>
                   <ol className="list">
@@ -296,7 +296,7 @@ class Hive extends Component {
             <ProjectSection title="Feedback"
               content={
                 <span>
-                  <p>
+                  <p className="before-list">
                     After conducting several user tests, this was the feedback we received on our prototype:
                   </p>
                     <ol className="list">
@@ -376,16 +376,16 @@ class Hive extends Component {
             <ProjectSection title="Further Design Considerations"
               content={
                 <span>
+                  <p className="subheader">Test colors pairings to convey available or unavailable areas.</p>
                   <p>
-                    <b>Test colors pairings to convey available or unavailable areas.</b> <br/>
                     For the physical prototypes we were limited to a certain set of colors that were available in the form of EL wires which were green and blue. After testing different colors on the 3D model and questionnaires, the pair of colors that seemed to communicate empty and full most clearly were green and red. Therefore, for future iterations we would need to test with different hues and lightness of the two colors to find a specific pair that are visible with sunlight as well not being intrusive for students studying or lacking accessibility.
                   </p>
+                  <p className="subheader">Improve the way we communicate how full or empty the seating area is and provide more details about the seating.</p>
                   <p>
-                    <b>Improve the way we communicate how full or empty the seating area is and provide more details about the seating.</b> <br/>
                     Information such as whether there is a table of four is available for group work or four individual seats available. Currently, we are communicating that information the same way on the tree, and students can only see that there is an open seat but not know if it is for an individual or a group. Our next iteration would immediately address this issue. We would test various ways of communicating this information by either brightness or pulsing light. This idea is one that will need extensive testing at a large scale to see if it could work in the CULC environment.
                   </p>
+                  <p className="subheader">Work on a final architectural design of the tree.</p>
                   <p>
-                    <b>Work on a final architectural design of the tree.</b> <br/>
                     The largest design challenge that we had while working on this project was creating a sculpture that maintained a tree-like appearance with enough branches so that it did not seem empty while also having the required number of branches so that users did not get confused as to which branch was pointing to which area or floor. Therefore, a future design implication could be to create large main branches that point to the main seating areas and have smaller, minor branches to point towards smaller seating areas.
                   </p>
                 </span>

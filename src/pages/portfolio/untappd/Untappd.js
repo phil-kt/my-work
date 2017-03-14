@@ -56,14 +56,14 @@ class Untappd extends Component {
     return (
       <ProjectPage
         title="Untappd Redesign"
-        description="A material redesign of Untappd, an app used by beer fans to log their beers and see what their friends are drinking."
+        description="A material redesign of Untappd, an app used by beer fans to log their beers and see what their friends are drinking"
         content={
           <span>
 
             <ProjectSection title="Origins"
               content={
                 <p>
-                  I really like to use Untappd, a social networking app that is unique in that it focuses on beer drinkers. People can use Untappd to log their beers, add friends and see their beers, and view ratings of beers from other users of the app. However, although Untappd is a pretty popular app among beer fans, the design of the app leaves somewhat to be desired. However, to be sure I was not just basing this off of my own beliefs, I first started conducting some research to inform my potential redesign and to find out what people use Untappd for.
+                  I really like to use Untappd, a social networking app that is unique in that it focuses on beer drinkers. People can use Untappd to log their beers, add friends and see their beers, and view ratings of beers from other users of the app. Although Untappd is a pretty popular app among beer fans, the design of the app leaves somewhat to be desired. However, to be sure I was not just basing this off of my own beliefs, I started conducting some research to inform my redesign and to find out what people really use Untappd for.
                 </p>
               }
             />
@@ -72,7 +72,7 @@ class Untappd extends Component {
               content={
                 <span>
                   <p>
-                    My research consisted of creating and sending out a survey to get an idea of what features of Untappd people use, and what their primary usage of Untappd consists of. I chose to do a survey as I don't really have many real life friends who use Untappd so I didn't have many people to reach out to. I spent a few nights crafting a Qualtrics survey to send out, and after I felt it was finished I posted it to <a href="https://reddit.com/r/beer" target="_blank">the beer subreddit</a>, hoping to get a couple of responses:
+                    My research consisted of creating and sending out a survey to get an idea of what features of Untappd people use and what their primary usage of Untappd consists of. I chose to do a survey as I don't really have many real life friends who use Untappd, so I didn't have many people to reach out to. I spent a few nights crafting a Qualtrics survey to send out, and after I felt it was finished I posted it to <a href="https://reddit.com/r/beer" target="_blank">the beer subreddit</a>, hoping to get a couple of responses:
                   </p>
                   <img className="extend" src={responses} alt="247 responses"/>
                   <p>
@@ -86,19 +86,19 @@ class Untappd extends Component {
               content={
                 <span>
                   <p>
-                    All of my survey was multiple choice so that I would not waste users time and could hopefully convince more of them to finish. I focused on asking about whether people used certain parts of the app I did leave certain options open to write in answers, as well as left a general feedback section for those who wanted it. (44 out of the 257 did!)
+                    All of my survey was multiple choice so that I would not waste users time and could hopefully convince more of them to finish. I focused on asking about whether people used certain parts of the app. I did leave certain options open to write in answers, as well as left a general feedback section for those who wanted it. (44 out of the 257 did!)
                   </p>
-                  <p>As a brief summary of the data gained from this survey:</p>
+                  <p className="before-list">As a brief summary of the data gained from this survey:</p>
                   <ul className="list">
                     <li>74% of users use the app at least once a week</li>
                     <li>87% use it primarily as a beer log</li>
-                    <li>More people (8%) use it to check beer ratings than check up on their friends (4%)</li>
+                    <li>More people (8%) use Untappd to check beer ratings than check up on their friends (4%)</li>
                     <li>89% only have up to 30 friends, 60% between 1-10</li>
                     <li>48% of users follow venues, and mostly (78%) for beer menu updates</li>
                     <li>44% of users also add beers to their wishlist, to keep reminders on beers to try (73%)</li>
-                    <li>One user did it “for the badge”</li>
-                    <li>1% use the explore tab always, 75% rarely or never use it, 22% were even unaware it existed!</li>
-                    <li>Those who do use it, 42% are looking for nearby venues and their beers, or other beer related things such as nearby beers or breweries</li>
+                    <li>One user wishlisted a beer “for the badge”</li>
+                    <li>1% use the Explore tab always, 75% rarely or never use it, 22% were even unaware it existed!</li>
+                    <li>Of those who do use Explore, 42% are looking for nearby venues and their beers or other beer related things such as nearby beers or breweries</li>
                   </ul>
                    <div className="button collapse" onClick={this.collapseSurvey}>
                     <a>{this.state.surveyDetails ? "Hide Data" : "Show Data"}</a>
@@ -145,18 +145,18 @@ class Untappd extends Component {
                 <span>
                   <p>Based on these results, I concluded the following about Untappd and its users:</p>
 
-                  <p><b>People are posting, but nobody is listening</b></p>
+                  <p className="subheader">People are posting, but nobody is listening</p>
 
                   <p>
                     Untappd is in a unique position as a social network as most people are creating content on their app instead of consuming it. This runs against the common <a href="https://en.wikipedia.org/wiki/1%25_rule_(Internet_culture)" target="_blank">1% rule</a> of Internet communities, which states "only 1% of the users of a website actively create new content, while the other 99% of the participants only lurk." It also goes against the <a href="https://en.wikipedia.org/wiki/Pareto_principle" target="_blank">Parento Principles</a>, which states that 20% of a group creates 80% of the content.
                   </p>
 
-                  <p><b>Untappd isn't truly a "social" network</b></p>
+                  <p className="subheader">Untappd isn't truly a "social" network</p>
                   <p>
-                    Most users on Untappd use it simply as a beer log, and don't participate in the larger ecosystem. Responders left comments such as "social aspect is lacking" and "it would be nice to be able to message others". A social network that doesn't allow its users to message each other seems pretty boggling doesn't it? Untappd has a lot of potential to promote social interaction between its users however, and beer drinkers are not opposed to talking to each other: r/beer has an estimated 200,000 subscribers.
+                    Users of Untappd consistently use it simply as a beer log, and don't participate in the larger ecosystem. Responders left comments such as "social aspect is lacking" and "it would be nice to be able to message others". A social network that doesn't allow its users to message each other seems pretty boggling doesn't it? Untappd has a lot of potential to promote social interaction between its users however, and beer drinkers are not opposed to talking to each other: r/beer has an estimated 200,000 subscribers.
                   </p>
 
-                  <p><b>The Explore tab has a lot of potential</b></p>
+                  <p className="subheader">The Explore tab has a lot of potential</p>
                   <p>
                     Most users don't use the Explore tab or don't even know it exists, but with all the content available on Untappd it could really be useful to people. Users could discover new breweries, new beers, or other users who share their tastes, all of this driving social interaction within the app. Right now the Explore tab is merely a list of options presented to the user and is not all that visually interesting or curated, but with the right touch could lead users to be more active on Untappd instead of just logging a beer and leaving.
                   </p>
@@ -208,7 +208,7 @@ class Untappd extends Component {
                   </div>
                   <Collapse isOpened={this.state.mockupDetails} keepCollapsedContent={true}>
                   <div>
-                  <p><b>Home</b></p>
+                  <p className="subheader">Home</p>
                   <p>
                   <img src={home_comp} alt="the two home designs"/>
                   </p>
@@ -219,23 +219,24 @@ class Untappd extends Component {
                   </p>
 
                   <img src={cards} alt="all the card states" className="extend"/>
-
                   <p className="caption">All possible card states</p>
-                  <p><b>Explore</b></p>
+
+                  <p className="subheader">Explore</p>
                   <p>
                   <img src={explore_comp} alt="explore comparisons"/>
                   </p>
                   <p>
                     The Explore tab is the screen with the most work done to it. Instead of having a long list of clickable items, I instead choose to show some items in the list, and give the user the option to see more. I also introduced a similar users category so that you can find people who like the same beers you do outside of your friend circle and start using Untappd more socially. Also I decided to introduce a bottom tab to allow you to toggle between nearby and global instead of having them be two different list items, simply tap to see the global popular beers or people.
                   </p>
-                  <p><b>Messages</b></p>
+
+                  <p className="subheader">Messages</p>
                   <p>
                     <img src={messages} alt="messages screen"/>
                   </p>
                   <p>
                     The Messages screen is obviously an original invention, and serves to make it so you can interact with your friends on Untappd in a more meaningful manner that just comments. Introduce yourself to fellow beer fans nationwide, organize beer trades, set up a bar crawl, all of these are potential applications of talking with other Untappd fans within the app. In addition you can from a glance see some of your friends who have recently had a drink, and message them about it or click the beer to see its details. This helps foster discussion between beer fans and creates a sense of community, which Untappd lacks.
                   </p>
-                  <p><b>Profile</b></p>
+                  <p className="subheader">Profile</p>
                   <p>
                     <img src={profile_comp} alt="profile comparison"/>
                   </p>
@@ -251,9 +252,22 @@ class Untappd extends Component {
               }
             />
 
+            {/*
             <ProjectSection title="Prototype"
               content={
                 <p>Coming soon, a high fidelity prototype with more than just these screens!</p>
+              }
+            />
+            */}
+
+            <ProjectSection title="Conclusion"
+              content={
+                <span>
+                  <p>This little personal project helped me practice how to effectively design surveys and how to analyze survey results for powerful insights. These insights then allowed me to better develop my skills in turning research data into detailed mockups that seek to address the problems research discovered.</p>
+                  <p>
+                    Funnily enough, while I was working on this project Untappd ended up launching <a href="http://blog.untappd.com/post/157278795406/untappd-30" target="_blank">a new, 3.0 redesign.</a> I guess they realized some of the problems and sought to address them, but I feel like this redesign falls short for other reasons. A tale for another time.
+                  </p>
+                </span>
               }
             />
 

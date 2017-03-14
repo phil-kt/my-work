@@ -22,71 +22,33 @@
     transition: opacity .3s ease-in-out;
 }
 
-
 .home .about {
     font-family: Consolas, Monaco, monospace;
 }
 
+
 .home .about ul {
-    margin-top: 5px;
-    padding-left: 30px;
+    margin-top: 7px;
+    padding-left: 20px;
+    line-height: 1.3em;
 }
 
-.home .social {
-    display: flex;
-    align-items: center;
-    width: 270px;
-    justify-content: space-between;
-}
-.home .social a {
-    text-decoration: none;
+
+.home .about ul li {
+    margin-bottom: 4px;
 }
 
-.home .social svg {
-    width: 24px;
-    height: 24px;
-    fill: #1F1E1E;
+.home .about ul li span {
+    padding-left: 5px;
+    display: inline-flex;
 }
 
-.home .social path, .home .social rect {
-    transition: fill .4s ease;
-}
+/*
+.home .about ul li:before {
+    padding-right: 15px;
+    content: '•';
+}*/
 
-#resume svg:hover {
-    fill: #8C7AE5;
-}
-
-#dribbble svg:hover {
-    fill: #ea4c89
-}
-
-#github svg:hover {
-    fill: #6cc644;
-}
-
-#twitter svg:hover {
-    fill: rgb(29, 161, 242);
-}
-
-#mail svg:hover {
-    fill: #43918E;
-}
-
-#linkedin svg:hover {
-    fill: #0077B5;
-}
-
-#instagram svg:hover {
-    fill: #e95950;
-}
-
-#untappd svg:hover {
-    fill: #ffcc09;
-}
-
-#mal svg:hover {
-    fill: #2D50A1;
-}
 
 .home .Untappd {
     background: #F57F17;
@@ -132,29 +94,10 @@
     background: #4CAF50;
 }
 
-.home footer {
-    height: auto;
-    padding: 20px 0;
-    width: 90%;
-    margin: auto;
-    font-family: Consolas, Monaco, monospace;
-}
-
-.home footer a:hover {
-    cursor: pointer;
-}
-
-.home footer span {
-    display: block;
-}
-
 .home a {
     text-decoration: none;
     color: #47c3fd;
 }
-.home p a:hover, .website-link:hover {
+.home p a:hover {
     border-bottom: 2px solid #47c3fd;
-}
-
-.home .button a {
 }

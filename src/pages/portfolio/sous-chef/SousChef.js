@@ -46,10 +46,10 @@ class SousChef extends Component {
             <ProjectSection title="Design"
               content={
                 <span>
-                  <p>
+                  <p className="before-list">
                     This was my first time designing a VoiceUser Interface (VUI), so it was a pretty fun challenge to design and implement within 36 hours. I first read the docs on <a href="https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-voice-design-handbook" target="_blank">Alexa Skills Design Handbook</a> and took away some important factors:
                   </p>
-                  <ul>
+                  <ul className="list">
                     <li>Present information in consumable pieces</li>
                     <li>Make sure users now where they are in the flow</li>
                     <li>Get one piece of info from the user at a time</li>
@@ -65,8 +65,8 @@ class SousChef extends Component {
                   <p>
                     After experimenting many different ways to use the power of Alexa, I realied that it was talking a lot more than was necessary. You are unable to interrupt Alexa, which means you have to wait for it to read a list of recipes or ingredients. In response to that, I decided to limit Alexa to list five ingredients at a time because if it told you all at once it was overwhelming. I also incorporated the Alexa app so you would get a list of ingredients on your phone so you could skip Alexa listing out ingredients entirely.
                   </p>
-                  <p>Other tweaks to this flow I made include:</p>
-                  <ul>
+                  <p className="before-list">Other tweaks to this flow I made include:</p>
+                  <ul className="list">
                     <li>Removing the timer and conversion functions due to technical limitations</li>
                     <li>Options to search for a new recipe if you don't like what Alexa gives you</li>
                     <li>Increasing the amount of recipes Alexa reads out so the user has a bit more choice</li>

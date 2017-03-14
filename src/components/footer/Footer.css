@@ -1,0 +1,78 @@
+
+footer {
+    height: auto;
+    padding: 20px 0;
+    width: 90%;
+    margin: auto;
+    font-family: Consolas, Monaco, monospace;
+}
+
+footer a:hover {
+    cursor: pointer;
+}
+
+footer span {
+    display: block;
+}
+
+
+footer .social {
+    display: flex;
+    align-items: center;
+    width: 270px;
+    justify-content: space-between;
+}
+
+footer .social a {
+    text-decoration: none;
+}
+
+footer .social svg {
+    width: 24px;
+    height: 24px;
+    fill: #1F1E1E;
+}
+
+footer .social path, footer .social rect {
+    transition: fill .4s ease;
+}
+
+footer .website-link:hover {
+    border-bottom: 2px solid #47c3fd;
+}
+
+#resume svg:hover {
+    fill: #8C7AE5;
+}
+
+#dribbble svg:hover {
+    fill: #ea4c89
+}
+
+#github svg:hover {
+    fill: #6cc644;
+}
+
+#twitter svg:hover {
+    fill: rgb(29, 161, 242);
+}
+
+#mail svg:hover {
+    fill: #43918E;
+}
+
+#linkedin svg:hover {
+    fill: #0077B5;
+}
+
+#instagram svg:hover {
+    fill: #e95950;
+}
+
+#untappd svg:hover {
+    fill: #ffcc09;
+}
+
+#mal svg:hover {
+    fill: #2D50A1;
+}

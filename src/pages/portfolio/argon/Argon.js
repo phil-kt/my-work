@@ -4,7 +4,6 @@ import './Argon.css';
 
 import ProjectPage from '../../../components/project-page/ProjectPage';
 import ProjectSection from '../../../components/project-section/ProjectSection';
-import live from '../../../media/argon/live.jpg';
 import process from '../../../media/argon/process.svg';
 import eyetap from '../../../media/argon/eyetap.png';
 import vuforia from '../../../media/argon/vuforia.jpg';
@@ -69,7 +68,7 @@ class Argon extends Component {
             <ProjectSection title="Concept"
               content={
                 <span>
-                    <p className="starting-paragraph">
+                    <p className="before-list">
                       Understanding AR is a project inspired by Scott McCloud's book <a href="https://en.wikipedia.org/wiki/Understanding_Comics" target="blank">Understanding Comics</a>, which is a meta work that describes how to write and draw comics through the use of comics. Professor Bolter really liked this work, and wondered if we could do the same with augmented reality: create an augmented reality application about augmented reality. My partner, Victoria, and I took up this challenge and sought to create an AR book about the history and development of AR. We identified what we considered key moments in augmented history worth representing:
                     </p>
                     <ul className="list">

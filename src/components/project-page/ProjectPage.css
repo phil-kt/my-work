@@ -111,7 +111,7 @@
 .project-page .statistics {
     display: flex;
     justify-content: space-around;
-    max-width: initial;
+    max-width: 750px;
     width: 80%;
     margin: auto;
     color: #1f1e1e;

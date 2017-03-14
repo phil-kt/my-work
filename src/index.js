@@ -13,7 +13,8 @@ import Medi from './pages/portfolio/medi/Medi';
 import SousChef from './pages/portfolio/sous-chef/SousChef';
 import Graffiti from './pages/portfolio/graffiti/Graffiti';
 import Rendezvous from './pages/portfolio/rendezvous/Rendezvous';
-import Misc from './pages/misc/Misc'
+import Misc from './pages/misc/Misc';
+import About from './pages/about/About';
 import NotFound from './pages/not-found/NotFound';
 import './index.css';
 
@@ -42,6 +43,7 @@ ReactDOM.render((
     <Route path="/graffiti" component={Graffiti}/>
     <Route path="/rendezvous" component={Rendezvous}/>
     <Route path="/miscellaneous" component={Misc}/>
+    <Route path="/about" component={About}/>
     <Route path="/my-work" component={App}/>
     <Route path="/*" component={NotFound}/>
 

@@ -117,14 +117,14 @@ class Medi extends Component {
                   <p className="starting-paragraph">
                     For fall semester of my master's program, I took a class which focused on teaching how to design interfaces from low to high fidelity. We were given an assignment to design an application that would assist both the elderly and their caretakers in taking prescription medication.  When designing these apps I was really influenced by the idea of <a href="https://medium.com/swarm-nyc/complexion-reduction-a-new-trend-in-mobile-design-cef033a0b978#.h55s4jdug" target="_blank">complexion reduction.</a>
                   </p>
-                  <p>
+                  <p className="before-list">
                     For this application, three aspects of a prototype were created:
                   </p>
-                  <ul className="list">
+                  <ol className="list">
                     <li>A mobile application for the caretaker to use to check up on their patient</li>
                     <li>A physical artifact which allows the patient to track their medication</li>
                     <li>An automatic pill dispensing device for the patient with an embedded screen</li>
-                  </ul>
+                  </ol>
                 </span>
               }
             />
@@ -271,7 +271,7 @@ class Medi extends Component {
                 <span>
                   <p className="starting-paragraph">After low fidelity mockups came the medium fidelity ones which were used for user testing.</p>
                   <iframe className="invision-embed" width="438" height="930" src="//invis.io/DX90SMQU4" frameBorder="0" allowFullScreen="true"></iframe>
-                  <p>
+                  <p className="before-list">
                     In this prototype the following tasks are incorporated:
                   </p>
                   <ul className="list">
@@ -299,7 +299,7 @@ class Medi extends Component {
             <ProjectSection title="User Testing"
               content={
                 <span>
-                  <p>Using the medium fidelity prototype on Invision, I sent it out to two people for user testing:
+                  <p className="before-list">Using the medium fidelity prototype on Invision, I sent it out to two people for user testing:
                   </p>
                   <ol className="list">
                       <li>my mother, a licensed physician who is currently practicing in a private clinic and could provide insight from a medical perspective</li>
@@ -310,7 +310,7 @@ class Medi extends Component {
                   </div>
                   <Collapse isOpened={this.state.feedbackDetails} keepCollapsedContent={true}>
                   <div>
-                    <p>
+                    <p className="before-list">
                       My mother provided some great feedback (as mothers tend to do) from a doctor's point of view:
                     </p>
                      <ul className="list">
@@ -322,7 +322,7 @@ class Medi extends Component {
                         <li>Maybe only show pills he misses on the calendar, otherwise can get busy</li>
                         <li>Would like to be able to make memos on the calendar on patient’s condition to discuss with doctor next visit</li>
                       </ul>
-                    <p>
+                    <p className="before-list">
                       As for my fellow classmate, choice feedback included:
                     </p>
                     <ul className="list">
@@ -418,9 +418,9 @@ class Medi extends Component {
                   <p>For the final leg of this project, we had to create a high fidelity prototype of the interface that would be on the pill dispensing machine. The dimensions were 480 by 320, and the design of the device itself was given to us, we just had to make the interface.
                   </p>
 
-                  <p>The device itself is meant to be able to be a standalone device, which means that all settings, interactions, controls, etc, had to be on the embedded screen, no accompanying app. Features of the device include:
+                  <p className="before-list">The device itself is meant to be able to be a standalone device, which means that all settings, interactions, controls, etc, had to be on the embedded screen, no accompanying app. Features of the device include:
                   </p>
-                  <ol>
+                  <ol className="list">
                     <li>Onboarding</li>
                     <li>Medication set up</li>
                     <li>Editing settings</li>
@@ -452,7 +452,7 @@ class Medi extends Component {
                         : null
                     }
                   </p>
-                  <p>
+                  <p className="before-list">
                     In this prototype you can:
                   </p>
                   <ul className="list">

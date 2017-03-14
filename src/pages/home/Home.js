@@ -1,17 +1,11 @@
 import React, { Component } from 'react';
-import Isvg from 'react-inlinesvg';
+import {Link} from 'react-router';
 import './Home.css';
 
 import Project from '../../components/project/Project';
+import Footer from '../../components/footer/Footer';
 
 import computers from '../../media/home/im_so_computers.png';
-import dribbble from '../../media/social/dribbble.svg';
-import github from '../../media/social/github.svg';
-import twitter from '../../media/social/twitter.svg';
-import untappd from '../../media/social/untappd.svg';
-import linkedin from '../../media/social/linkedin.svg';
-import instagram from '../../media/social/instagram.svg';
-import mal from '../../media/social/MAL.svg';
 import untappd_phone from '../../media/home/untappd-phone.png';
 import tree from '../../media/home/tree.png';
 import graffiti from '../../media/home/graffiti-iphone.png';
@@ -71,10 +65,11 @@ class Home extends Component {
             About me:
           </span>
           <ul>
-            <li>Master’s HCI at Georgia Tech, undergrad CS at Stony Brook</li>
-            <li>UI design, UX engineering, with some UX research thrown in</li>
-            <li>Passionate about emojis, mecha, and vaporwave</li>
-            <li>Previously at HBO and Pypestream, seeking a summer 2017 internship</li>
+            <li><span>Master’s HCI at Georgia Tech, undergrad CS at Stony Brook</span></li>
+            <li><span>UI design, UX engineering, with some UX research thrown in</span></li>
+            <li><span>Passionate about emojis, mecha, and vaporwave</span></li>
+            <li><span>Previously at HBO and Pypestream, seeking a summer 2017 internship</span></li>
+            <li><span><Link to="/about">Wanna learn more?</Link></span></li>
           </ul>
           <p>Check out my work below, or if you're short for time&nbsp;
             <a href={process.env.PUBLIC_URL + '/philippe_kimura-thollander_resume.pdf'} target="_blank" id="resume">
@@ -84,7 +79,7 @@ class Home extends Component {
         </div>
 
         <Project title="Untappd Redesign"
-                 description="An in-progress case study and redesign of the popular beer app Untappd"
+                 description="A case study and Material redesign of the popular beer app Untappd"
                  link="/untappd"
                  image={untappd_phone}
                  iPhone={true}
@@ -141,56 +136,8 @@ class Home extends Component {
                  image={misc}
                  tags="Otaku, Hackathon"/>
 
+        <Footer />
 
-
-        <footer>
-          <div className="social">
-
-            <a href="http://dribbble.com/linkcable" target="_blank" id="dribbble">
-              <Isvg src={dribbble}>
-                <img src={dribbble} alt="dribbbble link" width="20px" />
-              </Isvg>
-            </a>
-
-            <a href="http://github.com/linkcable" target="_blank" id="github">
-              <Isvg src={github}>
-                <img src={github} alt="github link" width="20px" />
-              </Isvg>
-            </a>
-
-            <a href="http://twitter.com/link_cable" target="_blank" id="twitter">
-              <Isvg src={twitter}>
-                <img src={twitter} alt="twitter link" width="20px" />
-              </Isvg>
-            </a>
-
-            <a href="http://linkedin.com/in/linkcable" target="_blank" id="linkedin">
-              <Isvg src={linkedin}>
-                <img src={linkedin} alt="linkedin link" width="20px" />
-              </Isvg>
-            </a>
-
-            <a href="https://instagram.com/link_cable" target="_blank" id="instagram">
-              <Isvg src={instagram}>
-                <img src={instagram} alt="instagram link" width="20px" />
-              </Isvg>
-            </a>
-
-            <a href="https://untappd.com/user/LinkCable" target="_blank" id="untappd">
-              <Isvg src={untappd}>
-                <img src={untappd} alt="untappd link" width="20px" />
-              </Isvg>
-            </a>
-
-            <a href="https://myanimelist.net/profile/LinkCable" target="_blank" id="mal">
-              <Isvg src={mal}>
-                <img src={mal} alt="my anime list link" width="20px" />
-              </Isvg>
-            </a>
-          </div>
-          <span style={{margin: "5px 0"}}>This website designed and developed by me</span>
-          <a className="website-link" href="http://github.com/linkcable/my-work">View it on Github</a>
-        </footer>
       </div>
     )
   }
