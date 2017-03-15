@@ -83,3 +83,9 @@
 .back i {
     width: 24px;
 }
+
+@media (min-width: 767px) {
+    .fab-menu {
+        display: none;
+    }
+}

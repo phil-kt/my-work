@@ -1,5 +1,5 @@
-.about-page {
-    margin: 40px auto;
+.about-page .about-content {
+    margin: 40px auto 20px;
     max-width: 1000px;
 }
 
@@ -23,8 +23,7 @@
     border-bottom: 2px solid #47c3fd;
 }
 
-
-.about-page .button {
+.about-page .go-home {
     text-align: center;
 }
 
@@ -32,5 +31,4 @@
     border: 3px solid #1f1e1e;
     color: #1f1e1e;
     background-image: linear-gradient(to bottom, transparent 50%, white 50%);
-
 }

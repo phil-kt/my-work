@@ -25,6 +25,9 @@ function logPageView() {
   ReactGA.set({ page: window.location.pathname });
   ReactGA.pageview(window.location.pathname);
   window.scrollTo(0,0);
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
 }
 
 /*

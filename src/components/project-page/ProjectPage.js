@@ -1,11 +1,27 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router';
 import './ProjectPage.css';
 
 import Button from '../button/Button';
 import FabButton from '../fab-button/FabButton';
-import ProjectSection from '../project-section/ProjectSection'
+import ProjectSection from '../project-section/ProjectSection';
+import Project from '../project/Project';
+import Projects from '../projects/Projects';
+
+import home from '../../media/home/im_so_computers.png';
 
 class ProjectPage extends Component {
+
+  constructor(props) {
+
+    super(props);
+
+    const proj = new Projects();
+
+    this.state = {
+      nextProject: proj.getNextProject(this.props.title),
+    };
+  }
 
   static propTypes = {
     title: React.PropTypes.string.isRequired,
@@ -34,9 +50,6 @@ class ProjectPage extends Component {
         />
       );
     });
-
-    console.log(linksList);
-
 
     return (
       <div className={"project-page " + this.props.title}>
@@ -87,7 +100,16 @@ class ProjectPage extends Component {
           null
         }
 
+        <Link to="/">
+          <img  className="home-btn" src={home} alt="home" width="30" />
+        </Link>
+
         <FabButton currentPage={this.props.title}/>
+
+        <h4 className="next-up">Up Next:</h4>
+
+
+        <Project title={this.state.nextProject.name} description={this.state.nextProject.description} link={this.state.nextProject.link} image={this.state.nextProject.image} tags={this.state.nextProject.tags} iPhone={this.state.nextProject.iPhone}/>
 
       </div>
     )

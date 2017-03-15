@@ -5,8 +5,8 @@
 
 .home .vapor {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 15px;
+    left: 15px;
 }
 
 .home .name {
@@ -50,54 +50,15 @@
 }*/
 
 
-.home .Untappd {
-    background: #F57F17;
-}
-
-.home .Hive {
-    background: #78909C;
-}
-
-.home .Hive .right {
-    padding-top: 60px;
-}
-
-.home .Hive .right img {
-    max-width: 300px;
-}
-
-.home .Sous {
-    background: #03A9F4;
-}
-
-.home .Chef .right img {
-    max-width: 300px;
-}
-
-.home .AR {
-    background: #d0a70f;
-}
-
-.home .Medi {
-    background: #DB4D32;
-}
-
-.home .Graffiti {
-    background: #1DC7AA;
-}
-
-.home .Rendezvous {
-    background: #5C6BC0;
-}
-
-.home .Miscellaneous {
-    background: #4CAF50;
-}
-
 .home a {
     text-decoration: none;
     color: #47c3fd;
 }
-.home p a:hover {
+
+.home p a, .home li a {
+    border-bottom: 2px solid transparent;
+}
+
+.home p a:hover, .home li a:hover {
     border-bottom: 2px solid #47c3fd;
 }

@@ -102,11 +102,6 @@
     margin-bottom: 15px;
 }
 
-.project-page {
-
-    padding-bottom: 50px;
-}
-
 
 .project-page .statistics {
     display: flex;
@@ -147,3 +142,35 @@
     text-align: center;
 }
 
+.project-page .next-up {
+    text-align: center;
+    margin: 30px auto 20px;
+}
+
+.project-page .project img {
+    max-height: inherit;
+}
+
+.project-page .home-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+@media (max-width: 767px) {
+    .project-page .next-up {
+        display: none;
+    }
+
+    .project-page .project {
+        display: none;
+    }
+
+    .project-page {
+        padding-bottom: 50px;
+    }
+
+    .project-page .home-btn {
+        display: none;
+    }
+}

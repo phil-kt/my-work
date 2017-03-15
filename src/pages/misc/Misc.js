@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router';
 import './Misc.css';
 
 import MiscProject from '../../components/misc-project/MiscProject';
 import FabButton from '../../components/fab-button/FabButton';
-
+import Project from '../../components/project/Project';
+import Projects from '../../components/projects/Projects';
 
 import tachiyomi from '../../media/misc/tachiyomi/tachiyomi.png';
 import tachiyomi_flow from '../../media/misc/tachiyomi/tachiyomi-flow.png';
@@ -12,8 +14,20 @@ import stokr from '../../media/misc/stokr/stokr.svg';
 import dots from '../../media/home/dots.svg';
 import ai from '../../media/misc/ai/ai.png';
 import ai_prev from '../../media/misc/ai/elsie.png';
+import home from '../../media/home/im_so_computers.png';
+
 
 class Home extends Component {
+
+  constructor(props) {
+    super(props);
+
+    const proj = new Projects();
+
+    this.state = {
+      project: proj.getNextProject("Miscellaneous")
+    }
+  }
 
   render() {
     return (
@@ -115,8 +129,18 @@ class Home extends Component {
         </div>
 
 
+        <Link to="/">
+          <img  className="home-btn" src={home} alt="home" width="30" />
+        </Link>
 
         <FabButton currentPage="Miscellaneous"/>
+
+        <h4 className="next-up">Up Next:</h4>
+
+
+        <Project title={this.state.project.name} description={this.state.project.description} link={this.state.project.link} image={this.state.project.image} tags={this.state.project.tags} iPhone={this.state.project.iPhone}/>
+
+
       </div>
     )
   }

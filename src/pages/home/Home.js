@@ -5,7 +5,7 @@ import './Home.css';
 import Project from '../../components/project/Project';
 import Footer from '../../components/footer/Footer';
 
-import computers from '../../media/home/im_so_computers.png';
+import computers from '../../media/windows.png';
 import untappd_phone from '../../media/home/untappd-phone.png';
 import tree from '../../media/home/tree.png';
 import graffiti from '../../media/home/graffiti-iphone.png';

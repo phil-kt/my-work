@@ -10,6 +10,7 @@
     text-transform: uppercase;
     display: inline-block;
     transition: all 0.3s;
+    line-height: 1.3em;
 }
 
 .button a:hover {

@@ -46,7 +46,7 @@
     margin-bottom: 0;
 }
 
-.project img {
+.project .preview-content .right img {
     width: 85%;
     max-width: 200px;
     margin: auto;
@@ -59,4 +59,49 @@
     left: 5%;
     bottom: 0;
     font-size: .90em;
+}
+
+
+.project.Untappd {
+    background: #F57F17;
+}
+
+.project.Hive {
+    background: #78909C;
+}
+
+.project.Hive .right {
+    padding-top: 60px;
+}
+
+.project.Hive .right img {
+    max-width: 300px;
+}
+
+.project.Sous {
+    background: #03A9F4;
+}
+
+.project.Chef .right img {
+    max-width: 300px;
+}
+
+.project.AR {
+    background: #d0a70f;
+}
+
+.project.Medi {
+    background: #DB4D32;
+}
+
+.project.Graffiti {
+    background: #1DC7AA;
+}
+
+.project.Rendezvous {
+    background: #5C6BC0;
+}
+
+.project.Miscellaneous {
+    background: #4CAF50;
 }
