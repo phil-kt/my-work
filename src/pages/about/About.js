@@ -36,7 +36,7 @@ class About extends Component {
                               I'm flattered you want to know about me! 😊 Well I guess I'll start with the obvious, I'm currently a student at GaTech learning how to design everything from digital interfaces to customer experiences across an entire brand. I've gone from pushing code to pushing pixels, and have learned the importance of research in software development and design in general.
                             </p>
                             <p>
-                              In terms of design, I believe in design by doing, by making quickly, testing quickly, and iterating quickly. Design can't predict everything a user will do, so you have to be ready to constantly improve your product, through research, design, and development.
+                              In terms of design, I believe in design by doing, by making quickly, testing quickly, and iterating quickly. Design can't predict everything a user will do, so you have to be ready to constantly improve your product, through research, design, and development. Personally I'm also interested in the areas of service design, VR design, and AR design.
                             </p>
                             <p>
                               As for outside of school and work, I spend a lot of time reading manga, playing video games, listening to future funk or building model kits, just like any typical half-🇯🇵 half-🇸🇪 raised in America. I also try to go to hackathons when I can, and have been attending conventions like New York Comic Con and PAX East for the better part of decade.
@@ -44,7 +44,6 @@ class About extends Component {
                             <p>
                               Feel free to stalk me on my various online presences if you'd, or drop me a line at <a href="mailto:hi@philkt.me">hi@philkt.me</a>.
                             </p>
-
 
                             <p className="go-home">
                               <Button content="Go Home" link="/"/>

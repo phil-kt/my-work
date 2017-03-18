@@ -13,7 +13,7 @@ import medi from '../../media/home/medi-iphone.png';
 import argon from '../../media/home/argon-iphone.png';
 import sous_chef from '../../media/home/sous-chef.png';
 import rendezvous from '../../media/home/rendezvous-iphone.png';
-import misc from '../../media/home/logo.png';
+import misc from '../../media/home/misc.png';
 
 class Home extends Component {
 

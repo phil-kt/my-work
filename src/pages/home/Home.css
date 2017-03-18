@@ -62,3 +62,7 @@
 .home p a:hover, .home li a:hover {
     border-bottom: 2px solid #47c3fd;
 }
+
+.home .Miscellaneous .preview-content .right img {
+    max-width: inherit;
+}
