@@ -64,5 +64,24 @@
 }
 
 .home .Miscellaneous .preview-content .right img {
-    max-width: inherit;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.home .contact {
+    width: 100%;
+    height: auto;
+    background: #F06292;
+    color: #fff;
+}
+
+.home .contact .container {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.home .contact .container a {
+    color: #000;
 }

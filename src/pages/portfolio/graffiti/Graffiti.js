@@ -36,7 +36,7 @@ class Graffiti extends Component {
         content={
           <span>
 
-            <ProjectSection title="Origins"
+            <ProjectSection title="Background"
               content={
                 <p>
                   The concept of Graffiti came about by thinking about what avenues of social media haven't been explored to their full potential yet, and my friends and I all agreed we were most interested in the aspect of anonymous socializing, in the vein of YikYak or Secret, as well as the "in the moment" feeling of platforms like Snapchat and Twitter. We tried to think of the best way we could combine these two aspects, and add in a creative aspect to convey these ideas through art.

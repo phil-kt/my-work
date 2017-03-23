@@ -15,6 +15,14 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: 'DINPro-Regular';
+  src: url('fonts/din-pro/DINPro-Regular.eot');
+  src: url('fonts/din-pro/DINPro-Regular.woff2') format('woff2'),
+  url('fonts/din-pro/DINPro-Regular.woff') format('woff'),
+  url('fonts/din-pro/DINPro-Regular.ttf') format('truetype');
+}
+
 /* Import Lora */
 @import url('https://fonts.googleapis.com/css?family=Lora:700');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');

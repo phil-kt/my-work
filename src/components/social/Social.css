@@ -1,0 +1,57 @@
+.social {
+    display: flex;
+    align-items: center;
+    width: 270px;
+    justify-content: space-between;
+}
+
+.social a {
+    text-decoration: none;
+}
+
+.social svg {
+    width: 24px;
+    height: 24px;
+    fill: #1F1E1E;
+}
+
+.social path, footer .social rect {
+    transition: fill .4s ease;
+}
+
+
+#resume svg:hover {
+    fill: #8C7AE5;
+}
+
+#dribbble svg:hover {
+    fill: #ea4c89
+}
+
+#github svg:hover {
+    fill: #6cc644;
+}
+
+#twitter svg:hover {
+    fill: rgb(29, 161, 242);
+}
+
+#mail svg:hover {
+    fill: #43918E;
+}
+
+#linkedin svg:hover {
+    fill: #0077B5;
+}
+
+#instagram svg:hover {
+    fill: #e95950;
+}
+
+#untappd svg:hover {
+    fill: #ffcc09;
+}
+
+#mal svg:hover {
+    fill: #2D50A1;
+}

@@ -21,7 +21,7 @@ class SousChef extends Component {
         content={
           <span>
 
-            <ProjectSection title="Origins"
+            <ProjectSection title="Background"
               content={
                 <p>
                   For PennApps XV, my friend and I knew we wanted to do a hack regarding Alexa or chatbots, since they are the newest and most rapidly developing areas of software right now. After some deliberation, we decided to go with the Amazon Echo, as it is an increasingly more ubiquitous device and voice was an input we had never worked with before.

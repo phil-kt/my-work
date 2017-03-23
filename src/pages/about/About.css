@@ -32,3 +32,11 @@
     color: #1f1e1e;
     background-image: linear-gradient(to bottom, transparent 50%, white 50%);
 }
+
+.about-page .social {
+    margin: auto;
+}
+
+.about-page .project-section .social a:hover {
+    border: none;
+}

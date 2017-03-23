@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router';
 import './ProjectPage.css';
 
 import Button from '../button/Button';
@@ -7,8 +6,7 @@ import FabButton from '../fab-button/FabButton';
 import ProjectSection from '../project-section/ProjectSection';
 import Project from '../project/Project';
 import Projects from '../projects/Projects';
-
-import home from '../../media/home/im_so_computers.png';
+import HomeButton from '../home-button/HomeButton';
 
 class ProjectPage extends Component {
 
@@ -100,9 +98,7 @@ class ProjectPage extends Component {
           null
         }
 
-        <Link to="/">
-          <img  className="home-btn" src={home} alt="home" width="30" />
-        </Link>
+        <HomeButton/>
 
         <FabButton currentPage={this.props.title}/>
 

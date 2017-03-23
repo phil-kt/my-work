@@ -12,7 +12,6 @@ import Argon from './pages/portfolio/argon/Argon';
 import Medi from './pages/portfolio/medi/Medi';
 import SousChef from './pages/portfolio/sous-chef/SousChef';
 import Graffiti from './pages/portfolio/graffiti/Graffiti';
-import Rendezvous from './pages/portfolio/rendezvous/Rendezvous';
 import Misc from './pages/misc/Misc';
 import About from './pages/about/About';
 import NotFound from './pages/not-found/NotFound';
@@ -44,7 +43,6 @@ ReactDOM.render((
     <Route path="/medi" component={Medi}/>
     <Route path="/sous-chef" component={SousChef}/>
     <Route path="/graffiti" component={Graffiti}/>
-    <Route path="/rendezvous" component={Rendezvous}/>
     <Route path="/miscellaneous" component={Misc}/>
     <Route path="/about" component={About}/>
     <Route path="/my-work" component={App}/>

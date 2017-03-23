@@ -38,7 +38,7 @@ class Argon extends Component {
         content={
           <span>
 
-            <ProjectSection title="Origins"
+            <ProjectSection title="Background"
               content={
                 <span>
                    <p className="starting-paragraph">

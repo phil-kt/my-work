@@ -4,7 +4,6 @@ import mediImage from '../../media/home/medi-iphone.png';
 import argonImage from '../../media/home/argon-iphone.png';
 import sousImage from '../../media/home/sous-chef.png';
 import graffitiImage from '../../media/home/graffiti-iphone.png';
-import rendImage from '../../media/home/rendezvous-iphone.png';
 import miscImage from '../../media/home/logo.png';
 
 class Projects {
@@ -53,14 +52,6 @@ class Projects {
       description: "An augmented reality iOS app to draw virtual graffiti on real world objects",
       image: graffitiImage,
       link: "/graffiti",
-      iPhone: true,
-      tags: "UI Design, Development, Hackathon"
-    },
-    {
-      name: "Rendezvous",
-      description: "An iOS app to help you find your friends in a crowd or whenever you have no service",
-      image: rendImage,
-      link: "/rendezvous",
       iPhone: true,
       tags: "UI Design, Development, Hackathon"
     },

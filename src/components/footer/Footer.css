@@ -40,39 +40,3 @@ footer .social path, footer .social rect {
 footer .website-link:hover {
     border-bottom: 2px solid #47c3fd;
 }
-
-#resume svg:hover {
-    fill: #8C7AE5;
-}
-
-#dribbble svg:hover {
-    fill: #ea4c89
-}
-
-#github svg:hover {
-    fill: #6cc644;
-}
-
-#twitter svg:hover {
-    fill: rgb(29, 161, 242);
-}
-
-#mail svg:hover {
-    fill: #43918E;
-}
-
-#linkedin svg:hover {
-    fill: #0077B5;
-}
-
-#instagram svg:hover {
-    fill: #e95950;
-}
-
-#untappd svg:hover {
-    fill: #ffcc09;
-}
-
-#mal svg:hover {
-    fill: #2D50A1;
-}

@@ -151,12 +151,6 @@
     max-height: inherit;
 }
 
-.project-page .home-btn {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
 @media (max-width: 767px) {
     .project-page .next-up {
         display: none;

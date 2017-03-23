@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router';
 import './Misc.css';
 
 import MiscProject from '../../components/misc-project/MiscProject';
 import FabButton from '../../components/fab-button/FabButton';
 import Project from '../../components/project/Project';
 import Projects from '../../components/projects/Projects';
+import HomeButton from '../../components/home-button/HomeButton';
 
 import tachiyomi from '../../media/misc/tachiyomi/tachiyomi.png';
 import tachiyomi_flow from '../../media/misc/tachiyomi/tachiyomi-flow.png';
@@ -14,10 +14,10 @@ import stokr from '../../media/misc/stokr/stokr.svg';
 import dots from '../../media/home/dots.svg';
 import ai from '../../media/misc/ai/ai.png';
 import ai_prev from '../../media/misc/ai/elsie.png';
-import home from '../../media/home/im_so_computers.png';
+import rendezvous from '../../media/misc/rendezvous.png';
 
 
-class Home extends Component {
+class Misc extends Component {
 
   constructor(props) {
     super(props);
@@ -107,6 +107,23 @@ class Home extends Component {
                          },
                        ]}/>
 
+          <MiscProject title="Rendezvous"
+                       description={
+                         <p>An iOS app to help you find your friends in crowded places or, if left in the background, to encourage spontaneous meetings with your friends. <a href="https://devpost.com/software/rendezvous-fsu7xd">Created for PennApps XII.</a></p>
+                       }
+                       badge={rendezvous}
+                       preview={
+                         <p>
+                         <iframe className="framer-embed" src="https://framer.cloud/GrnUD" frameBorder="0" allowFullScreen="allowFullScreen"></iframe>
+                         </p>
+                       }
+                       customLinks={[
+                         {
+                           name: "github",
+                           link: "https://github.com/LinkCable/rendezvous"
+                         }
+                       ]}/>
+
           <MiscProject title="Ai.exe"
                        description={
                          <p>A visual novel where you can date personifications of Internet Explorer, Chrome, and Firefox. Which browser is best girl?</p>
@@ -129,9 +146,7 @@ class Home extends Component {
         </div>
 
 
-        <Link to="/">
-          <img  className="home-btn" src={home} alt="home" width="30" />
-        </Link>
+        <HomeButton/>
 
         <FabButton currentPage="Miscellaneous"/>
 
@@ -147,4 +162,4 @@ class Home extends Component {
 
 }
 
-export default Home;
+export default Misc;

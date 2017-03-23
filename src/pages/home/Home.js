@@ -12,7 +12,6 @@ import graffiti from '../../media/home/graffiti-iphone.png';
 import medi from '../../media/home/medi-iphone.png';
 import argon from '../../media/home/argon-iphone.png';
 import sous_chef from '../../media/home/sous-chef.png';
-import rendezvous from '../../media/home/rendezvous-iphone.png';
 import misc from '../../media/home/misc.png';
 
 class Home extends Component {
@@ -123,18 +122,17 @@ class Home extends Component {
                  iPhone={true}
                  />
 
-        <Project title="Rendezvous"
-                 description="An iOS app to help you find your friends in a crowd or to promote spontaneous encounters"
-                 link="/rendezvous"
-                 image={rendezvous}
-                 tags="UI Design, Development, Hackathon"
-                 iPhone={true}/>
-
         <Project title="Miscellaneous"
                  description="Some other stuff I've made"
                  link="/miscellaneous"
                  image={misc}
                  tags="Otaku, Hackathon"/>
+
+        <div className="contact">
+          <div className="container">
+            <h4>Like my work? Send me mail at <a href="mailto:hi@philkt.me">hi@philkt.me</a></h4>
+          </div>
+        </div>
 
         <Footer />
 

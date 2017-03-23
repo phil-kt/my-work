@@ -57,10 +57,16 @@ class Untappd extends Component {
       <ProjectPage
         title="Untappd Redesign"
         description="A material redesign of Untappd, an app used by beer fans to log their beers and see what their friends are drinking"
+        customLinks={[
+            {
+                name: "Prototype",
+                link: "https://framer.cloud/YzLIl"
+            },
+        ]}
         content={
           <span>
 
-            <ProjectSection title="Origins"
+            <ProjectSection title="Background"
               content={
                 <p>
                   I really like to use Untappd, a social networking app that is unique in that it focuses on beer drinkers. People can use Untappd to log their beers, add friends and see their beers, and view ratings of beers from other users of the app. Although Untappd is a pretty popular app among beer fans, the design of the app leaves somewhat to be desired. However, to be sure I was not just basing this off of my own beliefs, I started conducting some research to inform my redesign and to find out what people really use Untappd for.
@@ -192,22 +198,17 @@ class Untappd extends Component {
               content={
                 <span>
                   <p>
-                   So before I go into detail I imagine you'd like to see what the revision looks like:
+                   So before I go into detail I imagine you'd like to see the original Untappd versus my version:
                   </p>
 
+                  <p className="subheader">Old Untappd</p>
                   <img src={current_untappd} alt="the current home screen of untappd" className="extend"/>
-                  <p className="caption">A look at the current tabs of Untappd</p>
-
+                  <p className="subheader">My Untappd</p>
                   <img src={new_untappd} alt="the new designs" className="extend"/>
-                  <p className="caption">My version of Untappd</p>
                   <p>
                     As you can see, I decreased the number of tabs from 5 to 4, and also introduced the Messages tab mentioned before. I cut the Friends and Notifications tabs, and moved that information to different locations (Notifications to the status bar, Friends to your profile). I also introduced a floating action button to make it easier and more intuitive to check in, as the current design requires you to hit the search button in the corner to initiate a check-in, when it really should be obvious and easily accessible, since it is the primary focus for people using the app. Now let's go through screen by screen the design decisions:
                   </p>
-                  <div className="button collapse" onClick={this.collapseMocks}>
-                    <a>{this.state.mockupDetails ? "Hide Breakdown" : "Show Breakdown"}</a>
-                  </div>
-                  <Collapse isOpened={this.state.mockupDetails} keepCollapsedContent={true}>
-                  <div>
+
                   <p className="subheader">Home</p>
                   <p>
                   <img src={home_comp} alt="the two home designs"/>
@@ -246,19 +247,20 @@ class Untappd extends Component {
                   <p>
                     Below the fold on the current app design is the list of your check-ins, so I decided to move that up and condense the information in the profile card. Now a user can simply tab between their check-ins, photos, and what they've toasted to get a good sense of their or others' activity.
                   </p>
-                  </div>
-                  </Collapse>
+
                 </span>
               }
             />
 
-            {/*
+            {
             <ProjectSection title="Prototype"
               content={
-                <p>Coming soon, a high fidelity prototype with more than just these screens!</p>
+                <p>
+                  <iframe className="framer-embed" src="https://framer.cloud/YzLIl" frameBorder="0" allowFullScreen="allowFullScreen"></iframe>
+                </p>
               }
             />
-            */}
+            }
 
             <ProjectSection title="Conclusion"
               content={

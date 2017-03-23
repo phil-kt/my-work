@@ -29,7 +29,7 @@ class Project extends Component {
           <div className="left">
             <h2>{this.props.title}</h2>
             <p>{this.props.description}</p>
-            <Button content="explore" link={this.props.link} />
+            <Button content="read more" link={this.props.link} />
           </div>
           <div className={ this.props.iPhone ? "right iphone" : "right"}>
             <img src={this.props.image} alt={this.props.title + " preview"}/>

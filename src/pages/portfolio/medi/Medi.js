@@ -111,7 +111,7 @@ class Medi extends Component {
         content={
           <span>
 
-            <ProjectSection title="Origins"
+            <ProjectSection title="Background"
               content={
                 <span>
                   <p className="starting-paragraph">
@@ -158,11 +158,6 @@ class Medi extends Component {
                     For the development of the mobile app, our professor assigned us to write a scenario/persona for the average caretaker who would find this app useful and better than the current method they are using. Although this is nowhere as good as user research, for the purpose of this class it made sense as the professor already had the app and its general features in mind.
                   </p>
 
-                  <div className="button collapse" onClick={this.collapseScenario}>
-                    <a>{this.state.scenarioDetails ? "Hide Scenario" : "Show Scenario"}</a>
-                  </div>
-                  <Collapse isOpened={this.state.scenarioDetails} keepCollapsedContent={true}>
-                  <div>
                   <h4>Scenario</h4>
                   <p className="starting-paragraph">Thomas is a middle-aged businessman taking care of his older father, Harry, who is now living in his family’s home. Harry is about 80 years old and has to take several pain medications for this arthritis, and has recently been diagnosed with depression due to his lack of ability from old age. However, Thomas has many clients across the country requiring him to travel often and not be home to check on his father.
                   </p>
@@ -202,8 +197,6 @@ class Medi extends Component {
                     </div>
                   </Slider>
                   </p>
-                  </div>
-                  </Collapse>
                 </span>
               }
             />
