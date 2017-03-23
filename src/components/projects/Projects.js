@@ -19,7 +19,7 @@ class Projects {
     },
     {
       name: "The Hive",
-      description: "A case study about how to optimize finding a seat in Georgia Tech’s library",
+      description: "A case study about designing the optimal solution to find workspaces in Georgia Tech’s library",
       image: hiveImage,
       link: "/hive",
       tags: "UX Research, Prototyping"
