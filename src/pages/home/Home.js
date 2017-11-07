@@ -67,7 +67,7 @@ class Home extends Component {
             <li><span>Master’s HCI at Georgia Tech, undergrad CS at Stony Brook</span></li>
             <li><span>UI design, UX engineering, with some UX research thrown in</span></li>
             <li><span>Passionate about emojis, mecha, and vaporwave</span></li>
-            <li><span>Previously at HBO and Pypestream, seeking a summer 2017 internship</span></li>
+            <li><span>Previously at HBO and Pypestream, at Capital One this summer</span></li>
             <li><span><Link to="/about">Wanna learn more?</Link></span></li>
           </ul>
           <p>Check out my work below, or if you're short for time&nbsp;

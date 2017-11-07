@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, browserHistory } from 'react-router';
+import { Router, Route, browserHistory, hashHistory } from 'react-router';
 import ReactGA from 'react-ga';
 //import { useBasename } from 'history'
 
@@ -17,7 +17,7 @@ import About from './pages/about/About';
 import NotFound from './pages/not-found/NotFound';
 import './index.css';
 
-ReactGA.initialize('UA-36903668-3');
+ReactGA.initialize('UA-36903668-5');
 
 
 function logPageView() {
@@ -35,7 +35,7 @@ function logPageView() {
 
 
 ReactDOM.render((
-  <Router history={browserHistory} onUpdate={logPageView}>
+  <Router history={hashHistory} onUpdate={logPageView}>
     <Route path="/" component={App}/>
     <Route path="/untappd" component={Untappd}/>
     <Route path="/hive" component={Hive}/>
